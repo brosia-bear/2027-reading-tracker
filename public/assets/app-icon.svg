@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Open book with a blooming rose, Rosewood Library">
+<rect width="512" height="512" rx="112" fill="#B8797C"/>
+<rect x="17" y="17" width="478" height="478" rx="100" fill="none" stroke="#D7B879" stroke-width="12"/>
+<circle cx="256" cy="255" r="196" fill="#FAF3E7" stroke="#D7B879" stroke-width="8"/>
+<path d="M255 325C218 298 166 293 96 312v104c70-20 118-11 159 18 43-29 96-38 161-18V312c-68-19-124-14-161 13z" fill="#FFFDF8" stroke="#49362F" stroke-width="12" stroke-linejoin="round"/>
+<path d="M256 326v107M112 334c46-13 96-9 131 16M401 334c-47-13-93-9-131 16M125 361c47-12 88-8 117 7M387 361c-44-10-84-7-115 8" fill="none" stroke="#D7B879" stroke-width="7" stroke-linecap="round"/>
+<path d="M254 316C243 247 253 199 280 151" fill="none" stroke="#A2AD8B" stroke-width="16" stroke-linecap="round"/>
+<path d="M250 268c-44-51-76-34-73-12 22 20 53 20 73 12zM271 208c45-48 76-35 77-17-18 25-49 29-77 17z" fill="#A2AD8B" stroke="#49362F" stroke-width="4"/>
+<path d="M272 158c-27-15-25-45-4-55 15 0 20 12 23 21 19-14 44-9 47 8 1 17-16 27-32 30 15 21 0 38-18 33-10-2-17-10-18-20-17 12-37 4-39-13-3-16 19-27 41-22z" fill="#B8797C" stroke="#49362F" stroke-width="5"/>
+<path d="M280 155c12-18 26-19 33-11-10 11-19 19-33 11M272 161c-15-1-26 2-31 12" fill="none" stroke="#D7B879" stroke-width="5" stroke-linecap="round"/>
+<path d="M144 147l8 15 15 8-15 8-8 15-8-15-15-8 15-8zM375 255l7 13 13 7-13 7-7 13-7-13-13-7 13-7z" fill="#D7B879"/>
+</svg>

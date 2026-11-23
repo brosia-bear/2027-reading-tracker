@@ -1,0 +1,12 @@
+{
+  "name": "brosias-library",
+  "version": "2.0.0-dev",
+  "private": true,
+  "type": "module",
+  "description": "Brosia's Library: personal 2027 reading library and tracker (PWA).",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "serve": "node tools/serve.mjs",
+    "test": "node --test tests/"
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 600" role="img" aria-label="Custom reading-list artwork for The Color of Law by Richard Rothstein; not a publisher cover">
+ <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#622e46"/><stop offset="1" stop-color="#bd7990"/></linearGradient><pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="6" cy="7" r="1" fill="#fff0e2" opacity=".2"/></pattern></defs>
+ <rect width="420" height="600" fill="url(#g)"/><rect width="420" height="600" fill="url(#dots)"/>
+ <path d="M0 0h28v600H0z" fill="#622e46" opacity=".67"/><path d="M38 39H381V562H38z" fill="none" stroke="#f4c6bb" stroke-width="2" opacity=".86"/>
+ <path d="M61 62Q210 96 358 62M62 540Q210 505 359 540" fill="none" stroke="#f4c6bb" stroke-width="2" opacity=".7"/>
+ <circle cx="210" cy="121" r="44" stroke="#f4c6bb" stroke-width="1.7" fill="none"/><text x="210" y="141" text-anchor="middle" font-family="Georgia,serif" font-size="53" fill="#fff0e2">✦</text>
+ <text x="210" y="191" text-anchor="middle" font-family="Georgia,serif" font-size="13" letter-spacing="3" fill="#fff0e2" opacity=".9">BROSIA’S LIBRARY</text>
+ <text text-anchor="middle" font-family="Georgia,serif" font-size="37" font-weight="600" fill="#fff0e2"><tspan x="210" y="260">The Color of Law</tspan></text>
+ <path d="M132 426H288" stroke="#f4c6bb" stroke-width="2"/>
+ <text text-anchor="middle" font-family="Georgia,serif" font-size="19" fill="#fff0e2" font-style="italic"><tspan x="210" y="460">Richard Rothstein</tspan></text>
+ <text x="210" y="571" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#fff0e2" opacity=".86" letter-spacing="2">ORIGINAL LIBRARY ART</text>
+ </svg>
