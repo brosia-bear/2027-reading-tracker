@@ -6,7 +6,10 @@
 <meta name="theme-color" content="#ECEEE6">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icon-512.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Brosia’s Library">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="description" content="Brosia’s Library — your private reading journal and book collection.">
 <title>Brosia’s Library · Reading Journal</title>
 <style><!--@include css/00-design-system.css--></style>
@@ -96,9 +99,12 @@
 </section>
 <section class="main-section" id="view-achievements" aria-label="Achievements" aria-hidden="true">
  <div class="page-intro"><span class="eyebrow">Milestones</span><h1>Awards</h1><p>Earned from books you’ve actually finished and chapters you’ve checked off.</p></div>
+ <div class="section-heading ladders-heading"><h2>Shelf milestones</h2><div class="scope-toggle" role="group" aria-label="Count books finished"><button type="button" data-ladder-scope="year" aria-pressed="true">This year</button><button type="button" data-ladder-scope="all" aria-pressed="false">All time</button></div></div>
+ <p class="ladders-note">Every shelf has five milestones: 5, 10, 15, 20 and 25 finished books. A book can count toward more than one shelf.</p>
+ <div id="ladders" class="ladders" aria-live="polite"></div>
+ <div class="section-heading"><h2>Illustrated awards</h2></div>
  <div class="cluster" style="margin-bottom:16px"><button type="button" id="award-art-preview" class="btn rose-btn" aria-pressed="false" aria-controls="achievements-grid">Preview unlocked artwork</button><span class="tiny muted" id="achievement-status" role="status" aria-live="polite">Loading your real earned awards from private saved records…</span></div>
- <div class="trophy-grid" id="achievements-grid"></div><div class="section-heading"><h2>Your classics milestones</h2><span class="small muted">Earned from saved chapters and completed books</span></div><div id="classics-milestones" class="classics-milestone-grid" aria-live="polite"></div>
- <div class="section-heading"><h2>Your reading moments</h2></div><div class="card gold"><p>Real earned badges are saved alongside your reading history. A celebration appears only after a successfully committed new unlock; closing the celebration never changes an award.</p><button class="btn primary" data-open="celebration" style="margin-top:15px">Preview the book-finished popup</button></div>
+ <div class="trophy-grid" id="achievements-grid"></div><div class="section-heading"><h2>Daily classics milestones</h2></div><div id="classics-milestones" class="classics-milestone-grid" aria-live="polite"></div>
 </section>
 <section class="main-section" id="view-wrapped" aria-label="Reading review" aria-hidden="true">
  <div class="page-intro"><span class="eyebrow">Looking back</span><h1>Your year in review</h1><p>Everything you finished, month by month.</p></div>
@@ -170,6 +176,7 @@
 <script><!--@include js/49b-catalog-v2.js--></script>
 <script id="brosia-facets" type="application/json"><!--@include data/brosia-facets.json--></script>
 <script><!--@include js/49c-discover.js--></script>
+<script><!--@include js/49d-ladders.js--></script>
 <script><!--@include js/50-app-ui.js--></script>
 <script async src="pwa-client.js"></script>
 </body>

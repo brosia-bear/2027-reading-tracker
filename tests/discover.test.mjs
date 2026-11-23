@@ -2,11 +2,11 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { execFileSync } from 'node:child_process';
+import { writeFacets } from '../tools/build.mjs';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const D = require('../src/js/49c-discover.js');
-execFileSync(process.execPath, ['tools/build.mjs']); // generates src/data/brosia-facets.json
+writeFacets();
 const cat = JSON.parse(fs.readFileSync('catalog/curated-200-plus-2.json', 'utf8'));
 const facets = JSON.parse(fs.readFileSync('src/data/brosia-facets.json', 'utf8')).books;
 const books = [...cat.curated_books, ...cat.daily_slow_reads].map((b, i) => ({ ...b, plan_order: i + 1 }));

@@ -1,13 +1,13 @@
 {
   "name": "Brosia’s Library",
   "short_name": "Brosia’s Library",
-  "description": "Personal reading journal with saved progress, researched books and two daily chapter calendars.",
+  "description": "Brosia’s Library: your 2027 books, daily chapters, notes and reading goals.",
   "id": "./index.html",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#FAF3E7",
-  "theme_color": "#FAF3E7",
+  "background_color": "#ECEEE6",
+  "theme_color": "#ECEEE6",
   "lang": "en-US",
   "dir": "ltr",
   "icons": [

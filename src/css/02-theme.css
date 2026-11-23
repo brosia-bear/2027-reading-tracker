@@ -324,3 +324,26 @@ h1[tabindex="-1"]:focus{outline:none}
 .discover-link{margin:4px 0 6px}
 @media(max-width:480px){.discover-card{grid-template-columns:64px minmax(0,1fr);gap:14px}.discover-card .book-cover{width:64px;height:96px}.guide-options{grid-template-columns:1fr}}
 .discover-panel>.link-toggle{justify-self:start}
+
+/* SHELF MILESTONES */
+.ladders-heading{align-items:center}
+.scope-toggle{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden}
+.scope-toggle button{border:0;background:none;padding:5px 14px;font-size:.92rem;color:var(--muted)}
+.scope-toggle button[aria-pressed="true"]{background:var(--iron);color:var(--leaf)}
+.ladders-note{font-style:italic;color:var(--muted);margin:-4px 0 12px;font-size:.95rem}
+.ladders{border-top:1px solid var(--rule)}
+.ladder{border-bottom:1px solid var(--hairline)}
+.ladder>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 18px;align-items:center;padding:14px 0}
+.ladder>summary::-webkit-details-marker{display:none}
+.ladder h3{font-size:1.2rem}
+.ladder-count{font-style:italic;color:var(--muted);font-size:.92rem}
+.ladder-tiers{display:flex;gap:10px;list-style:none;margin:0;padding:0}
+.tier{display:grid;justify-items:center;gap:2px}
+.tier-mark{width:22px;height:22px;border-radius:50%;border:1px solid var(--rule);background:transparent;position:relative}
+.tier[data-earned="true"] .tier-mark{border-color:var(--gilt);background:radial-gradient(circle at 50% 50%,var(--claret) 0 42%,transparent 44%),var(--leaf);box-shadow:0 0 0 2px rgba(168,138,74,.25)}
+.tier:last-child .tier-mark{border-radius:30% 70% 50% 50%/50% 40% 60% 50%}
+.tier-n{font-size:.78rem;color:var(--muted);font-feature-settings:"lnum" 1}
+.tier[data-earned="true"] .tier-n{color:var(--claret);font-weight:600}
+.ladder-body{padding:0 0 16px}
+.ladder-books{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:4px}
+@media(max-width:480px){.ladder>summary{grid-template-columns:1fr}.ladder-tiers{gap:14px}}
