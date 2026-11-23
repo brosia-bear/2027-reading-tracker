@@ -4,3 +4,6 @@ test-results/
 playwright-report/
 *.log
 .DS_Store
+src/data/brosia-catalog-v2.json
+src/data/brosia-covers.json
+src/data/brosia-facets.json

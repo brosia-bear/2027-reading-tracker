@@ -6,6 +6,10 @@
  * No ISBN/cover provenance is asserted until verified by later catalog curation. */
 (() => {
  'use strict';
+ // Cloud sync (Supabase). The publishable key is safe in the app; row-level
+ // security limits every row to its owner.
+ window.BrosiaSync.configure({url:'https://ldxnwwctiwkfzzvxleun.supabase.co',key:'sb_publishable_xj0-jWo14fhz7VL0_l22UA_FuS6eNSD'});
+ window.RosewoodStorage=window.BrosiaSync.wrapStorage(window.RosewoodStorage);
  const bookCatalog=JSON.parse(document.getElementById('rosewood-seed').textContent);
  const awardCatalog=JSON.parse(document.getElementById('rosewood-achievements').textContent);
  const arcPayload=JSON.parse(document.getElementById('rosewood-arcs').textContent);
@@ -77,16 +81,19 @@
   const book=Object.freeze(entry);catalogIndex.books.push(book);catalogIndex.byId.set(book.id,book);
   catalogIndex.covers.set(book.id,{book_id:book.id,title:book.title,author:book.author,provider:'Open Library',status:'lookup_pending',cover_id:null,cover_url:null});
  }
- if(catalogIndex.books.length!==106||catalogIndex.books.filter(b=>!regularSupplementPayload.slow_read_ids.includes(b.id)).length!==104)throw Error('106 titles including two daily slow reads required');
- if(!catalogIndex.byId.has('rosewood-2027-105')||!catalogIndex.byId.has('rosewood-2027-106')||new Set(catalogIndex.books.map(b=>b.id)).size!==106)throw Error('Book catalog is incomplete');
+ if(catalogIndex.books.length!==106)throw Error('Legacy 106-book index incomplete');
+ // Catalog v2: 200 curated books in the established order, daily classics at #201–202.
+ const catalogV2=window.BrosiaCatalogV2.extend(catalogIndex,JSON.parse(document.getElementById('brosia-catalog-v2').textContent));
+ if(catalogV2.curated!==200||catalogV2.daily!==2||catalogV2.unique!==202)throw Error('Catalog must have 200 curated books and 2 daily classics');
+ if(!catalogIndex.byId.has('rosewood-2027-105')||!catalogIndex.byId.has('rosewood-2027-106')||new Set(catalogIndex.books.map(b=>b.id)).size!==202)throw Error('Book catalog is incomplete');
  const queueEngine=window.RosewoodQueue;
  // Both yearlong classics have independent calendars; neither consumes one of
  // the 104 ordinary slots or counts in either year-end public/private total.
  const yearlongBooks=new Set(['rosewood-revised-2027-031','rosewood-revised-2027-037']);
  const awards=awardCatalog.achievements;
- const routes=[['overview','⌂','Home'],['library','▤','Books'],['slowreads','◷','Slow Reads'],['research','✎','Notes'],['pacing','◷','Pacing'],['achievements','✧','Awards'],['wrapped','◈','Review'],['settings','⚙','Settings']];
+ const routes=[['overview','⌂','Home'],['library','▤','Books'],['discover','','Discover'],['slowreads','◷','Slow Reads'],['research','✎','Notes'],['pacing','◷','Pacing'],['achievements','✧','Awards'],['wrapped','◈','Review'],['settings','⚙','Settings']];
  const labels={discworld:'Discworld',completed_fantasy_arc:'Completed fantasy',philosophy:'Philosophy',nonfiction_research:'Research & nonfiction',standalone_literature_fantasy:'Literature & standalones'};
- const readingKind=b=>b.pathway==='philosophy'?'Required — Philosophy':yearlongBooks.has(b.id)?'Required — Daily classic':queueEngine.committed(b)?'Required — Classic':'Suggested reading';
+ const readingKind=b=>b.curated_extension?'Suggested reading':b.pathway==='philosophy'?'Required — Philosophy':yearlongBooks.has(b.id)?'Required — Daily classic':queueEngine.committed(b)?'Required — Classic':'Suggested reading';
  const icons={discworld:'✦',completed_fantasy_arc:'◇',philosophy:'◌',nonfiction_research:'✎',standalone_literature_fantasy:'❀'};
  const esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
  const safeKey=window.RosewoodCatalog.normalize;
@@ -99,6 +106,7 @@
  const NAV_ICONS={
   overview:'<path d="M4 11.5 12 5l8 6.5"/><path d="M6 10v9.5h12V10"/><path d="M10 19.5V15a2 2 0 0 1 4 0v4.5"/>',
   library:'<path d="M4.5 4.5h3.2v15H4.5zM9.4 4.5h3.2v15H9.4z"/><path d="m14.6 5.4 3-.7 3.4 14.6-3 .7z"/>',
+  discover:'<circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/><path d="M8.2 11.5c.6-1.9 2-3 3.8-3"/>',
   slowreads:'<path d="M3 6.5c3-1.6 6-1.6 9 0 3-1.6 6-1.6 9 0v12c-3-1.6-6-1.6-9 0-3-1.6-6-1.6-9 0z"/><path d="M12 6.5v12"/><path d="M15.5 6v5l1.5-1 1.5 1V6"/>',
   research:'<path d="M19.5 4C13 5 8.5 10 6.5 17.5L5 20.5"/><path d="M19.5 4c0 6.5-4.5 10.5-11 11.5"/><path d="M10 10.5 13.5 14"/>',
   pacing:'<circle cx="12" cy="12" r="8.5"/><path d="m15.2 8.8-2 4.4-4.4 2 2-4.4z"/>',
@@ -110,7 +118,7 @@
  const navButton=([name,,title])=>`<button type="button" class="nav-btn" data-route="${name}" aria-current="${name===activeRoute?'page':'false'}">${navIcon(name)}<span>${title}</span></button>`;
  function navHtml(){return routes.map(navButton).join('');}
  // Phones: four primary destinations plus a "More" menu for the rest.
- const MOBILE_PRIMARY=['overview','library','slowreads','research'];
+ const MOBILE_PRIMARY=['overview','library','discover','slowreads'];
  function mobileNavHtml(){
   const primary=routes.filter(r=>MOBILE_PRIMARY.includes(r[0])).map(navButton).join('');
   const rest=routes.filter(r=>!MOBILE_PRIMARY.includes(r[0]));
@@ -118,9 +126,33 @@
   return primary+`<details class="nav-more${current?' current':''}"><summary aria-label="More sections">${navIcon('more')}<span>More</span></summary><div class="nav-more-panel">${rest.map(navButton).join('')}</div></details>`;
  }
  function renderNav(){document.getElementById('desktop-nav').innerHTML=navHtml();document.getElementById('mobile-nav').innerHTML=mobileNavHtml();}
+
+ // Sync card + status line
+ {
+  const $=id=>document.getElementById(id);
+  const form=$('sync-signin'),account=$('sync-account'),msg=$('sync-form-msg'),statusEl=$('sync-status'),heroSync=$('hero-sync');
+  const plural=n=>n===1?'1 change':n+' changes';
+  const when=iso=>{if(!iso)return '';const d=new Date(iso),m=Math.round((Date.now()-d)/60000);return m<1?'just now':m<60?m+' min ago':d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});};
+  window.BrosiaSync.onStatus(s=>{
+   const signedIn=!!s.email;form.hidden=signedIn;account.hidden=!signedIn;if(signedIn)$('sync-email').textContent=s.email;
+   const text={signed_out:s.error||'Saved on this device only. Sign in to keep your phone, iPad and computer in step.',
+    syncing:'Syncing…',pending:'Saved on this device · waiting to sync '+plural(s.pending),
+    offline:s.pending?'Offline · '+plural(s.pending)+' saved here, will sync when you’re back online':'Offline · everything was synced',
+    synced:'Synced with your account'+(s.lastSynced?' · '+when(s.lastSynced):''),error:'Sync needs attention: '+(s.error||'unknown problem')}[s.state]||'';
+   statusEl.textContent=text;statusEl.dataset.state=s.state;
+   if(heroSync){heroSync.textContent=signedIn?({synced:'· synced',syncing:'· syncing',pending:'· waiting to sync',offline:'· offline',error:'· sync needs attention'}[s.state]||''):'';heroSync.dataset.state=s.state;}
+  });
+  form.addEventListener('submit',async e=>{e.preventDefault();msg.textContent='Signing in…';
+   try{await window.BrosiaSync.signIn($('sync-email-input').value.trim(),$('sync-password').value);msg.textContent='';$('sync-password').value='';}
+   catch(err){msg.textContent=err.message==='Invalid login credentials'?'That email and password don’t match. Check them, or use Forgot password.':err.message;}});
+  $('sync-forgot').addEventListener('click',async()=>{const email=$('sync-email-input').value.trim();if(!email){msg.textContent='Enter your email first, then tap Forgot password.';return;}
+   try{await window.BrosiaSync.resetPassword(email);msg.textContent='Check your email for a link to reset your password.';}catch(err){msg.textContent=err.message;}});
+  $('sync-now').addEventListener('click',()=>window.BrosiaSync.syncNow());
+  $('sync-signout').addEventListener('click',async()=>{if(confirm('Sign out? Your library stays on this device; it just stops syncing.'))await window.BrosiaSync.signOut();});
+ }
  document.addEventListener('click',e=>{const open=document.querySelector('.nav-more[open]');if(open&&!open.contains(e.target))open.removeAttribute('open');});
  {const heroDate=document.getElementById('hero-date');if(heroDate)heroDate.textContent=new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});}
- function openRoute(name){if(!routes.some(x=>x[0]===name))return;activeRoute=name;for(const s of document.querySelectorAll('.main-section'))s.setAttribute('aria-hidden',String(s.id!==`view-${name}`));renderNav();const heading=document.querySelector(`#view-${name} h1`); if(heading){heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true});}window.scrollTo({top:0,behavior:'instant'});if(name==='library'){observeCovers();}if(name==='research')renderResearch();if(name==='slowreads')renderSlowReads();}
+ function openRoute(name){if(!routes.some(x=>x[0]===name))return;activeRoute=name;for(const s of document.querySelectorAll('.main-section'))s.setAttribute('aria-hidden',String(s.id!==`view-${name}`));renderNav();const heading=document.querySelector(`#view-${name} h1`); if(heading){heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true});}window.scrollTo({top:0,behavior:'instant'});if(name==='library'){observeCovers();}if(name==='research')renderResearch();if(name==='discover')renderDiscover();if(name==='slowreads')renderSlowReads();}
  const BOOK_GRAPHIC='<span class="fallback-symbol" aria-hidden="true"></span>';
  let liveProgress={}; // Current saved records, never the completion event log.
  let currentGoalSummary=null;
@@ -210,14 +242,14 @@
   if(sort==='my_plan'&&rosewoodReader){const priorities=arcEngine.orderWithOverrides(catalogIndex,rosewoodReader.state),byId=new Map(priorities.map((id,i)=>[id,i]));found.sort((a,b)=>byId.get(a.id)-byId.get(b.id));}
   renderPathwayPanels();
   libraryRoot.innerHTML=found.length?found.map(createBookCard).join(''):'<div class="no-results"><img src="assets/empty-shelf.svg" class="empty-illustration" width="160" height="115" alt=""><p>No planned books match those filters. Try clearing the search or changing pathways.</p></div>';
-  document.getElementById('library-count').textContent=`${found.length} of 106 books shown · sorted by ${sort==='plan'?'original reading order':sort}`;
+  document.getElementById('library-count').textContent=(found.length===books.length?`${found.length} books`:`${found.length} of ${books.length} books`);
   observeCovers();
  }
  document.getElementById('arc-filter').innerHTML='<option value="all">All finished story arcs</option>'+catalogIndex.arcs.map(a=>`<option value="${esc(a.id)}">${esc(a.name)}</option>`).join('');
  for(const id of ['book-search','pathway-filter','book-sort','arc-filter','book-status-filter']){
   document.getElementById(id).addEventListener(id==='book-search'?'input':'change',renderLibrary);
  }
- document.querySelectorAll('[data-catalog-view]').forEach(b=>b.addEventListener('click',()=>{catalogView=b.dataset.catalogView;renderLibrary();document.getElementById('catalog-view-status').textContent=catalogView==='planned'?'Browsing 106 planned books':catalogView==='arcs'?'Browsing completed story arcs':'Browsing your saved additional books';}));
+ document.querySelectorAll('[data-catalog-view]').forEach(b=>b.addEventListener('click',()=>{catalogView=b.dataset.catalogView;renderLibrary();document.getElementById('catalog-view-status').textContent=catalogView==='planned'?'Browsing the year ahead':catalogView==='arcs'?'Browsing completed story arcs':'Browsing your saved additional books';}));
  document.getElementById('custom-search').addEventListener('input',e=>{customShelfQuery=e.target.value;renderCustomShelf();});
  document.getElementById('pathway-panels').addEventListener('click',e=>{const btn=e.target.closest('[data-pathway-choose]');if(!btn)return;const select=document.getElementById('pathway-filter');select.value=select.value===btn.dataset.pathwayChoose?'all':btn.dataset.pathwayChoose;catalogView='planned';renderLibrary();});
  arcRoot.addEventListener('click',e=>{const btn=e.target.closest('[data-arc-prioritize]');if(btn)requestArcPriority(btn.dataset.arcPrioritize);});
@@ -362,7 +394,7 @@
   const pub=p.publication.first_publication_year?String(p.publication.first_publication_year):p.publication.first_publication_period||'';
   const legacyPages=book.edition?.pages?`${book.edition.pages} pages`:'';
   const legacyAudio=book.edition?.audio_minutes_1x?`${book.edition.audio_minutes_1x} min`:'';
-  const facts=[['Reading order','#'+book.plan_order+' of 106'],['Reading category',readingKind(book)],['Author',book.author],['First publication',pub],['Narrative arc',arc?.name||p.series.name||''],['Position in arc',book.series_position?'Book '+book.series_position:p.series.position?'Book '+p.series.position:''],['Research scope','Work-level claims checked'],['Pages',book.edition?.pages?legacyPages:''],['Audio duration',book.edition?.audio_minutes_1x?legacyAudio:''],['ISBN',book.isbn13||''],['Goodreads eligibility','Planned as eligible; not an edition verification']];
+  const facts=[['Reading order','#'+book.plan_order+' of '+books.length],['Reading category',readingKind(book)],['Author',book.author],['First publication',pub],['Narrative arc',arc?.name||p.series.name||''],['Position in arc',book.series_position?'Book '+book.series_position:p.series.position?'Book '+p.series.position:''],['Research scope','Work-level claims checked'],['Pages',book.edition?.pages?legacyPages:''],['Audio duration',book.edition?.audio_minutes_1x?legacyAudio:''],['ISBN',book.isbn13||''],['Goodreads eligibility','Planned as eligible; not an edition verification']];
   const themeLabel=t=>t.basis==='source_verified_topic'?'Source-verified topic':t.basis==='source_verified_setup_and_editorial_interpretation'?'Source setup + editorial reading':t.basis==='author_commentary_and_editorial_interpretation'?'Author commentary + editorial reading':'Editorial interpretation';
   const themeList=p.themes.map(t=>`<li><strong>${esc(t.label)}</strong><p>${esc(t.discussion)}</p><span class="tiny muted">${esc(themeLabel(t))}</span></li>`).join('');
   const related=p.related_connections.length?`<section class="profile-panel"><h3>Related reading</h3><ul class="profile-related">${p.related_connections.map(r=>{const b=catalogIndex.byId.get(r.book_id);return `<li><button type="button" class="arc-book-link" data-book="${esc(r.book_id)}">${esc(b?.title||r.label)}</button><p class="small muted">${esc(r.note)}</p></li>`;}).join('')}</ul></section>`:'';
@@ -392,7 +424,7 @@
  function plannedDetails(book){
   const p=book.profile||{},arc=book.series_arc_id?catalogIndex.byArc.get(book.series_arc_id):null;
   const researched=literaryProfiles.get(book.id);if(researched)return researchedDetails(book,researched);
-  const facts=[['Reading order','#'+book.plan_order+' of 106'],['Author',book.author],['First publication',book.publication_year?String(book.publication_year):''],['Genre',p.genre_and_form||''],['Narrative arc',arc?.name||''],['Position in arc',book.series_position?'Book '+book.series_position:''],['Pages',book.edition?.pages?String(book.edition.pages):''],['Audio at 1×',book.edition?.audio_minutes_1x?String(book.edition.audio_minutes_1x)+' min':''],['ISBN',book.isbn13||'']];
+  const facts=[['Reading order','#'+book.plan_order+' of '+books.length],['Author',book.author],['First publication',book.publication_year?String(book.publication_year):''],['Genre',p.genre_and_form||''],['Narrative arc',arc?.name||''],['Position in arc',book.series_position?'Book '+book.series_position:''],['Pages',book.edition?.pages?String(book.edition.pages):''],['Audio at 1×',book.edition?.audio_minutes_1x?String(book.edition.audio_minutes_1x)+' min':''],['ISBN',book.isbn13||'']];
   const themes=Array.isArray(p.themes)?p.themes:[];
   const questions=Array.isArray(p.reading_questions)?p.reading_questions:[];
   const discussions=Array.isArray(p.discussion_questions)?p.discussion_questions:[];
@@ -592,7 +624,7 @@
  }
  function showCelebration(){showDialog(`<div class="dialog-head"><h2>Another story for your shelves</h2>${closeButton}</div><div class="celebration-content" style="position:relative;overflow:hidden"><span class="petal a" aria-hidden="true"></span><span class="petal b" aria-hidden="true"></span><span class="petal c" aria-hidden="true"></span><div class="celebration-art"><img src="assets/celebration.svg" width="260" height="168" alt="An open book, blooming rose and golden sparkles"/></div><p>Every finished book is a story worth celebrating. Your real reading history and achievements are based only on saved completions.</p><button class="btn primary" type="button" data-close>Back to my library</button></div>`);}
 
- function showNotice(){showDialog(`<div class="dialog-head"><div><span class="eyebrow">Brosia’s Library</span><h2>About your library</h2></div>${closeButton}</div><p>Your books, original research and progress are stored locally on this device when storage is available. The 106 approved books and the two chapter-a-day reading calendars are available. The daily classics are excluded from your regular-book completion totals. Your reading review shows only actual recorded eligible completions, not practice data.</p><p style="margin-top:12px"><strong>Important limitations:</strong> No automatic cross-device synchronization, live Goodreads sync or guaranteed installed-device storage durability. Exact-edition covers have not been certified. Export regular backups from Settings.</p><p>When online, public cover lookups may contact Open Library and Google Books. Opening research profiles does not fetch their linked sources automatically.</p>`);}
+ function showNotice(){showDialog(`<div class="dialog-head"><div><span class="eyebrow">Brosia’s Library</span><h2>About your library</h2></div>${closeButton}</div><p>Your books, original research and progress are stored locally on this device when storage is available. Your curated books and the two chapter-a-day reading calendars are available. The daily classics are excluded from your regular-book completion totals. Your reading review shows only actual recorded eligible completions, not practice data.</p><p style="margin-top:12px"><strong>Important limitations:</strong> No automatic cross-device synchronization, live Goodreads sync or guaranteed installed-device storage durability. Exact-edition covers have not been certified. Export regular backups from Settings.</p><p>When online, public cover lookups may contact Open Library and Google Books. Opening research profiles does not fetch their linked sources automatically.</p>`);}
  // SESSION 11 — PURE WEIGHTED SUGGESTIONS; NEVER MUTATES THE BOOK CATALOG.
  const fmtHours=n=>Number.isFinite(n)?`${n.toFixed(1)} h`:'—';
  function formatSoftDate(date){if(!window.RosewoodPacing.validDate(date))return '—';
@@ -1141,7 +1173,8 @@
  function applyPreferences(settings){document.getElementById('preview-pages').value=String(settings.pages_per_hour);document.getElementById('preview-audio-speed').value=String(settings.playback_speed);document.getElementById('saved-pacing-messages').checked=settings.pacing_messages;}
  async function initRosewoodStorage(){
   toggleStorageReady(false);storageStatus('Opening private device storage…','checking');
-  try{rosewoodReader=await window.RosewoodStorage.openReader(books,awards,catalogIndex.arcs,originalBooks.map(b=>b.id));applyPreferences(rosewoodReader.state.settings);toggleStorageReady(true);storageStatus('✓ Preferences and saved books and reading records loaded from this device.','saved');refreshProgressCards();renderCustomShelf();renderResearch();renderSlowReads();renderHomeRitual();}
+  try{rosewoodReader=await window.RosewoodStorage.openReader(books,awards,catalogIndex.arcs,originalBooks.map(b=>b.id));applyPreferences(rosewoodReader.state.settings);toggleStorageReady(true);storageStatus('✓ Preferences and saved books and reading records loaded from this device.','saved');refreshProgressCards();renderCustomShelf();renderResearch();renderSlowReads();renderHomeRitual();
+   window.BrosiaSync.attach(rosewoodReader,window.RosewoodStorage,state=>{applyPreferences(state.settings);refreshProgressCards();renderCustomShelf();renderResearch();renderSlowReads();renderHomeRitual();});}
   catch(e){rosewoodReader=null;storageStatus('Storage unavailable: '+e.message+' No preference changes were saved.','error');toggleStorageReady(false);refreshProgressCards();renderCustomShelf();renderSlowReads();renderHomeRitual();}
  }
  async function saveSettings(patch){
@@ -1196,5 +1229,108 @@
  // Give the page a working catalog even without any network or cover matches.
  updateArcs();renderLibrary();renderNav();renderSlowReads();renderHomeRitual();
  const initial=location.hash.replace('#','');if(routes.some(x=>x[0]===initial))openRoute(initial);
+
+ // ---------- Discover ----------
+ const facetPayload=JSON.parse(document.getElementById('brosia-facets').textContent).books;
+ const D=window.BrosiaDiscover;
+ const discoverEntries=()=>D.build([...books,...(rosewoodReader?customState():[])],facetPayload,b=>yearlongBooks.has(b.id));
+ const MOODS=['thought-provoking','funny','lyrical','emotionally-devastating','hopeful','cozy','romantic','epic','dark','contemplative','adventurous','atmospheric','whimsical','justice-minded','intense','tender','suspenseful','morally-gray','wonder-filled','challenging','comforting','rebellious','tragic','immersive'];
+ const FORMS=[['fiction','Fiction'],['nonfiction','Nonfiction'],['philosophy','Philosophy'],['memoir','Memoir'],['craft','Writing craft']];
+ const LENGTHS=[['short','Short'],['medium','Medium'],['long','Long'],['epic','Very long']];
+ const EFFORTS=[['light','Easy to sink into'],['moderate','Some focus'],['demanding','Demanding']];
+ const ds={mode:'mood',q:{moods:[],moodMode:'any',forms:[],lengths:[],efforts:[],genres:[],themes:[],unreadOnly:true,includeDaily:false},guide:{step:0,answers:{}},search:'',browse:null,hidden:new Set(),featured:null};
+ const surpriseBag=D.makeBag();
+ const chip=(group,value,label,on)=>`<button type="button" class="chip" data-chip="${group}" data-value="${esc(value)}" aria-pressed="${on}">${esc(label)}</button>`;
+ const cap=s=>D.LABEL(s).replace(/^./,c=>c.toUpperCase());
+ const GUIDE=[
+  ['kind','Tonight, fiction or nonfiction?',[['fiction','A story'],['nonfiction','Something true or a big idea'],['','Surprise me']]],
+  ['energy','How much energy do you have?',[['light','Not much, something easy'],['moderate','A medium amount'],['demanding','I want to wrestle with ideas']]],
+  ['appetite','What are you hungry for?',[['comfort','Comfort'],['wonder','Wonder'],['laughter','Laughter'],['sadness','A good cry'],['romance','Romantic tension'],['mystery','Mystery'],['injustice','Righteous anger'],['ideas','Big ideas']]],
+  ['time','How long a book?',[['short','Short'],['medium','Medium'],['long','Long and immersive'],['','I don’t mind']]]];
+ function discoverPanel(){
+  const p=document.getElementById('discover-panel');if(!p)return;
+  if(ds.mode==='mood'){
+   p.innerHTML=`<div class="chip-row" role="group" aria-label="Moods">${MOODS.map(m=>chip('moods',m,cap(m),ds.q.moods.includes(m))).join('')}</div>
+    <div class="discover-match">${ds.q.moods.length>1?`Show books that are <button type="button" class="link-toggle" data-mood-mode>${ds.q.moodMode==='all'?'all of these':'any of these'}</button>`:''}</div>
+    <details class="discover-refine"${ds.q.forms.length||ds.q.lengths.length||ds.q.efforts.length?' open':''}><summary>Refine</summary>
+     <div class="refine-group"><p>Kind of book</p><div class="chip-row">${FORMS.map(([v,l])=>chip('forms',v,l,ds.q.forms.includes(v))).join('')}</div></div>
+     <div class="refine-group"><p>Length</p><div class="chip-row">${LENGTHS.map(([v,l])=>chip('lengths',v,l,ds.q.lengths.includes(v))).join('')}</div></div>
+     <div class="refine-group"><p>Reading effort</p><div class="chip-row">${EFFORTS.map(([v,l])=>chip('efforts',v,l,ds.q.efforts.includes(v))).join('')}</div></div>
+     <label class="refine-check"><input type="checkbox" data-q-toggle="unreadOnly" ${ds.q.unreadOnly?'checked':''}> Hide books I’ve finished</label>
+     <label class="refine-check"><input type="checkbox" data-q-toggle="includeDaily" ${ds.q.includeDaily?'checked':''}> Include the two daily classics</label>
+    </details>${ds.q.moods.length||ds.q.forms.length||ds.q.lengths.length||ds.q.efforts.length?'<button type="button" class="link-toggle" data-discover-reset>Clear all</button>':''}`;
+  }else if(ds.mode==='guide'){
+   const g=ds.guide;
+   if(g.step<GUIDE.length){const [key,question,opts]=GUIDE[g.step];
+    p.innerHTML=`<div class="guide"><p class="guide-step">Question ${g.step+1} of ${GUIDE.length}</p><h2>${question}</h2><div class="guide-options">${opts.map(([v,l])=>`<button type="button" class="guide-option" data-guide="${key}" data-value="${v}" aria-pressed="${g.answers[key]===v}">${esc(l)}</button>`).join('')}</div><div class="cluster">${g.step?'<button type="button" class="link-toggle" data-guide-back>Back</button>':''}<button type="button" class="link-toggle" data-guide-skip>Skip</button></div></div>`;}
+   else p.innerHTML='<div class="guide"><h2>Here’s what fits</h2><div class="cluster"><button type="button" class="link-toggle" data-guide-back>Change an answer</button><button type="button" class="link-toggle" data-guide-restart>Start over</button></div></div>';
+  }else if(ds.mode==='browse'){
+   const entries=discoverEntries();
+   const shelf=(key,label)=>`<div class="refine-group"><p>${label}</p><div class="chip-row">${D.counts(entries,key).filter(([,n])=>n>=3).map(([v,n])=>`<button type="button" class="chip" data-browse="${key}" data-value="${esc(v)}" aria-pressed="${ds.browse?.key===key&&ds.browse.value===v}">${esc(cap(v))} <span class="chip-n">${n}</span></button>`).join('')}</div></div>`;
+   p.innerHTML=shelf('genres','Genres and shelves')+shelf('themes','Themes and ideas');
+  }else{
+   p.innerHTML=`<div class="field"><label for="discover-search">Title, author, genre or theme</label><input type="search" id="discover-search" class="search-field" placeholder="Try “Dostoyevsky”, “grief” or “finished trilogy”" value="${esc(ds.search)}"></div>`;
+  }
+ }
+ function discoverQuery(){
+  if(ds.mode==='mood')return ds.q;
+  if(ds.mode==='guide')return ds.guide.step>=GUIDE.length?D.guided(ds.guide.answers):null;
+  if(ds.mode==='browse')return ds.browse?{unreadOnly:false,[ds.browse.key]:[ds.browse.value]}:null;
+  return null;
+ }
+ function resultCard(item,featured){
+  const b=item.entry.book,f=item.entry.f,st=rosewoodReader?.state?.progress?.[b.id]?.status;
+  const isNext=queueBooks()[0]?.id===b.id,daily=yearlongBooks.has(b.id);
+  const meta=[f&&{short:'Short',medium:'Medium length',long:'Long',epic:'Very long'}[f.length],f&&{light:'easy to sink into',moderate:'some focus',demanding:'demanding'}[f.effort],b.series_name].filter(Boolean).join(' · ');
+  const reasons=item.reasons?.length?item.reasons.join(' · '):(f?f.moods.slice(0,3).map(D.LABEL).join(' · '):'');
+  return `<article class="discover-card${featured?' featured':''}" data-result="${esc(b.id)}"><div class="book-cover">${coverMarkup(b)}</div><div class="discover-body">${featured?'<p class="eyebrow">A surprise pick</p>':''}<h3>${esc(b.title)}</h3><p class="discover-author">${esc(b.author)}</p>${reasons?`<p class="discover-why">${esc(reasons)}</p>`:''}${meta?`<p class="discover-meta">${esc(meta)}</p>`:''}
+   <div class="discover-actions"><button type="button" class="btn small-btn" data-book="${esc(b.id)}">Open</button>${isNext?'<span class="discover-note">Your next read</span>':st==='finished'?'<span class="discover-note">Finished</span>':daily?'':`<button type="button" class="btn small-btn primary" data-discover-next="${esc(b.id)}">Make this my next read</button>`}${featured?'<button type="button" class="link-toggle" data-surprise-again>Try another</button>':`<button type="button" class="link-toggle" data-discover-hide="${esc(b.id)}">Not tonight</button>`}</div></div></article>`;
+ }
+ function discoverResults(){
+  const root=document.getElementById('discover-results'),count=document.getElementById('discover-count');if(!root)return;
+  const entries=discoverEntries(),progress=rosewoodReader?.state?.progress||{};
+  let list=null;
+  if(ds.mode==='search'){list=ds.search.trim()?D.search(entries,ds.search).map(entry=>({entry,reasons:[]})):null;}
+  else{const q=discoverQuery();if(q)list=D.filter(entries,{...q,excludeIds:[...ds.hidden]},progress);}
+  if(!list){root.innerHTML=ds.mode==='mood'?'<p class="discover-empty">Choose a mood or two to begin.</p>':'';count.textContent='';return;}
+  count.textContent=list.length?(list.length===1?'1 book':`${list.length} books`):'';
+  root.innerHTML=list.length?list.slice(0,60).map(x=>resultCard(x)).join('')+(list.length>60?`<p class="discover-empty">Showing the best 60 of ${list.length}. Add a mood or refine to narrow it down.</p>`:'')
+   :`<div class="discover-empty"><p>Nothing matches all of that.</p>${ds.mode==='mood'&&ds.q.moodMode==='all'?'<button type="button" class="link-toggle" data-mood-mode>Match any mood instead</button>':''}<button type="button" class="link-toggle" data-discover-reset>Clear filters</button></div>`;
+ }
+ function renderDiscover(){
+  for(const t of document.querySelectorAll('[data-discover-mode]'))t.setAttribute('aria-selected',String(t.dataset.discoverMode===ds.mode));
+  discoverPanel();discoverResults();
+  const feat=document.getElementById('discover-featured');if(feat)feat.innerHTML=ds.featured?resultCard(ds.featured,true):'';
+ }
+ function surprise(){
+  const entries=discoverEntries(),progress=rosewoodReader?.state?.progress||{};
+  const q=discoverQuery();
+  let pool=q?D.filter(entries,{...q,unreadOnly:true,excludeIds:[...ds.hidden]},progress):[];
+  if(!pool.length)pool=D.filter(entries,{unreadOnly:true,excludeIds:[...ds.hidden]},progress);
+  const pick=surpriseBag(pool);ds.featured=pick?{...pick,reasons:pick.reasons?.length?pick.reasons:[]}:null;renderDiscover();
+  document.getElementById('discover-featured')?.scrollIntoView({behavior:'smooth',block:'nearest'});
+ }
+ document.getElementById('view-discover')?.addEventListener('click',e=>{
+  const t=e.target;
+  const mode=t.closest('[data-discover-mode]');if(mode){ds.mode=mode.dataset.discoverMode;ds.featured=null;renderDiscover();if(ds.mode==='search')document.getElementById('discover-search')?.focus();return;}
+  const c=t.closest('[data-chip]');if(c){const arr=ds.q[c.dataset.chip],v=c.dataset.value,i=arr.indexOf(v);i<0?arr.push(v):arr.splice(i,1);ds.featured=null;renderDiscover();return;}
+  if(t.closest('[data-mood-mode]')){ds.q.moodMode=ds.q.moodMode==='all'?'any':'all';renderDiscover();return;}
+  if(t.closest('[data-discover-reset]')){Object.assign(ds.q,{moods:[],forms:[],lengths:[],efforts:[],moodMode:'any'});ds.browse=null;ds.hidden.clear();ds.featured=null;renderDiscover();return;}
+  const g=t.closest('[data-guide]');if(g){ds.guide.answers[g.dataset.guide]=g.dataset.value;ds.guide.step++;renderDiscover();return;}
+  if(t.closest('[data-guide-skip]')){delete ds.guide.answers[GUIDE[ds.guide.step][0]];ds.guide.step++;renderDiscover();return;}
+  if(t.closest('[data-guide-back]')){ds.guide.step=Math.max(0,ds.guide.step-1);renderDiscover();return;}
+  if(t.closest('[data-guide-restart]')){ds.guide={step:0,answers:{}};renderDiscover();return;}
+  const br=t.closest('[data-browse]');if(br){const same=ds.browse?.key===br.dataset.browse&&ds.browse.value===br.dataset.value;ds.browse=same?null:{key:br.dataset.browse,value:br.dataset.value};renderDiscover();return;}
+  const hide=t.closest('[data-discover-hide]');if(hide){ds.hidden.add(hide.dataset.discoverHide);renderDiscover();return;}
+  if(t.closest('#discover-surprise')||t.closest('[data-surprise-again]')){surprise();return;}
+  const next=t.closest('[data-discover-next]');if(next){queuePick(next.dataset.discoverNext);next.replaceWith(Object.assign(document.createElement('span'),{className:'discover-note',textContent:'Now your next read'}));return;}
+ });
+ document.getElementById('view-discover')?.addEventListener('input',e=>{if(e.target.id==='discover-search'){ds.search=e.target.value;discoverResults();}});
+ document.getElementById('view-discover')?.addEventListener('change',e=>{const k=e.target.dataset?.qToggle;if(k){ds.q[k]=e.target.checked;discoverResults();}});
+ // Home teaser: six moods that open Discover pre-filtered.
+ {const row=document.getElementById('home-mood-chips');if(row){
+  row.innerHTML=['cozy','thought-provoking','funny','emotionally-devastating','romantic','adventurous','lyrical','dark'].map(m=>`<button type="button" class="chip" data-home-mood="${m}">${esc(cap(m))}</button>`).join('');
+  row.addEventListener('click',e=>{const b=e.target.closest('[data-home-mood]');if(!b)return;Object.assign(ds,{mode:'mood',featured:null});ds.q.moods=[b.dataset.homeMood];openRoute('discover');});
+ }}
  window.__rosewoodPrototype={version:'0.31.0-106-all-menus-exact-slow-book-progress',queueImplemented:true,getQueueIds:()=>rosewoodReader?queueEngine.fullOrder(books,customState(),rosewoodReader.state.overrides.reading_order_ids):[],getNextRead:()=>queueBooks()[0]?.id||null,getQueueStatuses:()=>books.map(b=>({id:b.id,kind:queueEngine.classification(b)})),getCommitmentSummary:()=>queueEngine.commitmentSummary(books,rosewoodReader?.state?.progress||{}),revisedPlanImplemented:true,getRevisedPlan:()=>revisionPayload,slowReadsImplemented:true,getSlowReadTracks:()=>slowTracks,getSlowReadSaved:()=>rosewoodReader?.state?.overrides?.slow_reads||{},arcTrackingImplemented:true,getArcSnapshot:()=>arcSnapshot,compassImplemented:true,getCompass:()=>compassSummary,previewCompass:day=>computeCompass(day),calendarImplemented:true,softDatesImplemented:true,getPacing:()=>pacingSummary,previewPacing:day=>computePacing(day),goalsImplemented:true,getGoalSummary:()=>currentGoalSummary,readingRecordsImplemented:true,getBookProgress:id=>rosewoodReader?.state?.progress?.[id]||null,bookProfilesImplemented:true,literaryProfilesImplemented:true,literaryProfileCount:literaryProfiles.count,literaryProfileCohorts:Object.freeze([16,17,18,19,20,21,22,23,24,25,26]),getLiteraryProfile:id=>literaryProfiles.get(id),readerNotesImplemented:true,privateResearchImplemented:true,goodreadsCSVImportImplemented:true,seriesReviewImplemented:true,getSeriesReview:()=>rosewoodReader?.state?.overrides?.series_continuation_choices||{},readerFavoritesImplemented:true,earnedAchievementsImplemented:true,getAchievements:()=>awardSnapshot(),getClassicsMilestones:()=>rosewoodReader?window.BrosiaReadingMilestones.evaluate(rosewoodReader.state,slowTracks):null,getResearchNotes:()=>researchItems().map(x=>({...x})),getFavoriteCounts:()=>rosewoodReader?researchEngine.counts(rosewoodReader.state):null,customBooksImplemented:true,getCustomBooks:()=>customState().map(x=>({...x})),storageImplemented:true,catalogImplemented:true,plannedCount:106,totalBooksWithSlowReads:106,regularScheduleCount:104,slowReadCount:2,achievementCount:awards.length,coverLookup:'106 bundled title-and-author covers with optional public published cover matching',persistenceImplemented:true,getBookById:id=>catalogIndex.byId.get(id),getCoverProvenance:id=>coverIds.get(id)||{status:'lookup_pending'}};
 })();

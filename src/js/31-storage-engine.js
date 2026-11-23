@@ -524,8 +524,23 @@
    await done;reader.state=clone(inspected.state);return clone(reader.state);
   }catch(e){try{tx.abort();}catch(_){}await done.catch(()=>{});throw e;}
  }
+ // Cloud sync: write a merged state produced by BrosiaSync. Aborts if the local
+ // record changed after the merge was computed, so a concurrent edit is never lost.
+ async function applySyncedState(reader,next,expectedSavedAt){
+  check(next,reader.ctx);
+  const tx=reader.db.transaction([STORES.state,STORES.progress,STORES.events,STORES.snapshots],'readwrite'),done=waitTx(tx);
+  try{
+   const stateStore=tx.objectStore(STORES.state),row=await waitRequest(stateStore.get(STATE_KEY));assert(row,'Reader state missing');
+   if(expectedSavedAt!==undefined&&row.payload.last_saved_at!==expectedSavedAt)throw Error('Local library changed during sync; will retry');
+   tx.objectStore(STORES.snapshots).put({id:'pre-sync-latest',reason:'pre-sync',created_at:new Date().toISOString(),payload:clone(row.payload)});
+   stateStore.put({id:STATE_KEY,payload:clone(next),revision:(row.revision||0)+1});
+   const progressStore=tx.objectStore(STORES.progress);progressStore.clear();for(const [id,progress] of Object.entries(next.progress))progressStore.put({id,progress:clone(progress)});
+   const eventStore=tx.objectStore(STORES.events);eventStore.clear();for(const ev of next.event_history)eventStore.put(clone(ev));
+   await done;reader.state=clone(next);return clone(next);
+  }catch(e){try{tx.abort();}catch(_){}await done.catch(()=>{});throw e;}
+ }
  async function getSnapshotCount(reader){const tx=reader.db.transaction([STORES.snapshots],'readonly'),done=waitTx(tx),n=await waitRequest(tx.objectStore(STORES.snapshots).count());await done;return n;}
- const api={DB_NAME,DB_VERSION,SIGNATURE,APP_ID,STORES,defaultState,validateState,migrateV0,stable,openDatabase,openReader,readState,changeSettings,changePlanningOverrides,changeSlowReadPercent,changeSlowReadChapter,changeCustomBook,changeBookNotes,changeBookProgress,reconcileAwards,emptyProgress,validateProgressInput,makeBackup,changeResearchItem,changeSeriesReview,importGoodreads,inspectBackup,restoreBackup,getSnapshotCount};
+ const api={DB_NAME,DB_VERSION,SIGNATURE,APP_ID,STORES,defaultState,validateState,migrateV0,stable,openDatabase,openReader,readState,changeSettings,changePlanningOverrides,changeSlowReadPercent,changeSlowReadChapter,changeCustomBook,changeBookNotes,changeBookProgress,reconcileAwards,emptyProgress,validateProgressInput,makeBackup,changeResearchItem,changeSeriesReview,importGoodreads,inspectBackup,restoreBackup,applySyncedState,getSnapshotCount};
  root.RosewoodStorage=Object.freeze(api);
  if(typeof module==='object'&&module.exports)module.exports=api;
 })(typeof window!=='undefined'?window:globalThis);

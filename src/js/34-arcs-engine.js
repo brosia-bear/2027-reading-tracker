@@ -11,7 +11,7 @@
  return eligible&&r?.goodreads_eligible===true&&r.status==='finished'&&r.percent===100&&validDate(r.finished_at)&&r.finished_at>='2027-01-01'&&r.finished_at<='2027-12-31'&&r.finished_at<=asOf;
  }
  function snapshots(index,state,asOf='2027-12-31'){
- assert(index?.arcs?.length===10 && [104,106].includes(index?.books?.length),'Original 104-book seed must remain intact; optional two supplemental regular books may be present');
+ assert(index?.arcs?.length===10 && index?.books?.length>=104,'Original 104-book seed must remain intact; optional two supplemental regular books may be present');
  assert(state&&typeof state==='object','Missing reader state');assert(validDate(asOf),'Invalid snapshot date');
  const views=index.arcs.map(a=>{
   assert(a.main_arc_complete===true,'Unfinished main story arc cannot be represented as complete');

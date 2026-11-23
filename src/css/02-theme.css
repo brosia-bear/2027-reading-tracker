@@ -269,3 +269,58 @@ h1[tabindex="-1"]:focus{outline:none}
 .catalog-switch{flex-wrap:nowrap;scrollbar-width:none}.catalog-switch::-webkit-scrollbar{display:none}
 .pathway-tile{white-space:nowrap}
 @media(max-width:480px){.book-card .right{justify-content:flex-start;gap:14px}.book-card .right .row-open{margin-left:auto}}
+
+/* Sync */
+.sync-card{grid-column:1/-1}
+.sync-status{font-style:italic;color:var(--muted)}
+.sync-status[data-state="synced"]{color:var(--moss)}
+.sync-status[data-state="error"]{color:var(--claret)}
+.sync-card form{max-width:420px}
+.hero-sync{font-style:italic}
+.hero-sync[data-state="synced"]{color:var(--moss)}
+.hero-sync[data-state="error"]{color:var(--claret)}
+
+/* DISCOVER */
+.chip-row{display:flex;flex-wrap:wrap;gap:7px}
+.chip{border:1px solid var(--rule);background:transparent;border-radius:999px;padding:6px 13px;font-size:.95rem;color:var(--iron);min-height:36px;line-height:1.2}
+.chip:hover{border-color:var(--iron)}
+.chip[aria-pressed="true"]{background:var(--claret);border-color:var(--claret);color:var(--leaf)}
+.chip-n{font-style:italic;opacity:.7;font-size:.85em}
+.discover-modes{display:flex;gap:0;border-bottom:1px solid var(--rule);margin-bottom:18px;overflow-x:auto;scrollbar-width:none}
+.discover-modes::-webkit-scrollbar{display:none}
+.discover-modes button{flex:none;border:0;background:none;padding:10px 14px 9px;font-size:1.02rem;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px}
+.discover-modes button[aria-selected="true"]{color:var(--claret);border-bottom-color:var(--claret);font-weight:600}
+.discover-panel{display:grid;gap:12px}
+.discover-match{font-style:italic;color:var(--muted);min-height:1.2em}
+.link-toggle{border:0;background:none;padding:2px 0;color:var(--claret);font:inherit;font-style:italic;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;cursor:pointer}
+.discover-refine{border-top:1px solid var(--hairline);padding-top:10px}
+.discover-refine summary{cursor:pointer;color:var(--iron);font-weight:600;list-style-position:inside}
+.refine-group{margin-top:12px}
+.refine-group>p{font-style:italic;color:var(--muted);margin-bottom:6px;font-size:.92rem}
+.refine-check{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:.95rem}
+.discover-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:22px 0 8px;border-bottom:1px solid var(--rule);padding-bottom:8px}
+.discover-count{font-style:italic;color:var(--muted)}
+.discover-results{display:grid}
+.discover-card{display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid var(--hairline)}
+.discover-card .book-cover{width:72px;height:108px}
+.discover-card h3{font-size:1.3rem}
+.discover-author{font-style:italic;color:var(--muted)}
+.discover-why{margin-top:6px;font-size:.95rem;color:var(--moss)}
+.discover-why::first-letter{text-transform:uppercase}
+.discover-meta{font-size:.88rem;color:var(--muted);margin-top:2px}
+.discover-actions{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-top:10px}
+.discover-note{font-style:italic;color:var(--moss);font-size:.92rem}
+.discover-card.featured{background:var(--leaf);border:1px solid var(--gilt);padding:18px;margin:6px 0 14px;border-radius:2px}
+.discover-empty{padding:18px 0;color:var(--muted);font-style:italic;display:grid;gap:6px;justify-items:start}
+.guide{background:var(--leaf);border:1px solid var(--hairline);border-radius:var(--radius-lg);padding:22px}
+.guide-step{font-style:italic;color:var(--muted);font-size:.9rem}
+.guide h2{margin:4px 0 14px}
+.guide-options{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin-bottom:12px}
+.guide-option{border:1px solid var(--rule);background:transparent;border-radius:var(--radius-sm);padding:12px 14px;text-align:left;font-size:1rem;min-height:48px}
+.guide-option:hover{border-color:var(--iron)}
+.guide-option[aria-pressed="true"]{border-color:var(--claret);color:var(--claret)}
+.mood-teaser{margin-top:40px;padding:22px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);display:grid;gap:14px;justify-items:start}
+.mood-teaser h2{font-size:1.6rem}
+.discover-link{margin:4px 0 6px}
+@media(max-width:480px){.discover-card{grid-template-columns:64px minmax(0,1fr);gap:14px}.discover-card .book-cover{width:64px;height:96px}.guide-options{grid-template-columns:1fr}}
+.discover-panel>.link-toggle{justify-self:start}

@@ -11,7 +11,7 @@
  const SLOW_IDS=Object.freeze(['rosewood-revised-2027-031','rosewood-revised-2027-037']);
  const CLASSIC_IDS=Object.freeze(['rosewood-2027-058']); // Oscar Wilde, The Picture of Dorian Gray
  const slowSet=new Set(SLOW_IDS),classicSet=new Set(CLASSIC_IDS);
- const committed=book=>!!book&&(book.pathway==='philosophy'||!!book.revision_of||classicSet.has(book.id));
+ const committed=book=>!!book&&!book.curated_extension&&(book.pathway==='philosophy'||!!book.revision_of||classicSet.has(book.id));
  const classification=book=>slowSet.has(book?.id)?'slow_read':committed(book)?'committed':'suggestion';
  const eligible=book=>book?.id?.startsWith('rosewood-custom-')?book.goodreads_eligible===true:book?.goodreads_eligible_planned===true;
  function fullOrder(books,custom=[],saved=[]){

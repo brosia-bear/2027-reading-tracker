@@ -116,7 +116,7 @@ async function fromGoogleBooks(book) {
 }
 
 function catalogBooks() {
-  const c = JSON.parse(fs.readFileSync(path.join(ROOT, 'catalog', 'proposed-200-plus-2.json'), 'utf8'));
+  const c = JSON.parse(fs.readFileSync(path.join(ROOT, 'catalog', 'curated-200-plus-2.json'), 'utf8'));
   return [...c.curated_books, ...c.daily_slow_reads].map(b => ({ id: b.id, title: b.title, author: b.author }));
 }
 

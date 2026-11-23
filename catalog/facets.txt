@@ -1,0 +1,207 @@
+# Discover tags for the 200 curated books (editorial classification, not reader data).
+# title | form | genres | moods | themes | length | effort
+# form: fiction, nonfiction, philosophy, craft, memoir
+# length (broad band, edition-independent): short, medium, long, epic
+# effort: light, moderate, demanding
+The Wee Free Men | fiction | comic-fantasy,discworld,coming-of-age | funny,whimsical,adventurous,cozy,hopeful | courage,family,identity,coming-of-age | medium | light
+Think | philosophy | philosophy,introduction | thought-provoking,grounded,contemplative | mind,free-will,knowledge,morality | medium | moderate
+The Righteous Mind | nonfiction | psychology,moral-psychology,politics | thought-provoking,grounded,challenging | morality,politics,faith,mind | long | moderate
+The Two Towers | fiction | epic-fantasy,classic | epic,adventurous,immersive,atmospheric | friendship,war,courage,power | long | moderate
+The Sword of Kaigen | fiction | epic-fantasy,military-fantasy | intense,emotionally-devastating,epic,character-driven | family,war,duty,identity | long | moderate
+A Hat Full of Sky | fiction | comic-fantasy,discworld,coming-of-age | funny,whimsical,tender,adventurous | identity,power,coming-of-age | medium | light
+Mistakes Were Made (But Not by Me) | nonfiction | psychology,social-psychology | thought-provoking,grounded,funny | mind,truth,self-deception,justice | medium | light
+The Problems of Philosophy | philosophy | philosophy,epistemology,classic | thought-provoking,contemplative,challenging | knowledge,truth,mind | short | moderate
+The Return of the King | fiction | epic-fantasy,classic | epic,emotionally-devastating,hopeful,immersive | friendship,war,courage,sacrifice | long | moderate
+The Spear Cuts Through Water | fiction | epic-fantasy,literary-fantasy,mythic | lyrical,epic,immersive,tender | power,myth,family,storytelling | long | demanding
+Thinking, Fast and Slow | nonfiction | psychology,behavioral-economics | thought-provoking,grounded,challenging | mind,truth,decision-making | long | demanding
+Wintersmith | fiction | comic-fantasy,discworld,coming-of-age | funny,whimsical,romantic,cozy | identity,nature,coming-of-age | medium | light
+What Does It All Mean? | philosophy | philosophy,introduction | thought-provoking,contemplative | meaning,mind,free-will,morality,mortality | short | light
+Jade City | fiction | urban-fantasy,crime,epic-fantasy | intense,suspenseful,morally-gray,immersive | family,power,loyalty,colonialism | long | moderate
+Babel | fiction | historical-fantasy,dark-academia | dark,thought-provoking,rebellious,emotionally-devastating | colonialism,language,revolution,power | long | demanding
+Behave | nonfiction | neuroscience,biology,psychology | thought-provoking,grounded,challenging,funny | mind,free-will,violence,morality | epic | demanding
+I Shall Wear Midnight | fiction | comic-fantasy,discworld,coming-of-age | funny,dark,tender,justice-minded | justice,identity,coming-of-age | medium | light
+Justice: What's the Right Thing to Do? | philosophy | philosophy,ethics,political-philosophy | thought-provoking,grounded,justice-minded | justice,morality,freedom | medium | moderate
+Determined | nonfiction | neuroscience,biology,philosophy | thought-provoking,challenging,grounded | free-will,mind,justice,morality | long | demanding
+Jade War | fiction | urban-fantasy,crime,epic-fantasy | intense,suspenseful,morally-gray,epic | family,power,loyalty,war | long | moderate
+Circe | fiction | mythic-retelling,literary-fantasy | lyrical,character-driven,atmospheric,tender,hopeful | identity,power,family,myth | medium | moderate
+The Shepherd's Crown | fiction | comic-fantasy,discworld,coming-of-age | tender,emotionally-devastating,hopeful,funny | mortality,identity,legacy | medium | light
+The Lucifer Effect | nonfiction | psychology,social-psychology | dark,thought-provoking,challenging | power,morality,violence | epic | demanding
+Nicomachean Ethics | philosophy | philosophy,ethics,classic | contemplative,challenging,meditative | morality,meaning,friendship,virtue | medium | demanding
+Jade Legacy | fiction | urban-fantasy,crime,epic-fantasy | epic,emotionally-devastating,morally-gray,immersive | family,power,legacy,war | epic | moderate
+Ariadne | fiction | mythic-retelling | lyrical,tragic,character-driven | power,family,myth,love | medium | light
+Just Mercy | nonfiction | memoir,social-justice,law | justice-minded,emotionally-devastating,hopeful | justice,prejudice,mercy | medium | moderate
+Going Postal | fiction | comic-fantasy,discworld | funny,whimsical,adventurous,hopeful | redemption,truth,power | medium | light
+Meditations | philosophy | philosophy,stoicism,classic | meditative,contemplative,comforting | meaning,mortality,virtue | short | moderate
+The Fifth Season | fiction | science-fantasy,epic-fantasy | dark,intense,emotionally-devastating,immersive | prejudice,power,family,survival | long | demanding
+The Irresistible Urge to Fall for Your Enemy | fiction | romantic-fantasy | romantic,enemies-to-lovers,funny,adventurous | love,loyalty,rivalry | long | light
+The New Jim Crow | nonfiction | social-justice,law,history | justice-minded,challenging,grounded | justice,prejudice,power | long | moderate
+Making Money | fiction | comic-fantasy,discworld | funny,whimsical | power,truth,money | medium | light
+The Enchiridion | philosophy | philosophy,stoicism,classic | meditative,comforting,grounded | virtue,freedom,meaning | short | light
+Caste | nonfiction | history,social-justice | justice-minded,thought-provoking,emotionally-devastating | prejudice,power,class | long | moderate
+The Obelisk Gate | fiction | science-fantasy,epic-fantasy | dark,intense,immersive | power,family,survival | long | demanding
+The Exquisite Torment of Loving Your Enemy | fiction | romantic-fantasy | romantic,enemies-to-lovers,funny,adventurous | love,loyalty,rivalry | long | light
+Raising Steam | fiction | comic-fantasy,discworld | funny,adventurous | progress,prejudice | medium | light
+The Sum of Us | nonfiction | social-justice,economics,politics | justice-minded,hopeful,grounded | prejudice,class,community | long | moderate
+Groundwork of the Metaphysics of Morals | philosophy | philosophy,ethics,classic | challenging,contemplative | morality,freedom,duty | short | demanding
+The Stone Sky | fiction | science-fantasy,epic-fantasy | emotionally-devastating,epic,cathartic | family,power,survival,love | long | demanding
+Notes from Underground | fiction | russian-classic,philosophical-fiction | dark,introspective,challenging | free-will,mind,isolation | short | moderate
+The Color of Law | nonfiction | history,social-justice,law | justice-minded,grounded | prejudice,justice,class | medium | moderate
+The Colour of Magic | fiction | comic-fantasy,discworld | funny,whimsical,adventurous | adventure,satire | short | light
+Utilitarianism | philosophy | philosophy,ethics,classic | thought-provoking,challenging | morality,happiness,justice | short | moderate
+A Wizard of Earthsea | fiction | epic-fantasy,classic,coming-of-age | atmospheric,contemplative,adventurous,lyrical | identity,power,coming-of-age,balance | short | light
+Crime and Punishment | fiction | russian-classic,philosophical-fiction,psychological | dark,intense,introspective,suspenseful | guilt,morality,redemption,mind | epic | demanding
+How to Be an Antiracist | nonfiction | social-justice,memoir | justice-minded,thought-provoking | prejudice,identity,justice | medium | light
+The Light Fantastic | fiction | comic-fantasy,discworld | funny,whimsical,adventurous | adventure,satire | short | light
+Existentialism Is a Humanism | philosophy | philosophy,existentialism | thought-provoking,challenging | freedom,meaning,responsibility | short | moderate
+The Body Keeps the Score | nonfiction | psychology,trauma,medicine | emotionally-devastating,hopeful,challenging | trauma,mind,healing | long | moderate
+The Tombs of Atuan | fiction | epic-fantasy,classic,coming-of-age | atmospheric,eerie,contemplative | freedom,faith,identity | short | light
+Fathers and Sons | fiction | russian-classic | character-driven,thought-provoking,tender | family,generations,ideology,love | medium | moderate
+Sourcery | fiction | comic-fantasy,discworld | funny,whimsical,adventurous | power,satire | short | light
+The Deepest Well | nonfiction | medicine,psychology,trauma | hopeful,grounded,emotionally-devastating | trauma,childhood,healing | medium | light
+The Myth of Sisyphus | philosophy | philosophy,existentialism | contemplative,challenging,thought-provoking | meaning,mortality,absurd | short | demanding
+The Farthest Shore | fiction | epic-fantasy,classic | contemplative,atmospheric,lyrical | mortality,balance,power | short | light
+The Picture of Dorian Gray | fiction | classic,gothic,philosophical-fiction | dark,witty,eerie | beauty,morality,corruption | medium | moderate
+Attached | nonfiction | psychology,relationships | grounded,hopeful | love,relationships,mind | medium | light
+Eric | fiction | comic-fantasy,discworld | funny,whimsical | satire,desire | short | light
+The Ethics of Ambiguity | philosophy | philosophy,existentialism,ethics | challenging,thought-provoking | freedom,morality,responsibility | short | demanding
+Tehanu | fiction | literary-fantasy,classic | contemplative,tender,dark | power,gender,healing,trauma | short | moderate
+White Nights | fiction | russian-classic,short-stories | romantic,wistful,tender,lyrical | loneliness,love,dreams | short | light
+The Year of Magical Thinking | memoir | memoir,grief | emotionally-devastating,introspective,lyrical | grief,mortality,love,memory | medium | moderate
+Interesting Times | fiction | comic-fantasy,discworld | funny,adventurous | revolution,satire | medium | light
+Man's Search for Meaning | memoir | memoir,psychology,philosophy | emotionally-devastating,hopeful,meditative | meaning,suffering,survival | short | moderate
+The Emotional Craft of Fiction | craft | writing-craft | grounded,thought-provoking | storytelling,emotion | medium | moderate
+Tales from Earthsea | fiction | epic-fantasy,short-stories | contemplative,atmospheric | power,history,balance | medium | moderate
+The Idiot | fiction | russian-classic,philosophical-fiction | tragic,character-driven,challenging | goodness,faith,love,society | epic | demanding
+The Last Continent | fiction | comic-fantasy,discworld | funny,whimsical,adventurous | satire,adventure | medium | light
+The Art of Character | craft | writing-craft | grounded,thought-provoking | storytelling,character | long | moderate
+The Death of Ivan Ilyich | fiction | russian-classic,philosophical-fiction | emotionally-devastating,contemplative | mortality,meaning,truth | short | moderate
+The Other Wind | fiction | literary-fantasy,classic | contemplative,lyrical,hopeful | mortality,balance,love | medium | moderate
+The Overcoat and Other Stories | fiction | russian-classic,short-stories,satire | funny,absurd,tragic | class,bureaucracy,dignity | short | moderate
+Story Genius | craft | writing-craft | grounded,thought-provoking | storytelling,character | medium | light
+The Last Hero | fiction | comic-fantasy,discworld | funny,adventurous,epic | heroism,mortality | short | light
+The Social Contract | philosophy | philosophy,political-philosophy,classic | challenging,thought-provoking | freedom,power,society | short | demanding
+The Poppy War | fiction | epic-fantasy,grimdark,military-fantasy | dark,intense,emotionally-devastating | war,power,colonialism,trauma | long | demanding
+The Gambler | fiction | russian-classic,psychological | intense,suspenseful,dark | addiction,love,pride | short | moderate
+The Anatomy of Story | craft | writing-craft | grounded,challenging | storytelling,structure | long | demanding
+Unseen Academicals | fiction | comic-fantasy,discworld | funny,whimsical,tender | identity,belonging | long | light
+On Liberty | philosophy | philosophy,political-philosophy,classic | thought-provoking,challenging | freedom,society,truth | short | moderate
+The Science of Storytelling | craft | writing-craft,psychology | thought-provoking,grounded | storytelling,mind | medium | moderate
+The Dragon Republic | fiction | epic-fantasy,grimdark,military-fantasy | dark,intense,morally-gray | war,power,loyalty | long | demanding
+The Brothers Karamazov | fiction | russian-classic,philosophical-fiction | challenging,contemplative,emotionally-devastating | faith,family,free-will,morality | epic | demanding
+Pyramids | fiction | comic-fantasy,discworld | funny,whimsical | tradition,identity | medium | light
+On Writing | craft | writing-craft,memoir | grounded,funny,comforting | storytelling,discipline | medium | light
+The Prince | philosophy | philosophy,political-philosophy,classic | thought-provoking,morally-gray | power,politics | short | moderate
+The Burning God | fiction | epic-fantasy,grimdark,military-fantasy | dark,emotionally-devastating,epic | war,power,sacrifice | long | demanding
+The Lady with the Dog and Other Stories | fiction | russian-classic,short-stories | contemplative,tender,wistful | love,longing,ordinary-life | medium | moderate
+The Gene: An Intimate History | nonfiction | science,biology,history | thought-provoking,grounded,lyrical | science,family,identity | epic | demanding
+Moving Pictures | fiction | comic-fantasy,discworld | funny,whimsical | illusion,satire | medium | light
+The Human Condition | philosophy | philosophy,political-philosophy | challenging,contemplative | work,politics,freedom | long | demanding
+The Golden Compass | fiction | epic-fantasy,coming-of-age | adventurous,immersive,atmospheric,rebellious | faith,freedom,coming-of-age | medium | light
+Demons | fiction | russian-classic,philosophical-fiction,political | dark,intense,challenging | revolution,faith,nihilism | epic | demanding
+The Emperor of All Maladies | nonfiction | science,medicine,history | thought-provoking,emotionally-devastating,grounded | science,mortality,medicine | epic | demanding
+The Truth | fiction | comic-fantasy,discworld | funny,justice-minded | truth,journalism,power | medium | light
+The Second Sex | philosophy | philosophy,feminism,existentialism | challenging,thought-provoking,rebellious | gender,freedom,identity | epic | demanding
+The Subtle Knife | fiction | epic-fantasy,coming-of-age | adventurous,intense,immersive | faith,freedom,love | medium | light
+The House of the Spirits | fiction | magical-realism,literary-fiction | lyrical,atmospheric,emotionally-devastating | family,politics,memory,love | long | moderate
+The Amazing Maurice and His Educated Rodents | fiction | comic-fantasy,discworld | funny,whimsical,adventurous | identity,storytelling | short | light
+The Amber Spyglass | fiction | epic-fantasy,coming-of-age | epic,emotionally-devastating,rebellious | faith,love,mortality,freedom | long | moderate
+Resurrection | fiction | russian-classic,philosophical-fiction | contemplative,justice-minded,challenging | redemption,justice,faith | long | demanding
+Monstrous Regiment | fiction | comic-fantasy,discworld,military-fantasy | funny,rebellious,tender | gender,war,identity | medium | light
+Piranesi | fiction | literary-fantasy | mysterious,atmospheric,lyrical,contemplative | memory,identity,wonder | short | moderate
+The Left Hand of Darkness | fiction | science-fiction,classic | contemplative,atmospheric,tender | gender,trust,identity | medium | moderate
+The Republic | philosophy | philosophy,political-philosophy,classic | challenging,thought-provoking | justice,politics,truth | long | demanding
+Symposium | philosophy | philosophy,classic | thought-provoking,witty,romantic | love,beauty | short | moderate
+Apology | philosophy | philosophy,classic | contemplative,thought-provoking | truth,mortality,justice | short | light
+The Gay Science | philosophy | philosophy | challenging,rebellious,lyrical | meaning,faith,truth | medium | demanding
+Beyond Good and Evil | philosophy | philosophy | challenging,rebellious | morality,truth,power | medium | demanding
+On the Genealogy of Morality | philosophy | philosophy,ethics | challenging,rebellious,dark | morality,power,guilt | short | demanding
+Fear and Trembling | philosophy | philosophy,existentialism | challenging,contemplative | faith,ethics,meaning | short | demanding
+Ethics | philosophy | philosophy,classic | challenging,meditative | mind,freedom,nature,faith | medium | demanding
+A Theory of Justice | philosophy | philosophy,political-philosophy | challenging,grounded | justice,fairness,society | epic | demanding
+At the Existentialist Café | nonfiction | philosophy,history,biography | thought-provoking,character-driven,lyrical | freedom,meaning,history | long | moderate
+Steering the Craft | craft | writing-craft | grounded,thought-provoking | storytelling,language | short | light
+Bird by Bird | craft | writing-craft,memoir | funny,comforting,hopeful | storytelling,discipline | medium | light
+A Room of One's Own | philosophy | essays,feminism,classic | thought-provoking,witty,lyrical | gender,creativity,freedom | short | light
+The Story of Philosophy | philosophy | philosophy,history,introduction | thought-provoking,grounded | history,mind,meaning | long | moderate
+Philosophy of Science: A Very Short Introduction | philosophy | philosophy,science,introduction | thought-provoking,grounded | science,truth,knowledge | short | moderate
+Exhalation | fiction | science-fiction,short-stories,philosophical-fiction | thought-provoking,contemplative,tender | free-will,mind,mortality,science | medium | moderate
+The Demon-Haunted World | nonfiction | science,skepticism | thought-provoking,hopeful,grounded | science,truth,misinformation | long | moderate
+Cosmos | nonfiction | science,astronomy | lyrical,hopeful,wonder-filled,thought-provoking | science,wonder,history | long | moderate
+Pale Blue Dot | nonfiction | science,astronomy | lyrical,meditative,hopeful,wonder-filled | science,wonder,humanity | long | moderate
+A Short History of Nearly Everything | nonfiction | science,history | funny,wonder-filled,grounded | science,history,wonder | long | light
+The Selfish Gene | nonfiction | science,biology | thought-provoking,challenging | evolution,science,behavior | long | demanding
+The Blind Watchmaker | nonfiction | science,biology | thought-provoking,challenging | evolution,science | long | demanding
+The Immortal Life of Henrietta Lacks | nonfiction | science,medicine,history | justice-minded,emotionally-devastating,character-driven | science,justice,family,prejudice | long | light
+The Sixth Extinction | nonfiction | science,nature | thought-provoking,grounded,dark | nature,extinction,science | medium | light
+Entangled Life | nonfiction | science,nature,biology | wonder-filled,lyrical,thought-provoking | nature,science,wonder | medium | moderate
+The Man Who Mistook His Wife for a Hat | nonfiction | neuroscience,medicine,psychology | tender,thought-provoking,wonder-filled | mind,identity,medicine | medium | light
+Hallucinations | nonfiction | neuroscience,medicine,psychology | thought-provoking,eerie,tender | mind,perception | medium | light
+The Undoing Project | nonfiction | psychology,biography | character-driven,thought-provoking | mind,friendship,decision-making | long | light
+The Scout Mindset | nonfiction | psychology,rationality | grounded,hopeful,thought-provoking | truth,mind,decision-making | medium | light
+Noise: A Flaw in Human Judgment | nonfiction | psychology,behavioral-economics | grounded,challenging | decision-making,justice,mind | long | demanding
+An Immense World | nonfiction | science,nature,biology | wonder-filled,lyrical,thought-provoking | nature,perception,science | long | moderate
+The Song of the Cell | nonfiction | science,medicine,biology | thought-provoking,lyrical,grounded | science,medicine,life | long | demanding
+The Warmth of Other Suns | nonfiction | history,social-justice | character-driven,emotionally-devastating,hopeful | migration,prejudice,family | epic | moderate
+The 1619 Project: A New Origin Story | nonfiction | history,social-justice,essays | justice-minded,challenging | prejudice,history,memory | epic | moderate
+The Dawn of Everything | nonfiction | history,anthropology | thought-provoking,challenging,rebellious | freedom,society,power | epic | demanding
+The Making of the Atomic Bomb | nonfiction | history,science | epic,intense,grounded | science,war,morality | epic | demanding
+A People's History of the United States | nonfiction | history,politics | justice-minded,rebellious,challenging | power,class,resistance | epic | moderate
+Evicted | nonfiction | social-justice,sociology | emotionally-devastating,justice-minded,character-driven | poverty,class,home | long | moderate
+Poverty, by America | nonfiction | social-justice,sociology,economics | justice-minded,grounded | poverty,class,responsibility | medium | light
+The Jakarta Method | nonfiction | history,politics | dark,justice-minded | power,violence,cold-war | long | moderate
+The Black Jacobins | nonfiction | history,revolution | rebellious,epic,challenging | revolution,freedom,colonialism | long | demanding
+The Wretched of the Earth | philosophy | political-philosophy,colonialism | rebellious,challenging,dark | colonialism,revolution,violence | medium | demanding
+The Fire Next Time | nonfiction | essays,social-justice | lyrical,justice-minded,emotionally-devastating | prejudice,faith,love | short | light
+The Souls of Black Folk | nonfiction | essays,history,social-justice,classic | lyrical,justice-minded,contemplative | prejudice,identity,education | medium | moderate
+Killers of the Flower Moon | nonfiction | history,true-crime | suspenseful,dark,justice-minded | justice,greed,prejudice | long | light
+Invisible Women | nonfiction | social-justice,data | justice-minded,grounded,thought-provoking | gender,justice,data | long | light
+How to Hide an Empire | nonfiction | history,politics | thought-provoking,witty | colonialism,power,history | long | moderate
+An Indigenous Peoples' History of the United States | nonfiction | history,social-justice | justice-minded,challenging | colonialism,resistance,history | medium | moderate
+Anna Karenina | fiction | russian-classic,literary-fiction | emotionally-devastating,character-driven,romantic,tragic | love,family,society,faith | epic | demanding
+The Kreutzer Sonata | fiction | russian-classic,philosophical-fiction | dark,intense | marriage,jealousy,morality | short | moderate
+Childhood, Boyhood, Youth | fiction | russian-classic,coming-of-age | tender,contemplative,lyrical | childhood,memory,coming-of-age | long | moderate
+The Master and Margarita | fiction | russian-classic,magical-realism,satire | funny,dark,whimsical,romantic | faith,power,love,art | long | moderate
+Dead Souls | fiction | russian-classic,satire | funny,absurd | greed,society,class | long | moderate
+The Nose | fiction | russian-classic,short-stories,satire | funny,absurd,whimsical | identity,status | short | light
+A Hero of Our Time | fiction | russian-classic,psychological | introspective,romantic,morally-gray | identity,boredom,love | short | moderate
+Eugene Onegin | fiction | russian-classic,poetry | romantic,lyrical,tragic,witty | love,regret,society | short | moderate
+The Queen of Spades | fiction | russian-classic,short-stories,gothic | eerie,suspenseful | greed,fate | short | light
+Oblomov | fiction | russian-classic,satire | funny,tender,contemplative | apathy,love,class | long | moderate
+We | fiction | science-fiction,dystopia,classic | rebellious,dark,thought-provoking | freedom,identity,power | short | moderate
+The Cherry Orchard | fiction | russian-classic,drama | wistful,tragic,funny | change,class,loss | short | light
+Uncle Vanya | fiction | russian-classic,drama | wistful,tragic,contemplative | regret,work,love | short | light
+The Seagull | fiction | russian-classic,drama | wistful,tragic,romantic | art,love,ambition | short | light
+One Day in the Life of Ivan Denisovich | fiction | russian-classic | grounded,dark,hopeful | survival,dignity,oppression | short | light
+The Count of Monte Cristo | fiction | classic,adventure | adventurous,suspenseful,epic,immersive | revenge,justice,love | epic | moderate
+The Hunchback of Notre-Dame | fiction | classic,gothic | tragic,atmospheric,dark | prejudice,love,fate | long | demanding
+The Stranger | fiction | classic,philosophical-fiction,existentialism | detached,contemplative,dark | absurd,mortality,justice | short | light
+The Plague | fiction | classic,philosophical-fiction,existentialism | contemplative,grounded,hopeful | solidarity,mortality,meaning | medium | moderate
+The Trial | fiction | classic,philosophical-fiction | absurd,dark,eerie | justice,power,guilt | medium | moderate
+The Metamorphosis | fiction | classic,philosophical-fiction | absurd,dark,tragic | identity,family,alienation | short | light
+A Memory Called Empire | fiction | science-fiction,space-opera,political | immersive,suspenseful,lyrical,thought-provoking | identity,empire,language,memory | long | moderate
+A Desolation Called Peace | fiction | science-fiction,space-opera,political | immersive,suspenseful,romantic,thought-provoking | empire,language,first-contact | long | moderate
+The Final Empire | fiction | epic-fantasy | adventurous,epic,intense,hopeful | revolution,trust,power | long | moderate
+The Well of Ascension | fiction | epic-fantasy | epic,intense,character-driven | power,leadership,faith | long | moderate
+The Hero of Ages | fiction | epic-fantasy | epic,emotionally-devastating,cathartic | faith,sacrifice,hope | long | moderate
+The City of Brass | fiction | epic-fantasy,historical-fantasy | immersive,adventurous,romantic,morally-gray | identity,power,prejudice | long | moderate
+The Kingdom of Copper | fiction | epic-fantasy,historical-fantasy | intense,morally-gray,immersive | power,family,prejudice | long | moderate
+The Empire of Gold | fiction | epic-fantasy,historical-fantasy | epic,emotionally-devastating,hopeful | power,forgiveness,family | long | moderate
+The Bear and the Nightingale | fiction | historical-fantasy,fairy-tale | atmospheric,lyrical,eerie,cozy | faith,nature,family,freedom | medium | light
+The Girl in the Tower | fiction | historical-fantasy,fairy-tale | adventurous,atmospheric,rebellious | freedom,identity,family | medium | light
+The Winter of the Witch | fiction | historical-fantasy,fairy-tale | epic,atmospheric,romantic | faith,nature,war,love | long | moderate
+Red Sister | fiction | epic-fantasy,coming-of-age | intense,dark,immersive | friendship,loyalty,power | long | moderate
+Grey Sister | fiction | epic-fantasy,coming-of-age | intense,dark,character-driven | friendship,loyalty,revenge | long | moderate
+Holy Sister | fiction | epic-fantasy,coming-of-age | epic,emotionally-devastating,intense | friendship,sacrifice,war | long | moderate
+The Blade Itself | fiction | epic-fantasy,grimdark | dark,funny,morally-gray,character-driven | power,violence,cynicism | long | moderate
+Before They Are Hanged | fiction | epic-fantasy,grimdark | dark,adventurous,morally-gray | war,loyalty,power | long | moderate
+Last Argument of Kings | fiction | epic-fantasy,grimdark | dark,epic,emotionally-devastating,morally-gray | power,war,fate | long | moderate
+The Goblin Emperor | fiction | court-fantasy | cozy,hopeful,tender,character-driven | kindness,power,belonging | long | light
+The Priory of the Orange Tree | fiction | epic-fantasy | epic,romantic,adventurous,immersive | faith,power,love | epic | moderate
+The Song of Achilles | fiction | mythic-retelling | romantic,lyrical,emotionally-devastating,tragic | love,glory,fate | medium | light
+The Night Circus | fiction | literary-fantasy | atmospheric,romantic,whimsical,lyrical | love,rivalry,wonder | medium | light
+Strange the Dreamer | fiction | literary-fantasy,romantic-fantasy | lyrical,romantic,mysterious,immersive | dreams,love,war | long | moderate
+Muse of Nightmares | fiction | literary-fantasy,romantic-fantasy | lyrical,emotionally-devastating,romantic,hopeful | love,forgiveness,war | long | moderate
+Jonathan Strange & Mr Norrell | fiction | historical-fantasy,literary-fantasy | atmospheric,witty,eerie,immersive | magic,rivalry,history | epic | demanding
+The Ten Thousand Doors of January | fiction | portal-fantasy,historical-fantasy | lyrical,adventurous,romantic,hopeful | freedom,family,stories | medium | light
+War and Peace | fiction | russian-classic,historical,literary-fiction | epic,character-driven,contemplative,immersive | war,love,history,meaning | epic | demanding
+Les Misérables | fiction | classic,historical,literary-fiction | epic,emotionally-devastating,justice-minded,hopeful | justice,mercy,revolution,love | epic | demanding
