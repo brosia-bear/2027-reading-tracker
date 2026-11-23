@@ -24,7 +24,7 @@ const norm = s => translit(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCa
   .replace(/&/g, ' and ').replace(/[^a-z0-9 ]+/g, ' ').replace(/\b(the|a|an)\b/g, ' ').replace(/\s+/g, ' ').trim();
 const mainTitle = t => norm(String(t).split(/[:(]/)[0]);
 // Transliteration variants so "Dostoyevsky" and "Dostoevsky" match.
-const ALIASES = [[/dostoyevsk(iy|y|ii|i)|dostoevsk(iy|ii|i)/g, 'dostoevsky'], [/tolstoi/g, 'tolstoy'], [/chekov/g, 'chekhov'], [/turgeniev/g, 'turgenev'], [/gogol'/g, 'gogol']];
+const ALIASES = [[/dostoyevsk(iy|y|ii|i)|dostoevsk(iy|ii|i)/g, 'dostoevsky'], [/tolstoi/g, 'tolstoy'], [/chekov/g, 'chekhov'], [/turgeniev/g, 'turgenev'], [/gogol'/g, 'gogol'], [/sarah monette/g, 'katherine addison'], [/chekh?ov|tchekhov/g, 'chekhov'], [/zamiatin/g, 'zamyatin']];
 const alias = s => ALIASES.reduce((v, [re, to]) => v.replace(re, to), s);
 const firstAuthor = a => String(a).split(/,| and | & /)[0].trim();
 const surname = a => alias(norm(firstAuthor(a))).split(' ').filter(Boolean).pop() || '';
@@ -105,6 +105,35 @@ async function fromOpenLibrary(book) {
   return null;
 }
 
+// Translated works are filed under their original-language title, and the
+// work's own cover may be a foreign edition. Find the author's work with the
+// most editions, then choose an English-language edition whose title matches.
+async function fromOpenLibraryEditions(book) {
+  const q = new URLSearchParams({ q: `${shortTitle(book.title)} ${surname(book.author)}`, limit: '10', fields: 'key,title,author_name,edition_count' });
+  const data = await getJson(`https://openlibrary.org/search.json?${q}`);
+  const works = (data?.docs || []).filter(d => authorMatches(d.author_name, book.author) && !NOT_THE_BOOK.test(d.title))
+    .sort((a, b) => (b.edition_count || 0) - (a.edition_count || 0)).slice(0, 2);
+  for (const w of works) {
+    await sleep(600);
+    const eds = await getJson(`https://openlibrary.org${w.key}/editions.json?limit=200`);
+    const english = (eds?.entries || []).filter(e => e.covers?.some(c => c > 0) && titleMatches(e.title, book.title)
+      && (!e.languages || e.languages.some(l => l.key === '/languages/eng'))
+      && !(e.publishers || []).some(p => /gutenberg/i.test(p)));
+    // Prefer published editions with an ISBN (real printed covers), then newer ones.
+    const isbn = e => (e.isbn_13 || e.isbn_10 || []).length ? 1 : 0;
+    const year = e => Number(String(e.publish_date || '').match(/\d{4}/)?.[0] || 0);
+    english.sort((a, b) => isbn(b) - isbn(a) || year(b) - year(a));
+    for (const e of english.slice(0, 4)) {
+      const url = `https://covers.openlibrary.org/b/id/${e.covers.find(c => c > 0)}-L.jpg?default=false`;
+      const img = await getImage(url);
+      if (img) return { img, source: 'Open Library (English edition)', record: `https://openlibrary.org${e.key}`, matched_title: e.title,
+        matched_author: book.author, image_url: url };
+      await sleep(400);
+    }
+  }
+  return null;
+}
+
 async function fromGoogleBooks(book) {
   const q = `intitle:${mainTitle(book.title)} inauthor:${surname(book.author)}`;
   const data = await getJson(`https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(q)}&maxResults=20&printType=books`);
@@ -136,6 +165,7 @@ for (const [i, book] of books.entries()) {
   const existing = sources.covers[book.id];
   if (!force && existing?.file && fs.existsSync(path.join(ROOT, 'public', existing.file))) { found++; continue; }
   let hit = await fromOpenLibrary(book);
+  if (!hit) { await sleep(700); hit = await fromOpenLibraryEditions(book); }
   if (!hit) { await sleep(700); hit = await fromGoogleBooks(book); }
   if (hit) {
     const ext = hit.img.type.includes('png') ? 'png' : hit.img.type.includes('webp') ? 'webp' : 'jpg';

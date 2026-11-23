@@ -602,9 +602,15 @@
   "rosewood-2027-046": {
    "title": "A Wizard of Earthsea",
    "author": "Ursula K. Le Guin",
-   "file": null,
-   "source": null,
-   "note": "previous match was a different edition; refetch pending"
+   "file": "assets/covers/rosewood-2027-046.jpg",
+   "width": 323,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL47806691M",
+   "matched_title": "A Wizard of Earthsea",
+   "matched_author": "Ursula K. Le Guin",
+   "image_url": "https://covers.openlibrary.org/b/id/14322315-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-revised-2027-047": {
    "title": "Crime and Punishment",
@@ -817,8 +823,15 @@
   "rosewood-revised-2027-063": {
    "title": "White Nights",
    "author": "Fyodor Dostoevsky",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-revised-2027-063.jpg",
+   "width": 347,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL29315792W",
+   "matched_title": "White Nights",
+   "matched_author": "Фёдор Михайлович Достоевский",
+   "image_url": "https://covers.openlibrary.org/b/id/13017120-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-064": {
    "title": "The Year of Magical Thinking",
@@ -849,9 +862,15 @@
   "rosewood-2027-066": {
    "title": "Man's Search for Meaning",
    "author": "Viktor Frankl",
-   "file": null,
-   "source": null,
-   "note": "previous match was a different edition; refetch pending"
+   "file": "assets/covers/rosewood-2027-066.jpg",
+   "width": 318,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL30168613M",
+   "matched_title": "Man's Search for Meaning",
+   "matched_author": "Viktor Frankl",
+   "image_url": "https://covers.openlibrary.org/b/id/13859818-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-067": {
    "title": "The Emotional Craft of Fiction",
@@ -875,8 +894,15 @@
   "rosewood-revised-2027-069": {
    "title": "The Idiot",
    "author": "Fyodor Dostoevsky",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-revised-2027-069.jpg",
+   "width": 310,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL20508265W",
+   "matched_title": "The idiot",
+   "matched_author": "Фёдор Михайлович Достоевский",
+   "image_url": "https://covers.openlibrary.org/b/id/9160647-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-070": {
    "title": "The Last Continent",
@@ -907,8 +933,15 @@
   "rosewood-2027-072": {
    "title": "The Death of Ivan Ilyich",
    "author": "Leo Tolstoy",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-2027-072.jpg",
+   "width": 318,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL16563010W",
+   "matched_title": "The death of Ivan Ilyich and The devil",
+   "matched_author": "Лев Толстой",
+   "image_url": "https://covers.openlibrary.org/b/id/11616112-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-073": {
    "title": "The Other Wind",
@@ -926,8 +959,15 @@
   "rosewood-revised-2027-074": {
    "title": "The Overcoat and Other Stories",
    "author": "Nikolai Gogol",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-revised-2027-074.jpg",
+   "width": 333,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL24492181W",
+   "matched_title": "'The Overcoat' and Other Stories",
+   "matched_author": "Николай Васильевич Гоголь, Will Jonson, Claud Field",
+   "image_url": "https://covers.openlibrary.org/b/id/11109874-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-075": {
    "title": "Story Genius",
@@ -984,8 +1024,15 @@
   "rosewood-revised-2027-079": {
    "title": "The Gambler",
    "author": "Fyodor Dostoevsky",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-revised-2027-079.jpg",
+   "width": 333,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL24617955W",
+   "matched_title": "The Gambler",
+   "matched_author": "Фёдор Михайлович Достоевский, Charles James Hogarth",
+   "image_url": "https://covers.openlibrary.org/b/id/11288317-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-080": {
    "title": "The Anatomy of Story",
@@ -1120,8 +1167,15 @@
   "rosewood-revised-2027-090": {
    "title": "The Lady with the Dog and Other Stories",
    "author": "Anton Chekhov",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-revised-2027-090.jpg",
+   "width": 309,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL278145W",
+   "matched_title": "The Lady with the Dog and Other Stories [9 stories]",
+   "matched_author": "Антон Павлович Чехов",
+   "image_url": "https://covers.openlibrary.org/b/id/12749981-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-091": {
    "title": "The Gene: An Intimate History",
@@ -1165,9 +1219,15 @@
   "rosewood-2027-094": {
    "title": "The Golden Compass",
    "author": "Philip Pullman",
-   "file": null,
-   "source": null,
-   "note": "previous match was a different edition; refetch pending"
+   "file": "assets/covers/rosewood-2027-094.jpg",
+   "width": 333,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL33309399M",
+   "matched_title": "The Golden Compass",
+   "matched_author": "Philip Pullman",
+   "image_url": "https://covers.openlibrary.org/b/id/11950161-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-revised-2027-095": {
    "title": "Demons",
@@ -1211,8 +1271,15 @@
   "rosewood-2027-098": {
    "title": "The Second Sex",
    "author": "Simone de Beauvoir",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-2027-098.jpg",
+   "width": 324,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL62694857M",
+   "matched_title": "The Second Sex",
+   "matched_author": "Simone de Beauvoir",
+   "image_url": "https://covers.openlibrary.org/b/id/15266113-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-099": {
    "title": "The Subtle Knife",
@@ -1230,8 +1297,15 @@
   "rosewood-2027-100": {
    "title": "The House of the Spirits",
    "author": "Isabel Allende",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-2027-100.jpg",
+   "width": 258,
+   "height": 400,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL36315580M",
+   "matched_title": "House of the Spirits",
+   "matched_author": "Isabel Allende",
+   "image_url": "https://covers.openlibrary.org/b/id/14807363-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-101": {
    "title": "The Amazing Maurice and His Educated Rodents",
@@ -1327,22 +1401,41 @@
   "brosia-curated-v2-108": {
    "title": "Symposium",
    "author": "Plato",
-   "file": null,
-   "source": null,
-   "note": "previous match was a different edition; refetch pending"
+   "file": "assets/covers/brosia-curated-v2-108.jpg",
+   "width": 316,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL46092930W",
+   "matched_title": "Symposium and The Death of Socrates",
+   "matched_author": "Plato",
+   "image_url": "https://covers.openlibrary.org/b/id/15264289-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-109": {
    "title": "Apology",
    "author": "Plato",
-   "file": null,
-   "source": null,
-   "note": "previous match was a different edition; refetch pending"
+   "file": "assets/covers/brosia-curated-v2-109.jpg",
+   "width": 359,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL51821W",
+   "matched_title": "Apology of Socrates and Crito and a part of the Phaedo",
+   "matched_author": "Plato",
+   "image_url": "https://covers.openlibrary.org/b/id/14405773-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-110": {
    "title": "The Gay Science",
    "author": "Friedrich Nietzsche",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-110.jpg",
+   "width": 322,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL26375465M",
+   "matched_title": "The Gay Science",
+   "matched_author": "Friedrich Nietzsche",
+   "image_url": "https://covers.openlibrary.org/b/id/8065134-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-111": {
    "title": "Beyond Good and Evil",
@@ -1399,8 +1492,15 @@
   "brosia-curated-v2-115": {
    "title": "A Theory of Justice",
    "author": "John Rawls",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-115.jpg",
+   "width": 333,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL22769425M",
+   "matched_title": "A theory of justice",
+   "matched_author": "John Rawls",
+   "image_url": "https://covers.openlibrary.org/b/id/8727293-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-116": {
    "title": "At the Existentialist Café",
@@ -1821,8 +1921,15 @@
   "brosia-curated-v2-148": {
    "title": "The Wretched of the Earth",
    "author": "Frantz Fanon",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-148.jpg",
+   "width": 339,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL32693308M",
+   "matched_title": "The Wretched of the Earth",
+   "matched_author": "Frantz Fanon",
+   "image_url": "https://covers.openlibrary.org/b/id/11317196-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-149": {
    "title": "The Fire Next Time",
@@ -1905,14 +2012,28 @@
   "brosia-curated-v2-155": {
    "title": "Anna Karenina",
    "author": "Leo Tolstoy",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-155.jpg",
+   "width": 334,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL26380516W",
+   "matched_title": "Anna Karenina",
+   "matched_author": "Лев Толстой",
+   "image_url": "https://covers.openlibrary.org/b/id/12327215-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-156": {
    "title": "The Kreutzer Sonata",
    "author": "Leo Tolstoy",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-156.jpg",
+   "width": 251,
+   "height": 400,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL46443613M",
+   "matched_title": "Kreutzer Sonata",
+   "matched_author": "Leo Tolstoy",
+   "image_url": "https://covers.openlibrary.org/b/id/14729435-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-157": {
    "title": "Childhood, Boyhood, Youth",
@@ -1923,8 +2044,15 @@
   "brosia-curated-v2-158": {
    "title": "The Master and Margarita",
    "author": "Mikhail Bulgakov",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-158.jpg",
+   "width": 286,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL36999384W",
+   "matched_title": "The Master and Margarita",
+   "matched_author": "Михаил Афанасьевич Булгаков",
+   "image_url": "https://covers.openlibrary.org/b/id/15013644-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-159": {
    "title": "Dead Souls",
@@ -1942,8 +2070,15 @@
   "brosia-curated-v2-160": {
    "title": "The Nose",
    "author": "Nikolai Gogol",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-160.jpg",
+   "width": 333,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL8791626W",
+   "matched_title": "The Nose",
+   "matched_author": "Николай Васильевич Гоголь",
+   "image_url": "https://covers.openlibrary.org/b/id/1826768-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-161": {
    "title": "A Hero of Our Time",
@@ -1961,14 +2096,28 @@
   "brosia-curated-v2-162": {
    "title": "Eugene Onegin",
    "author": "Alexander Pushkin",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-162.jpg",
+   "width": 350,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL24667968W",
+   "matched_title": "Eugene Onegin",
+   "matched_author": "Александр Сергеевич Пушкин, Henry Spalding",
+   "image_url": "https://covers.openlibrary.org/b/id/11365660-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-163": {
    "title": "The Queen of Spades",
    "author": "Alexander Pushkin",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-163.jpg",
+   "width": 325,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL623479W",
+   "matched_title": "The Queen of Spades",
+   "matched_author": "Александр Сергеевич Пушкин",
+   "image_url": "https://covers.openlibrary.org/b/id/103691-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-164": {
    "title": "Oblomov",
@@ -1986,26 +2135,54 @@
   "brosia-curated-v2-165": {
    "title": "We",
    "author": "Yevgeny Zamyatin",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-165.jpg",
+   "width": 337,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL51311190M",
+   "matched_title": "We",
+   "matched_author": "Yevgeny Zamyatin",
+   "image_url": "https://covers.openlibrary.org/b/id/14597900-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-166": {
    "title": "The Cherry Orchard",
    "author": "Anton Chekhov",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-166.jpg",
+   "width": 324,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL27340936M",
+   "matched_title": "The Cherry Orchard",
+   "matched_author": "Anton Chekhov",
+   "image_url": "https://covers.openlibrary.org/b/id/8805000-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-167": {
    "title": "Uncle Vanya",
    "author": "Anton Chekhov",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-167.jpg",
+   "width": 267,
+   "height": 400,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL38890903M",
+   "matched_title": "Uncle Vanya",
+   "matched_author": "Anton Chekhov",
+   "image_url": "https://covers.openlibrary.org/b/id/14691573-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-168": {
    "title": "The Seagull",
    "author": "Anton Chekhov",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-168.jpg",
+   "width": 316,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL27402448M",
+   "matched_title": "The Seagull",
+   "matched_author": "Anton Chekhov",
+   "image_url": "https://covers.openlibrary.org/b/id/8864786-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-169": {
    "title": "One Day in the Life of Ivan Denisovich",
@@ -2049,15 +2226,28 @@
   "brosia-curated-v2-172": {
    "title": "The Stranger",
    "author": "Albert Camus",
-   "file": null,
-   "source": null,
-   "note": "previous match was a different edition; refetch pending"
+   "file": "assets/covers/brosia-curated-v2-172.jpg",
+   "width": 324,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL48810681M",
+   "matched_title": "Stranger (Camus Novel)",
+   "matched_author": "Albert Camus",
+   "image_url": "https://covers.openlibrary.org/b/id/14814330-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-173": {
    "title": "The Plague",
    "author": "Albert Camus",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-173.jpg",
+   "width": 325,
+   "height": 500,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL7359068M",
+   "matched_title": "The Plague (Penguin Modern Classics)",
+   "matched_author": "Albert Camus",
+   "image_url": "https://covers.openlibrary.org/b/id/107969-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-174": {
    "title": "The Trial",
@@ -2244,8 +2434,15 @@
   "brosia-curated-v2-188": {
    "title": "Grey Sister",
    "author": "Mark Lawrence",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-188.jpg",
+   "width": 248,
+   "height": 400,
+   "source": "Open Library (English edition)",
+   "record": "https://openlibrary.org/books/OL28938272M",
+   "matched_title": "Grey Sister",
+   "matched_author": "Mark Lawrence",
+   "image_url": "https://covers.openlibrary.org/b/id/15140758-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-189": {
    "title": "Holy Sister",
@@ -2302,8 +2499,15 @@
   "brosia-curated-v2-193": {
    "title": "The Goblin Emperor",
    "author": "Katherine Addison",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-193.jpg",
+   "width": 258,
+   "height": 385,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL17270804W",
+   "matched_title": "The Goblin Emperor",
+   "matched_author": "Sarah Monette",
+   "image_url": "https://covers.openlibrary.org/b/id/9319294-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-194": {
    "title": "The Priory of the Orange Tree",
