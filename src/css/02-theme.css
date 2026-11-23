@@ -1,0 +1,271 @@
+/* Brosia's Library — "Ex Libris" theme (2026-11 revamp).
+   Concept: the inside of a cloth-bound private library. Celadon laid paper,
+   iron-gall ink, claret bookcloth for actions, moss for progress, gilt for rules.
+   Type: EB Garamond throughout (owner requirement). Self-hosted.
+   Layered after the original design system so the legacy CSS stays intact. */
+
+/* FONT-FACES: EB Garamond (OFL), self-hosted */
+@font-face{font-family:"EB Garamond";font-style:italic;font-weight:400 800;font-display:swap;src:url("fonts/eb-garamond-italic-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"EB Garamond";font-style:italic;font-weight:400 800;font-display:swap;src:url("fonts/eb-garamond-italic-latin.woff2") format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"EB Garamond";font-style:normal;font-weight:400 800;font-display:swap;src:url("fonts/eb-garamond-normal-latin-ext.woff2") format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"EB Garamond";font-style:normal;font-weight:400 800;font-display:swap;src:url("fonts/eb-garamond-normal-latin.woff2") format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+/* TOKENS — legacy variable names are remapped so every older rule follows. */
+:root{
+ --celadon:#ECEEE6;   /* laid paper: page ground */
+ --leaf:#F8F8F3;      /* a raised page */
+ --iron:#232838;      /* iron-gall ink */
+ --claret:#7A2E3A;    /* bookcloth: actions, current place */
+ --moss:#55613F;      /* progress, growth */
+ --gilt:#A88A4A;      /* rules and ornaments, sparingly */
+ --blush:#D9B3B0;     /* from the watercolor roses */
+
+ --ivory:var(--celadon); --paper:var(--leaf); --rose:var(--claret);
+ --sage:var(--moss); --cocoa:var(--iron); --gold:var(--gilt);
+ --ink:var(--iron); --muted:#5D6170;
+ --hairline:rgba(35,40,56,.14); --rule:rgba(35,40,56,.22);
+ --soft-rose:rgba(122,46,58,.07); --soft-sage:rgba(85,97,63,.10); --soft-gold:rgba(168,138,74,.12);
+ --shadow:none; --shadow-strong:0 18px 50px rgba(35,40,56,.18);
+ --radius-sm:3px; --radius-md:4px; --radius-lg:5px; --radius-xl:6px;
+ --display:"EB Garamond",Garamond,"Iowan Old Style",Georgia,serif;
+ --text:"EB Garamond",Garamond,"Iowan Old Style",Georgia,serif;
+ --font-display:clamp(2.3rem,5.4vw,3.9rem);
+}
+
+/* GROUND & TYPE */
+html{font-family:var(--text);font-size:18.5px;background:var(--celadon)}
+body,button,input,select,textarea,dialog,table,option{font-family:var(--text)}
+body{
+ color:var(--iron);line-height:1.55;font-feature-settings:"onum" 1,"kern" 1,"liga" 1;
+ background:
+  repeating-linear-gradient(90deg,transparent 0 31px,rgba(35,40,56,.018) 31px 32px),
+  var(--celadon);
+}
+body::before{display:none}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:0;color:var(--iron)}
+h1{font-size:var(--font-display);line-height:1.02}
+h2{font-size:1.75rem;line-height:1.15}
+h3{font-size:1.3rem;line-height:1.2}
+h1 em,h2 em,h3 em{font-style:inherit}
+.num,.big-num{font-feature-settings:"lnum" 1,"tnum" 1}
+a{color:var(--claret);text-decoration-thickness:1px;text-underline-offset:3px}
+::selection{background:rgba(122,46,58,.18)}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--claret);outline-offset:3px}
+
+/* Labels: quiet italic, never tracked caps. */
+.eyebrow,.nav-title{font-family:var(--text);font-size:.92rem;letter-spacing:0;text-transform:none;font-weight:400;font-style:italic;color:var(--muted)}
+.overline{font-size:.9rem}
+.pill,.pill.sage,.pill.rose,.pill.gold{border:0;background:none;padding:0;border-radius:0;font-size:.88rem;font-weight:400;font-style:italic;color:var(--muted)}
+.small{font-size:.92rem}.tiny{font-size:.82rem}
+
+/* SHELL: sidebar */
+.page-shell{grid-template-columns:232px minmax(0,1fr)}
+.side{background:var(--leaf);border-right:1px solid var(--hairline);padding:34px 14px 24px 20px}
+.brand strong{font-family:var(--display);font-weight:400;font-size:1.45rem;line-height:1.05}
+.brand small{font-style:italic;font-size:.85rem}
+.brand-icon{width:52px;height:52px}
+.nav{gap:1px}
+.nav-btn{border:0;border-radius:0;padding:10px 12px;font-size:1rem;color:var(--iron);border-left:2px solid transparent}
+.nav-btn:hover{background:transparent;color:var(--claret)}
+.nav-btn[aria-current="page"]{background:transparent;border-left-color:var(--claret);color:var(--claret);font-weight:600}
+.nav-icon{width:22px;display:grid;place-items:center}
+.nav-icon svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.side-footer{display:none}
+
+.main{padding-top:30px}
+.masthead{display:none}
+
+/* HERO: a dated diary heading */
+.hero{background:none;border:0;border-radius:0;padding:6px 0 26px;min-height:0;grid-template-columns:minmax(0,1fr) 150px;align-items:end;border-bottom:1px solid var(--rule);overflow:visible}
+.hero-kicker{font-style:italic;color:var(--muted);font-size:1rem}
+.hero h1{margin:4px 0 10px;max-width:none}
+.hero-line{color:var(--muted);max-width:34em}
+.hero-art{width:150px;border-radius:0;box-shadow:none;opacity:1;overflow:visible}
+.hero-bloom{aspect-ratio:auto;object-fit:contain;filter:none;mix-blend-mode:multiply}
+
+/* SECTION RHYTHM */
+.page-intro{margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--rule)}
+.page-intro p{color:var(--muted);max-width:36em;margin-top:10px}
+.section-heading{margin:40px 0 14px;align-items:baseline}
+.section-heading h2{font-size:1.6rem}
+
+/* SURFACES: one quiet page style, no gradients or drop shadows */
+.card,.card.soft,.card.rose,.card.sage,.card.gold{background:var(--leaf);border:1px solid var(--hairline);border-radius:var(--radius-lg);box-shadow:none}
+.card.soft{background:transparent}
+.mini-stat{background:transparent;border:0;border-top:1px solid var(--rule);border-radius:0;padding:14px 0 0}
+.mini-stat strong{font-family:var(--display);font-size:1.9rem}
+.mini-stat small{font-style:italic;font-size:.88rem}
+.info-box{border-left:2px solid var(--gilt);background:transparent;border-radius:0;color:var(--muted)}
+.botanical-divider{opacity:.55;filter:grayscale(.3)}
+
+/* BUTTONS */
+.btn{min-height:44px;border-radius:var(--radius-sm);font-weight:600;letter-spacing:.01em;background:transparent;border:1px solid var(--rule);color:var(--iron);transition:background-color .15s ease,color .15s ease,border-color .15s ease}
+.btn:hover{background:rgba(35,40,56,.04);transform:none;border-color:var(--iron)}
+.btn.primary{background:var(--claret);border-color:var(--claret);color:var(--leaf)}
+.btn.primary:hover{background:#65242F;border-color:#65242F}
+.btn.rose-btn{background:transparent;border-color:var(--claret);color:var(--claret)}
+.btn.rose-btn:hover{background:var(--soft-rose)}
+.btn.small-btn{min-height:36px;font-size:.88rem}
+
+/* FORMS */
+.field label{font-weight:600;font-size:.9rem}
+.field input,.field textarea,.field select,.search-field,select{border:1px solid var(--rule);border-radius:var(--radius-sm);background:var(--leaf);color:var(--iron);min-height:44px}
+.field input:focus,.field textarea:focus,.field select:focus,.search-field:focus{border-color:var(--iron)}
+.field input::placeholder,.field textarea::placeholder,.search-field::placeholder{color:#7C8090;font-style:italic}
+
+/* GOALS: ledger entries, the number set in Fell */
+.goal-grid{gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.goal-card,.goal-card.card,.card.rose.goal-card,.card.sage.goal-card{background:transparent;border:0;border-radius:0;padding:18px 0}
+.goal-grid>.goal-card+.goal-card{border-left:1px solid var(--rule);padding-left:22px}
+.goal-grid>.goal-card:first-child{padding-right:22px}
+.goal-card .topline strong{font-weight:600}
+.goal-card .big-num{font-family:var(--display);font-size:clamp(2.6rem,6vw,3.6rem)}
+.goal-card .big-num span{font-size:.4em;font-style:italic}
+.meter{height:3px;border-radius:0;background:rgba(35,40,56,.1)}
+.meter>span,.goal-card .meter>span{border-radius:0;background:var(--claret)}
+.goal-card.sage .meter>span{background:var(--moss)}
+
+/* NEXT READ: the bookplate. The one ornamented object on the page. */
+.next-read-card,.card.next-read-card{position:relative;background:var(--leaf);border:1px solid var(--gilt);border-radius:2px;padding:30px 28px 26px;margin-top:34px;box-shadow:0 1px 0 rgba(35,40,56,.04)}
+.next-read-card::before{content:"";position:absolute;inset:6px;border:1px solid rgba(122,46,58,.45);pointer-events:none}
+.next-read-card::after{content:"Ex libris";position:absolute;top:-.8em;left:50%;transform:translateX(-50%);background:var(--celadon);padding:0 12px;font-family:var(--display);font-style:italic;font-size:1.05rem;color:var(--claret)}
+.next-read-card h2,.next-read-card h2 em{font-size:clamp(1.9rem,4.6vw,2.6rem);font-style:normal;line-height:1.08}
+.next-read-card .eyebrow{display:block;margin-bottom:6px}
+.next-read-author{font-style:italic;font-size:1.08rem;color:var(--muted);margin-top:4px}
+
+/* BOOK ROWS: ruled entries, not stacked cards */
+.book-list{gap:0;border-top:1px solid var(--rule)}
+.book-card{background:transparent;border:0;border-bottom:1px solid var(--hairline);border-radius:0;padding:16px 2px;gap:18px}
+.book-card:hover{border-color:var(--hairline);background:rgba(255,255,255,.25)}
+.book-card .book-name{font-family:var(--display);font-weight:400;font-size:1.3rem;line-height:1.2}
+.book-card .book-meta{font-style:italic;font-size:.92rem}
+.book-card .book-note{font-size:.88rem}
+.book-cover{border-radius:1px 3px 3px 1px;border-left:0;box-shadow:inset 3px 0 0 rgba(0,0,0,.14),inset 4px 0 0 rgba(255,255,255,.18),2px 3px 0 rgba(35,40,56,.08),4px 8px 16px rgba(35,40,56,.10);background:var(--blush)}
+.book-cover::after{display:none}
+
+/* AWARDS */
+.trophy{background:transparent;border:1px solid var(--hairline);border-radius:var(--radius-md)}
+.trophy .emblem{border:1px solid var(--gilt);background:transparent}
+
+/* DIALOG */
+dialog{border:1px solid var(--rule);border-radius:var(--radius-lg);background:var(--leaf)}
+dialog::backdrop{background:rgba(35,40,56,.42);backdrop-filter:blur(2px)}
+
+/* MOBILE TAB BAR */
+.nav-more{display:none}
+@media(max-width:750px){
+ .main{padding:22px 18px calc(92px + env(safe-area-inset-bottom))}
+ .hero{grid-template-columns:minmax(0,1fr) 92px;padding-bottom:20px}
+ .hero-art{width:92px;display:block}
+ .mobile-nav{background:rgba(248,248,243,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--rule);box-shadow:none;padding:6px 6px calc(6px + env(safe-area-inset-bottom));justify-content:space-between;overflow:visible}
+ .mobile-nav>.nav-btn,.mobile-nav .nav-more>summary{flex:1;min-width:0;border:0;border-radius:0;padding:6px 2px;display:grid;gap:3px;place-items:center;text-align:center;font-size:.74rem;color:var(--muted);background:none;border-top:2px solid transparent}
+ .mobile-nav>.nav-btn[aria-current="page"],.mobile-nav .nav-more.current>summary{color:var(--claret);border-top-color:var(--claret);font-weight:600}
+ .mobile-nav .nav-icon svg{width:23px;height:23px}
+ .nav-more{display:flex;flex:1;position:relative}
+ .nav-more>summary{list-style:none;cursor:pointer;width:100%}
+ .nav-more>summary::-webkit-details-marker{display:none}
+ .nav-more-panel{position:absolute;right:0;bottom:calc(100% + 10px);min-width:200px;background:var(--leaf);border:1px solid var(--rule);border-radius:var(--radius-md);box-shadow:var(--shadow-strong);padding:6px;display:grid}
+ .nav-more-panel .nav-btn{font-size:1rem;padding:12px 12px;border-left:2px solid transparent;display:flex;gap:12px;color:var(--iron)}
+ .nav-more-panel .nav-btn[aria-current="page"]{border-left-color:var(--claret);color:var(--claret)}
+}
+@media(max-width:480px){
+ html{font-size:18px}
+ .goal-grid{grid-template-columns:1fr 1fr}
+ .goal-grid>.goal-card+.goal-card{padding-left:14px}
+ .goal-grid>.goal-card:first-child{padding-right:14px}
+ .goal-card .big-num{font-size:2.5rem}
+ .goal-card .topline{flex-direction:column;align-items:flex-start;gap:0}
+ .next-read-card{padding:28px 20px 22px}
+ .book-card{gap:14px}
+}
+
+/* The hero watercolor has a painted beige ground; fade it into the paper. */
+.hero-bloom{mix-blend-mode:multiply;-webkit-mask-image:radial-gradient(closest-side,#000 62%,transparent 100%);mask-image:radial-gradient(closest-side,#000 62%,transparent 100%)}
+
+/* TODAY'S CHAPTERS: two diary entries in one ruled block */
+.ritual-home-grid{display:block;background:var(--leaf);border:1px solid var(--hairline);border-radius:var(--radius-lg)}
+.ritual-entry{display:grid;grid-template-columns:4.6rem minmax(0,1fr) auto;gap:4px 14px;align-items:start;padding:18px 18px 16px}
+.ritual-entry+.ritual-entry{border-top:1px solid var(--hairline)}
+.ritual-when{font-family:var(--display);font-style:italic;font-size:1.1rem;color:var(--claret);padding-top:2px}
+.ritual-body h3{font-size:1.35rem}
+.ritual-chapter{margin-top:2px}
+.ritual-body .meter{margin:10px 0 6px;max-width:240px}
+.ritual-meta{font-size:.86rem;color:var(--muted)}
+.ritual-edition{display:block;font-style:italic}
+.ritual-entry[data-state="done"] .ritual-chapter{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(122,46,58,.5)}
+.ritual-entry .btn{align-self:center}
+@media(max-width:480px){.ritual-entry{grid-template-columns:minmax(0,1fr) auto;padding:16px}.ritual-when{grid-column:1/-1;padding:0}}
+
+/* Bookplate interior */
+.bookplate{display:grid;grid-template-columns:96px minmax(0,1fr);gap:20px;align-items:start}
+.bookplate-cover.book-cover{width:96px;height:144px}
+.bookplate-text h2{margin-top:2px}
+.bookplate-kind{font-style:italic;color:var(--muted);margin:6px 0 12px;font-size:.95rem}
+.bookplate-commitment{margin:20px 0 4px;padding-top:14px;border-top:1px solid var(--hairline);font-size:.92rem;color:var(--muted)}
+.next-read-controls{margin-top:14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:end}
+.next-read-options{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px}
+.next-read-options .btn{border:0;padding:4px 0;min-height:32px;background:none;color:var(--claret);font-weight:500;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.next-read-options .btn:hover{background:none;color:var(--iron)}
+@media(max-width:480px){.bookplate{grid-template-columns:76px minmax(0,1fr);gap:16px}.bookplate-cover.book-cover{width:76px;height:114px}.next-read-controls{grid-template-columns:1fr}}
+
+/* Covers: real images fill the frame; made covers are cloth in a jewel tone */
+.book-cover{background:#d9d6cc}
+.book-cover img{object-fit:cover}
+.made-cover{position:absolute;inset:0;background:var(--tone,#22396B);color:#F3EEE2;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:12% 10%;gap:6%;font-family:var(--display);
+ background-image:linear-gradient(90deg,rgba(0,0,0,.22) 0 6%,rgba(255,255,255,.06) 6% 7.5%,transparent 7.5%),radial-gradient(120% 80% at 50% 0%,rgba(255,255,255,.08),transparent 60%)}
+.made-cover::before{content:"";position:absolute;inset:6% 7% 6% 11%;border:1px solid rgba(214,190,130,.55);pointer-events:none}
+.made-title{font-size:clamp(.62rem,1.1vw + .35rem,1rem);line-height:1.12;text-wrap:balance;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.made-rule{width:22%;height:1px;background:rgba(214,190,130,.8)}
+.made-author{font-style:italic;font-size:clamp(.5rem,.8vw + .3rem,.78rem);line-height:1.15;opacity:.9}
+.profile-cover-image{position:relative}
+.profile-cover-image .made-title{font-size:1.4rem}.profile-cover-image .made-author{font-size:1rem}
+.profile-cover-frame{grid-template-columns:132px 1fr;border:0;border-radius:0;padding:0;background:none}
+.profile-cover-image{width:120px;height:180px;border-radius:1px 3px 3px 1px;box-shadow:inset 3px 0 0 rgba(0,0,0,.14),2px 3px 0 rgba(35,40,56,.08),4px 10px 20px rgba(35,40,56,.14)}
+.profile-cover-image .made-title{font-size:1rem}.profile-cover-image .made-author{font-size:.8rem}
+
+/* Home: pace note sits quietly under the ledger */
+#view-overview #overview-soft-pacing{display:none}
+#reading-compass{background:transparent;border:0;padding:16px 0 0;display:block}
+#reading-compass .compass-status{font-family:var(--display);font-size:1.35rem;margin:2px 0 4px}
+#reading-compass .compass-status .status-dot{display:none}
+#reading-compass .compass-detail:empty,#compass-finish:empty{display:none}
+
+/* Headings focused by route changes shouldn't show a focus box */
+h1[tabindex="-1"]:focus{outline:none}
+
+/* BOOKS PAGE */
+.catalog-switch{display:flex;gap:0;border:0;background:none;padding:0;margin:0 0 18px;border-bottom:1px solid var(--rule);overflow-x:auto}
+.catalog-switch button{flex:none;border:0;border-radius:0;background:none;padding:10px 14px 9px;font-size:1rem;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;box-shadow:none}
+.catalog-switch button[aria-pressed="true"]{color:var(--claret);border-bottom-color:var(--claret);background:none;font-weight:600}
+.pathway-gallery,.card.soft.pathway-gallery{border:0;padding:0;background:none;margin-bottom:12px}
+.pathway-grid{display:flex;flex-wrap:wrap;gap:6px 8px}
+.pathway-tile{display:inline-flex;align-items:baseline;gap:6px;border:1px solid var(--rule);border-radius:999px;background:transparent;padding:6px 14px;font-size:.95rem;min-height:0;box-shadow:none;text-align:left}
+.pathway-tile:hover{border-color:var(--iron);background:transparent;transform:none}
+.pathway-tile[aria-pressed="true"]{background:var(--claret);border-color:var(--claret);color:var(--leaf)}
+.pathway-tile[aria-pressed="true"] .pathway-count{color:rgba(248,248,243,.8)}
+.pathway-count{font-style:italic;color:var(--muted);font-size:.85rem}
+.toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;margin:14px 0 10px}
+.toolbar .search-field{grid-column:1/-1}
+.toolbar .field select{width:100%}
+.catalog-sort{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:8px}
+.catalog-sort .field label{font-weight:400;font-style:italic;color:var(--muted);font-size:.85rem}
+#library-count{font-style:italic;margin:10px 0 4px}
+.soft-book-date{background:none!important;border:0!important;padding:0!important;margin-top:4px;font-style:italic;font-size:.88rem;color:var(--moss)}
+.book-kind{font-size:.88rem;color:var(--muted);margin-top:2px}
+.book-card{grid-template-columns:68px minmax(0,1fr) auto}
+.book-card .book-cover{width:68px;height:102px}
+.book-card .right .pill{font-size:.85rem}
+@media(max-width:750px){.catalog-sort{grid-template-columns:1fr 1fr}.catalog-sort .field:last-child{grid-column:1/-1}}
+@media(max-width:480px){
+ .book-card{grid-template-columns:64px minmax(0,1fr);align-items:start}
+ .book-card .book-cover{width:64px;height:96px}
+ .book-card .right{grid-column:2;display:flex;justify-content:space-between;align-items:center}
+ .toolbar{grid-template-columns:1fr 1fr}.toolbar .btn{grid-column:auto}
+}
+.book-card[data-book]{cursor:pointer}
+.row-open{border:0;background:none;color:var(--claret);min-height:32px;padding:4px 0;font-weight:500}
+.row-open::after{content:"";display:inline-block;width:.42em;height:.42em;border-right:1.5px solid currentColor;border-top:1.5px solid currentColor;transform:rotate(45deg);margin-left:.4em;margin-bottom:.08em}
+.row-open:hover{background:none;color:var(--iron)}
+.catalog-switch{flex-wrap:nowrap;scrollbar-width:none}.catalog-switch::-webkit-scrollbar{display:none}
+.pathway-tile{white-space:nowrap}
+@media(max-width:480px){.book-card .right{justify-content:flex-start;gap:14px}.book-card .right .row-open{margin-left:auto}}

@@ -8,7 +8,20 @@ const SRC = path.join(root, 'src');
 const PUB = path.join(root, 'public');
 const DIST = path.join(root, 'dist');
 
+// Bundled real covers: { bookId: "assets/covers/<id>.jpg" } from the provenance file.
+export function writeCoverIndex() {
+  const srcFile = path.join(root, 'catalog', 'cover-sources.json');
+  const covers = {};
+  if (fs.existsSync(srcFile)) {
+    for (const [id, c] of Object.entries(JSON.parse(fs.readFileSync(srcFile, 'utf8')).covers || {}))
+      if (c.file && fs.existsSync(path.join(PUB, c.file))) covers[id] = c.file;
+  }
+  fs.writeFileSync(path.join(SRC, 'data', 'brosia-covers.json'), JSON.stringify({ format: 'brosia-bundled-covers-v1', covers }));
+  return Object.keys(covers).length;
+}
+
 export function assemble() {
+  writeCoverIndex();
   const shell = fs.readFileSync(path.join(SRC, 'index.html'), 'utf8');
   return shell.replace(/<!--@include ([^>]+?)-->/g, (_, rel) => fs.readFileSync(path.join(SRC, rel), 'utf8'));
 }

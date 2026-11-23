@@ -12,7 +12,18 @@
  const coverPayload=JSON.parse(document.getElementById('rosewood-cover-manifest').textContent);
  const localCoverPayload=JSON.parse(document.getElementById('brosia-cover-display-manifest').textContent);
  const localCoverAssets=new Map(localCoverPayload.covers.map(c=>[c.book_id,c.asset]));
- const localCoverFor=book=>localCoverAssets.get(book?.id)||'assets/empty-shelf.svg';
+ const bundledCovers=new Map(Object.entries(JSON.parse(document.getElementById('brosia-covers').textContent).covers||{}));
+ const localCoverFor=book=>bundledCovers.get(book?.id)||null;
+ // When no published cover exists, make one: a jewel or neutral cloth with the
+ // title and author set in Garamond. Tone is stable per book.
+ const COVER_TONES=['#1F5C4A','#22396B','#6E1E2E','#4B2D5E','#7D5A1E','#3E4A52','#2F4A32','#1E2A44','#5E4B3F','#5C3A3A'];
+ const coverTone=id=>{let h=0;for(const ch of String(id))h=(h*31+ch.charCodeAt(0))>>>0;return COVER_TONES[h%COVER_TONES.length];};
+ function madeCover(book){return `<div class="made-cover" style="--tone:${coverTone(book.id)}" role="img" aria-label="${esc(book.title)} by ${esc(book.author)}"><span class="made-title">${esc(book.title)}</span><span class="made-rule" aria-hidden="true"></span><span class="made-author">${esc(book.author)}</span></div>`;}
+ function coverMarkup(book,extraUrl){
+  const url=extraUrl||localCoverFor(book);
+  if(!url)return madeCover(book);
+  return `<img class="book-local-cover" src="${esc(url)}" alt="Cover of ${esc(book.title)} by ${esc(book.author)}" loading="lazy" decoding="async" onerror="this.replaceWith(Object.assign(document.createElement('div'),{innerHTML:this.dataset.fallback}).firstChild)" data-fallback="${esc(madeCover(book))}">`;
+ }
  const baseline=JSON.parse(document.getElementById('rosewood-baseline').textContent);
  const literaryPayload=JSON.parse(document.getElementById('rosewood-literary-profiles').textContent);
  const literaryProfiles16=window.RosewoodLiteraryProfiles.create(literaryPayload,bookCatalog);
@@ -84,17 +95,40 @@
  document.querySelector('.skip-link')?.addEventListener('click',event=>{event.preventDefault();document.getElementById('main-content')?.focus({preventScroll:false});});
  let rosewoodReader=null,rosewoodBusy=false,rosewoodPendingRestore=null;
  // Route switching changes presentation only. No history of books/readings is stored in this session.
- function navHtml(){return routes.map(([name,glyph,title])=>`<button type="button" class="nav-btn" data-route="${name}" aria-current="${name===activeRoute?'page':'false'}"><span class="nav-icon" aria-hidden="true">${glyph}</span><span>${title}</span></button>`).join('');}
- function renderNav(){document.getElementById('desktop-nav').innerHTML=navHtml();document.getElementById('mobile-nav').innerHTML=navHtml();}
+ // Line icons drawn for the Ex Libris theme (stroke inherits currentColor).
+ const NAV_ICONS={
+  overview:'<path d="M4 11.5 12 5l8 6.5"/><path d="M6 10v9.5h12V10"/><path d="M10 19.5V15a2 2 0 0 1 4 0v4.5"/>',
+  library:'<path d="M4.5 4.5h3.2v15H4.5zM9.4 4.5h3.2v15H9.4z"/><path d="m14.6 5.4 3-.7 3.4 14.6-3 .7z"/>',
+  slowreads:'<path d="M3 6.5c3-1.6 6-1.6 9 0 3-1.6 6-1.6 9 0v12c-3-1.6-6-1.6-9 0-3-1.6-6-1.6-9 0z"/><path d="M12 6.5v12"/><path d="M15.5 6v5l1.5-1 1.5 1V6"/>',
+  research:'<path d="M19.5 4C13 5 8.5 10 6.5 17.5L5 20.5"/><path d="M19.5 4c0 6.5-4.5 10.5-11 11.5"/><path d="M10 10.5 13.5 14"/>',
+  pacing:'<circle cx="12" cy="12" r="8.5"/><path d="m15.2 8.8-2 4.4-4.4 2 2-4.4z"/>',
+  achievements:'<circle cx="12" cy="9" r="5"/><path d="m9.2 13.4-1.7 7.1 4.5-2.4 4.5 2.4-1.7-7.1"/>',
+  wrapped:'<path d="M6.5 3.5h11v17l-5.5-3.5-5.5 3.5z"/><path d="M9.5 8h5M9.5 11h5"/>',
+  settings:'<path d="M4 7h9.5M18.5 7H20M4 17h3.5M12.5 17H20"/><circle cx="16" cy="7" r="2.2"/><circle cx="10" cy="17" r="2.2"/>',
+  more:'<circle cx="6" cy="12" r="1.1"/><circle cx="12" cy="12" r="1.1"/><circle cx="18" cy="12" r="1.1"/>'};
+ const navIcon=name=>`<span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24">${NAV_ICONS[name]||''}</svg></span>`;
+ const navButton=([name,,title])=>`<button type="button" class="nav-btn" data-route="${name}" aria-current="${name===activeRoute?'page':'false'}">${navIcon(name)}<span>${title}</span></button>`;
+ function navHtml(){return routes.map(navButton).join('');}
+ // Phones: four primary destinations plus a "More" menu for the rest.
+ const MOBILE_PRIMARY=['overview','library','slowreads','research'];
+ function mobileNavHtml(){
+  const primary=routes.filter(r=>MOBILE_PRIMARY.includes(r[0])).map(navButton).join('');
+  const rest=routes.filter(r=>!MOBILE_PRIMARY.includes(r[0]));
+  const current=rest.some(r=>r[0]===activeRoute);
+  return primary+`<details class="nav-more${current?' current':''}"><summary aria-label="More sections">${navIcon('more')}<span>More</span></summary><div class="nav-more-panel">${rest.map(navButton).join('')}</div></details>`;
+ }
+ function renderNav(){document.getElementById('desktop-nav').innerHTML=navHtml();document.getElementById('mobile-nav').innerHTML=mobileNavHtml();}
+ document.addEventListener('click',e=>{const open=document.querySelector('.nav-more[open]');if(open&&!open.contains(e.target))open.removeAttribute('open');});
+ {const heroDate=document.getElementById('hero-date');if(heroDate)heroDate.textContent=new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});}
  function openRoute(name){if(!routes.some(x=>x[0]===name))return;activeRoute=name;for(const s of document.querySelectorAll('.main-section'))s.setAttribute('aria-hidden',String(s.id!==`view-${name}`));renderNav();const heading=document.querySelector(`#view-${name} h1`); if(heading){heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true});}window.scrollTo({top:0,behavior:'instant'});if(name==='library'){observeCovers();}if(name==='research')renderResearch();if(name==='slowreads')renderSlowReads();}
  const BOOK_GRAPHIC='<span class="fallback-symbol" aria-hidden="true"></span>';
  let liveProgress={}; // Current saved records, never the completion event log.
  let currentGoalSummary=null;
  let pacingSummary=null,showAllPacing=false;
- function createBookCard(b){const num=String(b.plan_order).padStart(3,'0');const arc=b.series_arc_id?catalogIndex.byArc.get(b.series_arc_id):null;const rp=liveProgress[b.id];const nextSoft=pacingSummary?.queue?.find(x=>x.book_id===b.id);const pacingVisible=nextSoft?rosewoodReader?.state?.settings?.pacing_messages!==false:false;const softLabel=yearlongBooks.has(b.id)?'<div class="soft-book-date">2027 slow read · one chapter/day · through Dec 31</div>':nextSoft&&pacingVisible?`<div class="soft-book-date" data-soft-date="${esc(b.id)}">Finish by ~ ${esc(formatSoftDate(nextSoft.suggested_finish_by))} to stay on track</div>`:'';const stateLabel=rp?({not_started:'Not started',reading:'Reading',paused:'Paused',finished:'Finished',dnf:'DNF'}[rp.status]||'Reading record'):'Planned';
-  return `<article class="book-card" data-book-id="${esc(b.id)}" aria-label="Book ${b.plan_order}: ${esc(b.title)} by ${esc(b.author)}"><div class="book-cover" data-cover-id="${esc(b.id)}" data-cover-status="local_art" aria-label="Book cover for ${esc(b.title)}"><img class="book-local-cover" src="${esc(localCoverFor(b))}" alt="${esc(b.title)} by ${esc(b.author)}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/empty-shelf.svg'"></div><div><div class="book-name">${esc(b.title)}</div><div class="book-meta">${esc(b.author)}</div><div class="book-kind">${esc(readingKind(b))}</div>${softLabel}<div class="cover-source visually-hidden" data-source-label="${esc(b.id)}">Library cover</div></div><div class="right"><span class="pill rose">${esc(stateLabel)}</span><button class="btn small-btn" data-book="${esc(b.id)}" aria-label="Preview ${esc(b.title)}">View book</button></div></article>`;
+ function createBookCard(b){const num=String(b.plan_order).padStart(3,'0');const arc=b.series_arc_id?catalogIndex.byArc.get(b.series_arc_id):null;const rp=liveProgress[b.id];const nextSoft=pacingSummary?.queue?.find(x=>x.book_id===b.id);const pacingVisible=nextSoft?rosewoodReader?.state?.settings?.pacing_messages!==false:false;const softLabel=yearlongBooks.has(b.id)?'<div class="soft-book-date">A chapter a day, all year</div>':nextSoft&&pacingVisible?`<div class="soft-book-date" data-soft-date="${esc(b.id)}">Aim to finish by ${esc(formatSoftDate(nextSoft.suggested_finish_by))}</div>`:'';const stateLabel=rp?({not_started:'Not started',reading:'Reading',paused:'Paused',finished:'Finished',dnf:'DNF'}[rp.status]||'Reading record'):'';
+  return `<article class="book-card" data-book="${esc(b.id)}" data-book-id="${esc(b.id)}" aria-label="Book ${b.plan_order}: ${esc(b.title)} by ${esc(b.author)}"><div class="book-cover" data-cover-id="${esc(b.id)}">${coverMarkup(b)}</div><div><div class="book-name">${esc(b.title)}</div><div class="book-meta">${esc(b.author)}</div><div class="book-kind">${esc(readingKind(b))}</div>${softLabel}</div><div class="right">${stateLabel?`<span class="pill rose">${esc(stateLabel)}</span>`:''}<button class="btn small-btn row-open" data-book="${esc(b.id)}" aria-label="Open ${esc(b.title)}">Open</button></div></article>`;
  }
- const goalCard=(num,kind,goal,subtitle,pct=0)=>`<section class="card ${kind} goal-card" aria-label="${esc(subtitle)}: ${num} of ${goal} eligible books finished in 2027${num==='—'?' (device data unavailable)':''}"><div class="topline"><strong>${esc(subtitle)}</strong><span class="pill ${kind}">${kind==='rose'?'Visible goal':'Personal goal'}</span></div><div class="big-num num">${num} <span>/ ${goal}</span></div><div class="meter" role="progressbar" aria-label="${esc(subtitle)} 2027 completion progress" aria-valuemin="0" aria-valuemax="${goal}" aria-valuenow="${typeof num==='number'?Math.min(num,goal):0}"><span style="width:${pct}%"></span></div><p class="subline">${kind==='rose'?'Public milestone · not synced with Goodreads':'Private 104-book goal · two books each week on average'} · ${typeof num==='number'?Math.round(num/goal*100)+'% completed':'Waiting for saved records'}</p></section>`;
+ const goalCard=(num,kind,goal,subtitle,pct=0)=>`<section class="card ${kind} goal-card" aria-label="${esc(subtitle)}: ${num} of ${goal} books finished in 2027"><div class="topline"><strong>${kind==='rose'?'Goodreads challenge':'Private goal'}</strong></div><div class="big-num num">${num} <span>of ${goal}</span></div><div class="meter" role="progressbar" aria-label="${esc(subtitle)} progress" aria-valuemin="0" aria-valuemax="${goal}" aria-valuenow="${typeof num==='number'?Math.min(num,goal):0}"><span style="width:${pct}%"></span></div><p class="subline">${typeof num==='number'?(kind==='rose'?'One book a week':'Two books a week'):'Waiting for your records'}</p></section>`;
  document.getElementById('overview-goals').innerHTML=goalCard('—','rose',52,'Public milestone')+goalCard('—','sage',104,'Private goal');
  const goalLive=document.getElementById('goal-live-status');
  function renderUpcomingCards(){
@@ -122,7 +156,7 @@
   const snap=arcSnapshot;if(!snap)return;
   const current=document.getElementById('pathway-filter').value;
   root.innerHTML=arcEngine.PATHS.map(p=>{
-   const x=snap.pathways[p];return `<button type="button" class="pathway-tile" data-pathway-choose="${esc(p)}" aria-pressed="${current===p}"><span class="pathway-symbol" aria-hidden="true">${icons[p]}</span><span><strong>${esc(labels[p])}</strong><small>${x.completed}/${x.planned} finished in 2027 · ${x.remaining} remaining${x.custom_total?' · '+x.custom_total+' added':''}</small></span></button>`;
+   const x=snap.pathways[p];return `<button type="button" class="pathway-tile" data-pathway-choose="${esc(p)}" aria-pressed="${current===p}"><span class="pathway-name">${esc(labels[p])}</span> <span class="pathway-count">${x.completed} of ${x.planned}</span></button>`;
   }).join('');
  }
  function renderArcBrowsing(){
@@ -317,9 +351,8 @@
   return `<nav class="profile-navigation" aria-label="Book-to-book navigation">${prev?`<button class="btn" type="button" data-book="${esc(prev.id)}" aria-label="Previous book: ${esc(prev.title)}">← Previous book</button>`:'<span></span>'}${next?`<button class="btn" type="button" data-book="${esc(next.id)}" aria-label="Next book: ${esc(next.title)}">Next book →</button>`:'<span></span>'}</nav>`;
  }
  function profileCover(book,custom){
-  const url=custom?window.RosewoodCustom.safeCoverURL(book.cover_override?.url||''):coverIds.get(book.id)?.cover_url||localCoverFor(book);
-  const status=custom?'User-selected cover':coverLabel(coverIds.get(book.id));
-  return `<div class="profile-cover-frame"><div class="profile-cover-image">${url?`<img src="${esc(url)}" loading="lazy" referrerpolicy="no-referrer" alt="Book cover for ${esc(book.title)}; displayed edition may differ" onerror="this.onerror=null;this.src='${esc(localCoverFor(book))}'">`:'<img src="assets/empty-shelf.svg" alt="" loading="lazy">'}</div></div>`;
+  const url=custom?window.RosewoodCustom.safeCoverURL(book.cover_override?.url||''):null;
+  return `<div class="profile-cover-frame"><div class="profile-cover-image">${coverMarkup(book,url)}</div></div>`;
  }
  function researchSourceList(p){
   return `<section class="profile-panel literary-sources"><div class="spread wrap"><h3>Sources and verification</h3><span class="pill sage">${esc(p.profile_status)} · ${esc(p.verified_at)}</span></div><p class="small muted">The cited sources support the factual claims listed under each record. Interpretive observations are labeled separately. All links are optional; the bundled profile remains available offline.</p><ol class="profile-citations">${(p.sources||[]).map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a><div class="tiny muted">${esc(s.organization)} · ${esc(s.source_type.replaceAll('_',' '))} · ${esc(s.scope)} · ${esc(s.confidence)} confidence · checked ${esc(s.checked_on)}</div><ul class="tiny">${s.supports.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${s.notes?`<p class="tiny muted">Limitation: ${esc(s.notes)}</p>`:''}</li>`).join('')}</ol><p class="tiny muted">Work-level research does not verify the reader’s exact physical, ebook or audiobook edition. No exact-edition cover is claimed here.</p></section>`;
@@ -507,7 +540,7 @@
   status.textContent=`${filtered.length} of ${customState().length} added books displayed · ${books.length} original planned titles remain separate.`;
   target.innerHTML=filtered.length?filtered.map(b=>{
    const cover=b.cover_override;const safe=cover?.url?customApi.safeCoverURL(cover.url):null;const rp=liveProgress[b.id];
-   return `<article class="book-card custom-book-card" data-custom-id="${esc(b.id)}"><div class="book-cover" aria-label="${safe?'User-supplied image, ':'No online image supplied'}">${safe?`<img loading="lazy" referrerpolicy="no-referrer" src="${esc(safe)}" alt="" onerror="this.remove()">`:BOOK_GRAPHIC}</div><div><span class="small muted">Added book · ${esc(labels[b.pathway]||'Other')}</span><div class="book-name">${esc(b.title)}</div><div class="book-meta">${esc(b.author)}${b.series_name?' · '+esc(b.series_name):''}</div>${b.notes||b.custom_profile?`<div class="book-note">${esc((b.notes||b.custom_profile).slice(0,190))}</div>`:''}${cover?`<div class="cover-provider">Image: ${esc(cover.source.replaceAll('_',' '))}</div>`:''}</div><div class="right"><span class="pill sage">${rp?esc(({not_started:'Not started',reading:'Reading',paused:'Paused',finished:'Finished',dnf:'DNF'}[rp.status]||'Reading record')):'Saved'}</span><div class="custom-card-actions"><button class="btn small-btn" type="button" data-book="${esc(b.id)}">View</button><button class="btn small-btn" type="button" data-edit-custom="${esc(b.id)}">Edit</button><button class="btn small-btn custom-danger" type="button" data-delete-custom="${esc(b.id)}">Delete</button></div></div></article>`;
+   return `<article class="book-card custom-book-card" data-custom-id="${esc(b.id)}"><div class="book-cover">${coverMarkup(b,safe||null)}</div><div><span class="small muted">Added book · ${esc(labels[b.pathway]||'Other')}</span><div class="book-name">${esc(b.title)}</div><div class="book-meta">${esc(b.author)}${b.series_name?' · '+esc(b.series_name):''}</div>${b.notes||b.custom_profile?`<div class="book-note">${esc((b.notes||b.custom_profile).slice(0,190))}</div>`:''}${cover?`<div class="cover-provider">Image: ${esc(cover.source.replaceAll('_',' '))}</div>`:''}</div><div class="right"><span class="pill sage">${rp?esc(({not_started:'Not started',reading:'Reading',paused:'Paused',finished:'Finished',dnf:'DNF'}[rp.status]||'Reading record')):'Saved'}</span><div class="custom-card-actions"><button class="btn small-btn" type="button" data-book="${esc(b.id)}">View</button><button class="btn small-btn" type="button" data-edit-custom="${esc(b.id)}">Edit</button><button class="btn small-btn custom-danger" type="button" data-delete-custom="${esc(b.id)}">Delete</button></div></div></article>`;
   }).join(''):'<div class="no-results"><img src="assets/empty-shelf.svg" width="110" alt=""><p>No added books match yet. Use “Add a book” to save your next discovery.</p></div>';
  }
  function showCustomBook(id){showBook(id);}
@@ -591,24 +624,24 @@
   try{compassSummary=computeCompass(asOf);}catch(err){compassSummary=null;c.dataset.state='unknown';h.textContent='Compass calculation unavailable';d.textContent=err.message;f.textContent='Your saved records have not been changed.';m.innerHTML='';return;}
   const a=compassSummary;
   if(a.phase==='preview'){
-   c.dataset.state='preview';h.textContent='Upcoming';d.textContent='No eligible completed books have been logged for this reading year. Pacing is optional and never creates reading records.';
-   f.textContent='Public milestone: 52 · Private goal: 104 · No hard deadlines.';m.innerHTML='<strong>Your reading goals</strong><span class="small">Track real completed books here.</span>';return;
+   c.dataset.state='preview';h.textContent='Your reading year begins January 1';d.textContent='Finish a book in 2027 and your pace toward 104 will show here.';
+   f.textContent='';m.innerHTML='';return;
   }
   const snap=a.snapshot, status=snap.status; c.dataset.state=status;
   if(a.phase==='year_closed'){
    h.textContent='Your 2027 reading year is closed';
-   d.textContent=`${a.completed} distinct eligible books completed by Dec 31, 2027. This is a retrospective snapshot, not an overdue reminder.`;
+   d.textContent=`${a.completed} books finished in 2027.`;
   }else if(a.completed===0&&a.partial_equivalent===0){
-   h.textContent='No reading recorded yet';
-   d.textContent=`Your private 104-book target's expected trajectory by ${a.as_of} is about ${snap.expected_book_equivalents.toFixed(1)} book equivalents. Start whenever you are ready; nothing has been counted without a saved record.`;
+   h.textContent='Nothing finished yet';
+   d.textContent=`About ${snap.expected_book_equivalents.toFixed(1)} books by today would keep you on pace for 104.`;
   }else{
-   const names={ahead:'A little ahead of your reading pace',on_track:'Beautifully on track',behind:'A gentle change of pace',complete:'Your private goal is complete!'};
+   const names={ahead:'Ahead of pace',on_track:'On pace',behind:'A little behind pace',complete:'You reached 104'};
    h.textContent=names[status]||'Your reading progress';
    const diff=Math.abs(snap.balance_book_equivalents).toFixed(1);
-   d.textContent=`Your private 104-book trajectory: ${a.completed} finished book${a.completed===1?'':'s'} plus ${a.partial_equivalent.toFixed(2)} partial-book equivalents for pacing only; expected about ${snap.expected_book_equivalents.toFixed(1)}. ${status==='ahead'?`About ${diff} book equivalents ahead.`:status==='behind'?`About ${diff} book equivalents behind; there's no penalty for taking longer.`:status==='complete'?'Your private target is reached.':'Within the one-book grace zone.'}`;
+   d.textContent=`${a.completed} finished, about ${snap.expected_book_equivalents.toFixed(1)} expected by today.${status==='ahead'?` About ${diff} books ahead.`:status==='behind'?` About ${diff} books behind.`:''}`;
   }
-  f.textContent=a.projection===null?'Year-end estimate withheld until at least 28 days and 8 completed books.':`Rough year-end estimate: ~${a.projection} finished books if the completed-book pace continues. Not a guarantee.`;
-  m.innerHTML=`<div class="compass-metric"><small>Private goal trajectory</small><strong>${a.completed} / ${snap.target}</strong><span>Actually finished books</span></div><div class="compass-metric"><small>Public milestone</small><strong>${a.public_completed} / ${a.public_goal}</strong><span>Same eligible completions, separate 52 target</span></div><div class="compass-metric"><small>Snapshot only</small><strong>${a.partial_equivalent.toFixed(2)}</strong><span>Current partial-book equivalents; not completed books or a daily activity log</span></div>`;
+  f.textContent=a.projection===null?'':`At this rate, about ${a.projection} books by year’s end.`;
+  m.innerHTML='';
  }
  function exportOptionalCalendar(){
   const status=document.getElementById('rosewood-calendar-status');
@@ -635,15 +668,12 @@
   const all=queueBooks(),next=all[0];
   if(!next){root.innerHTML='<h2>Next read</h2><p>There are no unread eligible books available in your current selection.</p><div class="next-read-options"><button class="btn" type="button" data-open="add-book">Add a book</button><button class="btn" type="button" data-queue-import="true">Import Goodreads CSV</button></div>';return;}
   const other=queueEngine.options(books,customState(),rosewoodReader.state.overrides.reading_order_ids,rosewoodReader.state.progress,next.id)
-   .sort((a,b)=>((b.id==='rosewood-2027-105'||b.id==='rosewood-2027-106')?1:0)-((a.id==='rosewood-2027-105'||a.id==='rosewood-2027-106')?1:0)||a.plan_order-b.plan_order);
-  const newChoices=other.filter(b=>b.id==='rosewood-2027-105'||b.id==='rosewood-2027-106');
-  const quickChoices=newChoices.length?`<div class="next-read-quick"><span class="small"><strong>Also available</strong></span><div class="cluster">${newChoices.map(b=>`<button class="btn small-btn" type="button" data-queue-pick="${esc(b.id)}">Choose ${esc(b.title)}</button>`).join('')}</div></div>`:'';
+   .sort((a,b)=>a.plan_order-b.plan_order);
   const commitment=queueEngine.commitmentSummary(books,rosewoodReader.state.progress);
-  root.innerHTML=`<div class="next-read-flex"><div><span class="eyebrow">Your next read</span><h2>Next read: <em>${esc(next.title)}</em></h2><div class="next-read-author">${esc(next.author)}</div></div><div class="next-read-badges"><span class="pill ${queueEngine.committed(next)?'sage':'rose'}">${esc(readingKind(next))}</span></div></div>
-   <p class="small muted"><strong>${commitment.finished} of ${commitment.required} required books finished in 2027.</strong> Philosophy and classics must be completed by <strong>December 31, 2027</strong>, ${commitment.remaining} requirements remain.${commitment.dnf_unmet?' '+commitment.dnf_unmet+' DNF marked book(s) still need completing.':''} Morning <i>War and Peace</i> and evening <i>Les Misérables</i> stay on their separate daily calendars. </p>
-   <div class="next-read-controls"><label class="field" for="next-read-replacement"><span>Choose my next book</span><select id="next-read-replacement" ${other.length?'':'disabled'}><option value="">Select one of ${other.length} books</option>${other.map(b=>`<option value="${esc(b.id)}">${esc(b.title)} — ${esc(b.author)} · ${esc(b.id.startsWith('rosewood-custom-')?'Suggested reading':readingKind(b))}</option>`).join('')}</select></label><button type="button" class="btn primary" data-queue-swap="${esc(next.id)}" ${other.length?'':'disabled'}>Choose this book</button></div>
-   ${quickChoices}
-   <div class="next-read-options"><button class="btn small-btn" type="button" data-queue-shuffle>Shuffle regular books</button><button class="btn small-btn" type="button" data-queue-reset>Restore original order</button><button class="btn small-btn" type="button" data-open="add-book">+ Add a book</button><button class="btn small-btn" type="button" data-queue-import>Import Goodreads CSV</button><button class="btn small-btn" type="button" data-route="pacing">See full reading order</button></div>
+  root.innerHTML=`<div class="bookplate"><div class="book-cover bookplate-cover">${coverMarkup(next)}</div><div class="bookplate-text"><span class="eyebrow">Your next read</span><h2>${esc(next.title)}</h2><div class="next-read-author">${esc(next.author)}</div><p class="bookplate-kind">${esc(readingKind(next))}</p><button class="btn small-btn" type="button" data-book="${esc(next.id)}">View book</button></div></div>
+   <p class="bookplate-commitment">${commitment.finished} of ${commitment.required} required books finished · due December 31, 2027${commitment.dnf_unmet?' · '+commitment.dnf_unmet+' marked DNF still to finish':''}</p>
+   <div class="next-read-controls"><label class="field" for="next-read-replacement"><span>Read something else next</span><select id="next-read-replacement" ${other.length?'':'disabled'}><option value="">Choose from ${other.length} books</option>${other.map(b=>`<option value="${esc(b.id)}">${esc(b.title)} — ${esc(b.author)}</option>`).join('')}</select></label><button type="button" class="btn primary" data-queue-swap="${esc(next.id)}" ${other.length?'':'disabled'}>Make this my next read</button></div>
+   <div class="next-read-options"><button class="btn small-btn" type="button" data-queue-shuffle>Shuffle</button><button class="btn small-btn" type="button" data-queue-reset>Original order</button><button class="btn small-btn" type="button" data-route="pacing">Full reading order</button></div>
    <p class="tiny muted" role="status" id="next-read-status" aria-live="polite"></p>`;
  }
  async function saveQueueOrder(ids,success){
@@ -947,12 +977,14 @@
  }
  const priorityCoverIds=["rosewood-2027-007", "rosewood-2027-016", "rosewood-2027-018", "rosewood-2027-019", "rosewood-2027-023", "rosewood-2027-039", "rosewood-2027-055", "rosewood-2027-056", "rosewood-2027-059", "rosewood-2027-062", "rosewood-2027-064", "rosewood-2027-066", "rosewood-2027-067", "rosewood-2027-071", "rosewood-2027-072", "rosewood-2027-086", "rosewood-2027-087", "rosewood-2027-088", "rosewood-2027-089", "rosewood-2027-091", "rosewood-2027-092", "rosewood-2027-093", "rosewood-2027-094", "rosewood-2027-096", "rosewood-2027-097", "rosewood-2027-098", "rosewood-2027-099", "rosewood-2027-100", "rosewood-2027-101", "rosewood-2027-102", "rosewood-2027-104", "rosewood-2027-105", "rosewood-2027-106", "rosewood-revised-2027-042", "rosewood-revised-2027-053", "rosewood-revised-2027-063", "rosewood-revised-2027-069", "rosewood-revised-2027-074", "rosewood-revised-2027-090", "rosewood-revised-2027-095", "rosewood-revised-2027-103"];
  let priorityCoverRequested=false;
- function prioritizeMissingCovers(){
+ function prioritizeMissingCovers(){return;
+
   if(priorityCoverRequested||navigator.onLine===false)return;
   priorityCoverRequested=true;
   for(const id of priorityCoverIds)if(bookById.has(id))beginCover(id);
  }
- function beginCover(id){
+ function beginCover(id){return; // covers are bundled; no live lookups
+
   if(coverIds.has(id)){updateCover(id,coverIds.get(id));return;}
   if(requested.has(id))return;
   requested.add(id);queue.push(id);processCoverQueue();
@@ -1008,7 +1040,9 @@
   target.innerHTML=[['war-and-peace','Morning','War and Peace','Maude · Oxford Mandelker'],['les-miserables','Evening','Les Misérables','Unabridged Hapgood']].map(([key,when,title,edition])=>{
    const e=slowTracks[key].byDate.get(date);const complete=new Set(saved[key]||[]).has(date);const progress=window.RosewoodSlowReads.progress(saved,slowTracks)[key];
    const bookId=slowTracks[key].book_id;const exact=rosewoodReader?.state?.overrides?.edition_overrides?.[bookId]?.slow_read_percent;
-   return `<article class="card ritual-home-card"><span class="eyebrow">${when} · One chapter at a time</span><h3>${esc(title)}</h3><p class="small">${esc(edition)}</p><p>${e.rest_day?'Rest / reflection day':esc(e.label||e.english_hapgood_title)}</p><p class="small muted"><strong>${typeof exact==='number'?exact.toFixed(1):progress.percentage.toFixed(1)}% book progress</strong>${typeof exact==='number'?' · reader-entered':' · based on chapters'} · ${progress.completed}/${progress.total} chapters checked</p><span class="pill ${complete?'sage':'gold'}">${e.rest_day?'Scheduled break':complete?'Chapter finished':'Ready to read'}</span><div><button type="button" class="btn primary" data-slow-open="${key}">${when==='Morning'?'Start my morning reading':'Open my evening reading'}</button></div></article>`;
+   const pct=typeof exact==='number'?exact:progress.percentage;
+   const chapter=e.rest_day?'A rest day — no chapter scheduled':esc(e.label||e.english_hapgood_title);
+   return `<article class="ritual-entry" data-state="${e.rest_day?'rest':complete?'done':'open'}"><p class="ritual-when">${when}</p><div class="ritual-body"><h3>${esc(title)}</h3><p class="ritual-chapter">${chapter}</p><div class="meter" aria-hidden="true"><span style="width:${Math.min(100,Math.max(0,pct)).toFixed(1)}%"></span></div><p class="ritual-meta">${progress.completed} of ${progress.total} chapters${complete?' · today’s is done':''} <span class="ritual-edition">${esc(edition)}</span></p></div><button type="button" class="btn ${complete||e.rest_day?'':'primary'} small-btn" data-slow-open="${key}">${complete?'Review':e.rest_day?'View':'Read'}</button></article>`;
   }).join('');
  }
  function renderSlowReads(message=''){
