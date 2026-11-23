@@ -134,8 +134,15 @@
   "rosewood-2027-007": {
    "title": "Mistakes Were Made (But Not by Me)",
    "author": "Carol Tavris and Elliot Aronson",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-2027-007.jpg",
+   "width": 328,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL20882195W",
+   "matched_title": "Mistakes Were Made",
+   "matched_author": "Carol Tavris, Elliot Aronson",
+   "image_url": "https://covers.openlibrary.org/b/id/10207323-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-008": {
    "title": "The Problems of Philosophy",
@@ -270,8 +277,15 @@
   "rosewood-2027-018": {
    "title": "Justice: What's the Right Thing to Do?",
    "author": "Michael Sandel",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-2027-018.jpg",
+   "width": 348,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL1810923W",
+   "matched_title": "Justice",
+   "matched_author": "Michael J. Sandel",
+   "image_url": "https://covers.openlibrary.org/b/id/1129014-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-019": {
    "title": "Determined",
@@ -588,15 +602,9 @@
   "rosewood-2027-046": {
    "title": "A Wizard of Earthsea",
    "author": "Ursula K. Le Guin",
-   "file": "assets/covers/rosewood-2027-046.jpg",
-   "width": 326,
-   "height": 500,
-   "source": "Open Library",
-   "record": "https://openlibrary.org/works/OL15056565W",
-   "matched_title": "A Wizard of Earthsea/The Tombs of Atuan",
-   "matched_author": "Ursula K. Le Guin",
-   "image_url": "https://covers.openlibrary.org/b/id/11479905-L.jpg?default=false",
-   "fetched": "2026-11-23"
+   "file": null,
+   "source": null,
+   "note": "previous match was a different edition; refetch pending"
   },
   "rosewood-revised-2027-047": {
    "title": "Crime and Punishment",
@@ -757,8 +765,15 @@
   "rosewood-2027-059": {
    "title": "Attached",
    "author": "Amir Levine and Rachel Heller",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-2027-059.jpg",
+   "width": 333,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL16929630W",
+   "matched_title": "Attached",
+   "matched_author": "Amir Levine",
+   "image_url": "https://covers.openlibrary.org/b/id/8620497-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-060": {
    "title": "Eric",
@@ -834,15 +849,9 @@
   "rosewood-2027-066": {
    "title": "Man's Search for Meaning",
    "author": "Viktor Frankl",
-   "file": "assets/covers/rosewood-2027-066.jpg",
-   "width": 333,
-   "height": 500,
-   "source": "Open Library",
-   "record": "https://openlibrary.org/works/OL24557376W",
-   "matched_title": "Man's Search for Meaning adapted for Young Adults [adaptation]",
-   "matched_author": "Viktor Emil Frankl",
-   "image_url": "https://covers.openlibrary.org/b/id/11203708-L.jpg?default=false",
-   "fetched": "2026-11-23"
+   "file": null,
+   "source": null,
+   "note": "previous match was a different edition; refetch pending"
   },
   "rosewood-2027-067": {
    "title": "The Emotional Craft of Fiction",
@@ -1046,8 +1055,15 @@
   "rosewood-revised-2027-085": {
    "title": "The Brothers Karamazov",
    "author": "Fyodor Dostoevsky",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-revised-2027-085.jpg",
+   "width": 288,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL26803918W",
+   "matched_title": "Brothers Karamazov",
+   "matched_author": "Fyodor Dostoyevsky",
+   "image_url": "https://covers.openlibrary.org/b/id/14889167-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-086": {
    "title": "Pyramids",
@@ -1110,8 +1126,15 @@
   "rosewood-2027-091": {
    "title": "The Gene: An Intimate History",
    "author": "Siddhartha Mukherjee",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-2027-091.jpg",
+   "width": 317,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL17762235W",
+   "matched_title": "The Gene",
+   "matched_author": "Siddhartha Mukherjee, Dennis Boutsikaris",
+   "image_url": "https://covers.openlibrary.org/b/id/11320163-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-092": {
    "title": "Moving Pictures",
@@ -1142,15 +1165,9 @@
   "rosewood-2027-094": {
    "title": "The Golden Compass",
    "author": "Philip Pullman",
-   "file": "assets/covers/rosewood-2027-094.jpg",
-   "width": 394,
-   "height": 499,
-   "source": "Open Library",
-   "record": "https://openlibrary.org/works/OL17615692W",
-   "matched_title": "The Golden Compass Graphic Novel, Volume 2",
-   "matched_author": "Philip Pullman, Stéphane Melchior-Durand, Clément Oubrerie",
-   "image_url": "https://covers.openlibrary.org/b/id/7896630-L.jpg?default=false",
-   "fetched": "2026-11-23"
+   "file": null,
+   "source": null,
+   "note": "previous match was a different edition; refetch pending"
   },
   "rosewood-revised-2027-095": {
    "title": "Demons",
@@ -1245,8 +1262,15 @@
   "rosewood-revised-2027-103": {
    "title": "Resurrection",
    "author": "Leo Tolstoy",
-   "file": null,
-   "source": null
+   "file": "assets/covers/rosewood-revised-2027-103.jpg",
+   "width": 305,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL37903349W",
+   "matched_title": "Resurrection (Classics of Russian Literature)",
+   "matched_author": "L Tolstoy",
+   "image_url": "https://covers.openlibrary.org/b/id/15051905-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "rosewood-2027-104": {
    "title": "Monstrous Regiment",
@@ -1303,28 +1327,16 @@
   "brosia-curated-v2-108": {
    "title": "Symposium",
    "author": "Plato",
-   "file": "assets/covers/brosia-curated-v2-108.jpg",
-   "width": 316,
-   "height": 500,
-   "source": "Open Library",
-   "record": "https://openlibrary.org/works/OL46092930W",
-   "matched_title": "Symposium and The Death of Socrates",
-   "matched_author": "Plato",
-   "image_url": "https://covers.openlibrary.org/b/id/15264289-L.jpg?default=false",
-   "fetched": "2026-11-23"
+   "file": null,
+   "source": null,
+   "note": "previous match was a different edition; refetch pending"
   },
   "brosia-curated-v2-109": {
    "title": "Apology",
    "author": "Plato",
-   "file": "assets/covers/brosia-curated-v2-109.jpg",
-   "width": 325,
-   "height": 500,
-   "source": "Open Library",
-   "record": "https://openlibrary.org/works/OL379949W",
-   "matched_title": "The Apology, Phaedo and Crito of Plato; Golden Sayings of Epictetus; Meditations of Marcus Aurelius",
-   "matched_author": "Charles William Eliot, Plato, Epictetus, Marcus Aurelius",
-   "image_url": "https://covers.openlibrary.org/b/id/14390312-L.jpg?default=false",
-   "fetched": "2026-11-23"
+   "file": null,
+   "source": null,
+   "note": "previous match was a different edition; refetch pending"
   },
   "brosia-curated-v2-110": {
    "title": "The Gay Science",
@@ -1404,29 +1416,29 @@
    "fetched": "2026-11-23"
   },
   "brosia-curated-v2-117": {
-   "title": "The Pig That Wants to Be Eaten",
-   "author": "Julian Baggini",
+   "title": "Steering the Craft",
+   "author": "Ursula K. Le Guin",
    "file": "assets/covers/brosia-curated-v2-117.jpg",
-   "width": 300,
+   "width": 323,
    "height": 500,
    "source": "Open Library",
-   "record": "https://openlibrary.org/works/OL5745559W",
-   "matched_title": "The pig that wants to be eaten",
-   "matched_author": "Julian Baggini",
-   "image_url": "https://covers.openlibrary.org/b/id/918843-L.jpg?default=false",
+   "record": "https://openlibrary.org/works/OL59830W",
+   "matched_title": "Steering the Craft",
+   "matched_author": "Ursula K. Le Guin",
+   "image_url": "https://covers.openlibrary.org/b/id/712565-L.jpg?default=false",
    "fetched": "2026-11-23"
   },
   "brosia-curated-v2-118": {
-   "title": "The Ethics of Care",
-   "author": "Virginia Held",
+   "title": "Bird by Bird",
+   "author": "Anne Lamott",
    "file": "assets/covers/brosia-curated-v2-118.jpg",
-   "width": 333,
-   "height": 500,
+   "width": 300,
+   "height": 475,
    "source": "Open Library",
-   "record": "https://openlibrary.org/works/OL3921999W",
-   "matched_title": "The ethics of care",
-   "matched_author": "Virginia Held",
-   "image_url": "https://covers.openlibrary.org/b/id/1128921-L.jpg?default=false",
+   "record": "https://openlibrary.org/works/OL489421W",
+   "matched_title": "Bird by Bird",
+   "matched_author": "Anne Lamott, Susan Bennett",
+   "image_url": "https://covers.openlibrary.org/b/id/240973-L.jpg?default=false",
    "fetched": "2026-11-23"
   },
   "brosia-curated-v2-119": {
@@ -1458,20 +1470,27 @@
   "brosia-curated-v2-121": {
    "title": "Philosophy of Science: A Very Short Introduction",
    "author": "Samir Okasha",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-121.jpg",
+   "width": 300,
+   "height": 475,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL6016284W",
+   "matched_title": "Philosophy of Science",
+   "matched_author": "Samir Okasha",
+   "image_url": "https://covers.openlibrary.org/b/id/117848-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-122": {
-   "title": "Philosophy and the Mirror of Nature",
-   "author": "Richard Rorty",
+   "title": "Exhalation",
+   "author": "Ted Chiang",
    "file": "assets/covers/brosia-curated-v2-122.jpg",
-   "width": 328,
+   "width": 338,
    "height": 500,
    "source": "Open Library",
-   "record": "https://openlibrary.org/works/OL2018376W",
-   "matched_title": "Philosophy and the mirror of nature",
-   "matched_author": "Richard Rorty",
-   "image_url": "https://covers.openlibrary.org/b/id/1341519-L.jpg?default=false",
+   "record": "https://openlibrary.org/works/OL20149336W",
+   "matched_title": "Exhalation",
+   "matched_author": "Ted Chiang",
+   "image_url": "https://covers.openlibrary.org/b/id/8793546-L.jpg?default=false",
    "fetched": "2026-11-23"
   },
   "brosia-curated-v2-123": {
@@ -1579,16 +1598,16 @@
    "fetched": "2026-11-23"
   },
   "brosia-curated-v2-131": {
-   "title": "Why We Sleep",
-   "author": "Matthew Walker",
+   "title": "Entangled Life",
+   "author": "Merlin Sheldrake",
    "file": "assets/covers/brosia-curated-v2-131.jpg",
-   "width": 328,
-   "height": 500,
+   "width": 269,
+   "height": 400,
    "source": "Open Library",
-   "record": "https://openlibrary.org/works/OL20168133W",
-   "matched_title": "Why We Sleep",
-   "matched_author": "Matthew P. Walker",
-   "image_url": "https://covers.openlibrary.org/b/id/8814155-L.jpg?default=false",
+   "record": "https://openlibrary.org/works/OL20758206W",
+   "matched_title": "Entangled Life",
+   "matched_author": "Merlin Sheldrake",
+   "image_url": "https://covers.openlibrary.org/b/id/10152882-L.jpg?default=false",
    "fetched": "2026-11-23"
   },
   "brosia-curated-v2-132": {
@@ -1633,26 +1652,40 @@
   "brosia-curated-v2-135": {
    "title": "The Scout Mindset",
    "author": "Julia Galef",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-135.jpg",
+   "width": 331,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL21690394W",
+   "matched_title": "Scout Mindset",
+   "matched_author": "Julia Galef",
+   "image_url": "https://covers.openlibrary.org/b/id/10690900-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-136": {
    "title": "Noise: A Flaw in Human Judgment",
    "author": "Daniel Kahneman; Olivier Sibony; Cass R. Sunstein",
-   "file": null,
-   "source": null
-  },
-  "brosia-curated-v2-137": {
-   "title": "The Psychology of Money",
-   "author": "Morgan Housel",
-   "file": "assets/covers/brosia-curated-v2-137.jpg",
-   "width": 319,
+   "file": "assets/covers/brosia-curated-v2-136.jpg",
+   "width": 325,
    "height": 500,
    "source": "Open Library",
-   "record": "https://openlibrary.org/works/OL21640039W",
-   "matched_title": "The Psychology of Money",
-   "matched_author": "Morgan Housel",
-   "image_url": "https://covers.openlibrary.org/b/id/10389354-L.jpg?default=false",
+   "record": "https://openlibrary.org/works/OL17962180W",
+   "matched_title": "Noise",
+   "matched_author": "Daniel Kahneman, Olivier Sibony, Cass R. Sunstein",
+   "image_url": "https://covers.openlibrary.org/b/id/10981966-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-137": {
+   "title": "An Immense World",
+   "author": "Ed Yong",
+   "file": "assets/covers/brosia-curated-v2-137.jpg",
+   "width": 143,
+   "height": 218,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL25815646W",
+   "matched_title": "An Immense World",
+   "matched_author": "Ed Yong",
+   "image_url": "https://covers.openlibrary.org/b/id/12835209-L.jpg?default=false",
    "fetched": "2026-11-23"
   },
   "brosia-curated-v2-138": {
@@ -1684,8 +1717,15 @@
   "brosia-curated-v2-140": {
    "title": "The 1619 Project: A New Origin Story",
    "author": "Edited by Nikole Hannah-Jones",
-   "file": null,
-   "source": null
+   "file": "assets/covers/brosia-curated-v2-140.jpg",
+   "width": 331,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL24340913W",
+   "matched_title": "The 1619 Project",
+   "matched_author": "Nikole Hannah-Jones, The New York Times Company",
+   "image_url": "https://covers.openlibrary.org/b/id/10864102-L.jpg?default=false",
+   "fetched": "2026-11-23"
   },
   "brosia-curated-v2-141": {
    "title": "The Dawn of Everything",
@@ -1811,16 +1851,16 @@
    "fetched": "2026-11-23"
   },
   "brosia-curated-v2-151": {
-   "title": "The New Geography of Jobs",
-   "author": "Enrico Moretti",
+   "title": "Killers of the Flower Moon",
+   "author": "David Grann",
    "file": "assets/covers/brosia-curated-v2-151.jpg",
-   "width": 308,
+   "width": 329,
    "height": 500,
    "source": "Open Library",
-   "record": "https://openlibrary.org/works/OL19962219W",
-   "matched_title": "The new geography of jobs",
-   "matched_author": "Enrico Moretti",
-   "image_url": "https://covers.openlibrary.org/b/id/12839074-L.jpg?default=false",
+   "record": "https://openlibrary.org/works/OL17778665W",
+   "matched_title": "Killers of the Flower Moon",
+   "matched_author": "David Grann, Luis Murillo Fort",
+   "image_url": "https://covers.openlibrary.org/b/id/8055064-L.jpg?default=false",
    "fetched": "2026-11-23"
   },
   "brosia-curated-v2-152": {
@@ -1933,8 +1973,441 @@
   "brosia-curated-v2-164": {
    "title": "Oblomov",
    "author": "Ivan Goncharov",
+   "file": "assets/covers/brosia-curated-v2-164.jpg",
+   "width": 312,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL34612450W",
+   "matched_title": "Oblomov (nov.obl.)",
+   "matched_author": "I. A. Goncharov",
+   "image_url": "https://covers.openlibrary.org/b/id/14502268-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-165": {
+   "title": "We",
+   "author": "Yevgeny Zamyatin",
    "file": null,
    "source": null
+  },
+  "brosia-curated-v2-166": {
+   "title": "The Cherry Orchard",
+   "author": "Anton Chekhov",
+   "file": null,
+   "source": null
+  },
+  "brosia-curated-v2-167": {
+   "title": "Uncle Vanya",
+   "author": "Anton Chekhov",
+   "file": null,
+   "source": null
+  },
+  "brosia-curated-v2-168": {
+   "title": "The Seagull",
+   "author": "Anton Chekhov",
+   "file": null,
+   "source": null
+  },
+  "brosia-curated-v2-169": {
+   "title": "One Day in the Life of Ivan Denisovich",
+   "author": "Aleksandr Solzhenitsyn",
+   "file": "assets/covers/brosia-curated-v2-169.jpg",
+   "width": 278,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL43073356W",
+   "matched_title": "one day in the life of ivan denisovich",
+   "matched_author": "alexander solzhenitsyn",
+   "image_url": "https://covers.openlibrary.org/b/id/14921148-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-170": {
+   "title": "The Count of Monte Cristo",
+   "author": "Alexandre Dumas",
+   "file": "assets/covers/brosia-curated-v2-170.jpg",
+   "width": 351,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL20201553W",
+   "matched_title": "The Count of Monte Cristo",
+   "matched_author": "Alexandre Dumas",
+   "image_url": "https://covers.openlibrary.org/b/id/8851690-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-171": {
+   "title": "The Hunchback of Notre-Dame",
+   "author": "Victor Hugo",
+   "file": "assets/covers/brosia-curated-v2-171.jpg",
+   "width": 354,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL17736010W",
+   "matched_title": "The hunchback of Notre Dame",
+   "matched_author": "Victor Hugo",
+   "image_url": "https://covers.openlibrary.org/b/id/8015311-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-172": {
+   "title": "The Stranger",
+   "author": "Albert Camus",
+   "file": null,
+   "source": null,
+   "note": "previous match was a different edition; refetch pending"
+  },
+  "brosia-curated-v2-173": {
+   "title": "The Plague",
+   "author": "Albert Camus",
+   "file": null,
+   "source": null
+  },
+  "brosia-curated-v2-174": {
+   "title": "The Trial",
+   "author": "Franz Kafka",
+   "file": "assets/covers/brosia-curated-v2-174.jpg",
+   "width": 292,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL43043884W",
+   "matched_title": "The Trial",
+   "matched_author": "Franz Kafka",
+   "image_url": "https://covers.openlibrary.org/b/id/14910748-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-175": {
+   "title": "The Metamorphosis",
+   "author": "Franz Kafka",
+   "file": "assets/covers/brosia-curated-v2-175.jpg",
+   "width": 242,
+   "height": 400,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL15176533W",
+   "matched_title": "The Metamorphosis and Other Stories",
+   "matched_author": "Franz Kafka",
+   "image_url": "https://covers.openlibrary.org/b/id/6889547-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-176": {
+   "title": "A Memory Called Empire",
+   "author": "Arkady Martine",
+   "file": "assets/covers/brosia-curated-v2-176.jpg",
+   "width": 324,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL20157046W",
+   "matched_title": "A Memory Called Empire",
+   "matched_author": "Arkady Martine",
+   "image_url": "https://covers.openlibrary.org/b/id/8802134-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-177": {
+   "title": "A Desolation Called Peace",
+   "author": "Arkady Martine",
+   "file": "assets/covers/brosia-curated-v2-177.jpg",
+   "width": 324,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL20832939W",
+   "matched_title": "A Desolation Called Peace",
+   "matched_author": "Arkady Martine",
+   "image_url": "https://covers.openlibrary.org/b/id/10718806-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-178": {
+   "title": "The Final Empire",
+   "author": "Brandon Sanderson",
+   "file": "assets/covers/brosia-curated-v2-178.jpg",
+   "width": 332,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL5738148W",
+   "matched_title": "The Final Empire",
+   "matched_author": "Brandon Sanderson",
+   "image_url": "https://covers.openlibrary.org/b/id/14658160-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-179": {
+   "title": "The Well of Ascension",
+   "author": "Brandon Sanderson",
+   "file": "assets/covers/brosia-curated-v2-179.jpg",
+   "width": 311,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL5738150W",
+   "matched_title": "The Well of Ascension",
+   "matched_author": "Brandon Sanderson",
+   "image_url": "https://covers.openlibrary.org/b/id/14658341-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-180": {
+   "title": "The Hero of Ages",
+   "author": "Brandon Sanderson",
+   "file": "assets/covers/brosia-curated-v2-180.jpg",
+   "width": 299,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL5738154W",
+   "matched_title": "The Hero of Ages",
+   "matched_author": "Brandon Sanderson",
+   "image_url": "https://covers.openlibrary.org/b/id/14658094-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-181": {
+   "title": "The City of Brass",
+   "author": "S. A. Chakraborty",
+   "file": "assets/covers/brosia-curated-v2-181.jpg",
+   "width": 309,
+   "height": 475,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL19623241W",
+   "matched_title": "The City of Brass",
+   "matched_author": "Shannon A. Chakraborty",
+   "image_url": "https://covers.openlibrary.org/b/id/8536739-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-182": {
+   "title": "The Kingdom of Copper",
+   "author": "S. A. Chakraborty",
+   "file": "assets/covers/brosia-curated-v2-182.jpg",
+   "width": 332,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL19794571W",
+   "matched_title": "The Kingdom of Copper: A Novel (The Daevabad Trilogy)",
+   "matched_author": "Shannon A. Chakraborty",
+   "image_url": "https://covers.openlibrary.org/b/id/8598122-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-183": {
+   "title": "The Empire of Gold",
+   "author": "S. A. Chakraborty",
+   "file": "assets/covers/brosia-curated-v2-183.jpg",
+   "width": 331,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL20789805W",
+   "matched_title": "The Empire of Gold",
+   "matched_author": "Shannon A. Chakraborty",
+   "image_url": "https://covers.openlibrary.org/b/id/10082448-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-184": {
+   "title": "The Bear and the Nightingale",
+   "author": "Katherine Arden",
+   "file": "assets/covers/brosia-curated-v2-184.jpg",
+   "width": 318,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL21213411W",
+   "matched_title": "The Bear and the Nightingale",
+   "matched_author": "Katherine Arden",
+   "image_url": "https://covers.openlibrary.org/b/id/11946359-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-185": {
+   "title": "The Girl in the Tower",
+   "author": "Katherine Arden",
+   "file": "assets/covers/brosia-curated-v2-185.jpg",
+   "width": 318,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL19738981W",
+   "matched_title": "The Girl in The Tower",
+   "matched_author": "Katherine Arden",
+   "image_url": "https://covers.openlibrary.org/b/id/9200442-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-186": {
+   "title": "The Winter of the Witch",
+   "author": "Katherine Arden",
+   "file": "assets/covers/brosia-curated-v2-186.jpg",
+   "width": 327,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL20941183W",
+   "matched_title": "The Winter of the Witch",
+   "matched_author": "Katherine Arden",
+   "image_url": "https://covers.openlibrary.org/b/id/10308818-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-187": {
+   "title": "Red Sister",
+   "author": "Mark Lawrence",
+   "file": "assets/covers/brosia-curated-v2-187.jpg",
+   "width": 331,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL17888183W",
+   "matched_title": "Red Sister",
+   "matched_author": "Mark Lawrence",
+   "image_url": "https://covers.openlibrary.org/b/id/8500885-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-188": {
+   "title": "Grey Sister",
+   "author": "Mark Lawrence",
+   "file": null,
+   "source": null
+  },
+  "brosia-curated-v2-189": {
+   "title": "Holy Sister",
+   "author": "Mark Lawrence",
+   "file": "assets/covers/brosia-curated-v2-189.jpg",
+   "width": 329,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL20097592W",
+   "matched_title": "Holy Sister",
+   "matched_author": "Mark Lawrence",
+   "image_url": "https://covers.openlibrary.org/b/id/8760251-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-190": {
+   "title": "The Blade Itself",
+   "author": "Joe Abercrombie",
+   "file": "assets/covers/brosia-curated-v2-190.jpg",
+   "width": 355,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL8400950W",
+   "matched_title": "The Blade Itself",
+   "matched_author": "Joe Abercrombie",
+   "image_url": "https://covers.openlibrary.org/b/id/14543422-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-191": {
+   "title": "Before They Are Hanged",
+   "author": "Joe Abercrombie",
+   "file": "assets/covers/brosia-curated-v2-191.jpg",
+   "width": 320,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL8400946W",
+   "matched_title": "Before they are hanged",
+   "matched_author": "Joe Abercrombie",
+   "image_url": "https://covers.openlibrary.org/b/id/14595640-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-192": {
+   "title": "Last Argument of Kings",
+   "author": "Joe Abercrombie",
+   "file": "assets/covers/brosia-curated-v2-192.jpg",
+   "width": 329,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL8400952W",
+   "matched_title": "Last Argument of Kings",
+   "matched_author": "Joe Abercrombie",
+   "image_url": "https://covers.openlibrary.org/b/id/6901175-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-193": {
+   "title": "The Goblin Emperor",
+   "author": "Katherine Addison",
+   "file": null,
+   "source": null
+  },
+  "brosia-curated-v2-194": {
+   "title": "The Priory of the Orange Tree",
+   "author": "Samantha Shannon",
+   "file": "assets/covers/brosia-curated-v2-194.jpg",
+   "width": 337,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL20157354W",
+   "matched_title": "The Priory of the Orange Tree",
+   "matched_author": "Samantha Shannon",
+   "image_url": "https://covers.openlibrary.org/b/id/8802446-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-195": {
+   "title": "The Song of Achilles",
+   "author": "Madeline Miller",
+   "file": "assets/covers/brosia-curated-v2-195.jpg",
+   "width": 318,
+   "height": 471,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL16509148W",
+   "matched_title": "The Song of Achilles",
+   "matched_author": "Madeline Miller",
+   "image_url": "https://covers.openlibrary.org/b/id/7098465-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-196": {
+   "title": "The Night Circus",
+   "author": "Erin Morgenstern",
+   "file": "assets/covers/brosia-curated-v2-196.jpg",
+   "width": 326,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL16086747W",
+   "matched_title": "The Night Circus",
+   "matched_author": "Erin Morgenstern",
+   "image_url": "https://covers.openlibrary.org/b/id/8773134-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-197": {
+   "title": "Strange the Dreamer",
+   "author": "Laini Taylor",
+   "file": "assets/covers/brosia-curated-v2-197.jpg",
+   "width": 333,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL17719038W",
+   "matched_title": "Strange the Dreamer",
+   "matched_author": "Laini Taylor",
+   "image_url": "https://covers.openlibrary.org/b/id/8597976-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-198": {
+   "title": "Muse of Nightmares",
+   "author": "Laini Taylor",
+   "file": "assets/covers/brosia-curated-v2-198.jpg",
+   "width": 328,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL18184356W",
+   "matched_title": "Muse of Nightmares",
+   "matched_author": "Laini Taylor",
+   "image_url": "https://covers.openlibrary.org/b/id/8842705-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "brosia-curated-v2-199": {
+   "title": "Jonathan Strange & Mr Norrell",
+   "author": "Susanna Clarke",
+   "file": "assets/covers/brosia-curated-v2-199.jpg",
+   "width": 309,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL5703422W",
+   "matched_title": "Jonathan Strange and Mr. Norrell",
+   "matched_author": "Susanna Clarke",
+   "image_url": "https://covers.openlibrary.org/b/id/525391-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "rosewood-revised-2027-031": {
+   "title": "War and Peace",
+   "author": "Leo Tolstoy",
+   "file": "assets/covers/rosewood-revised-2027-031.jpg",
+   "width": 333,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL267171W",
+   "matched_title": "War and Peace",
+   "matched_author": "Leo Tolstoy",
+   "image_url": "https://covers.openlibrary.org/b/id/12621906-L.jpg?default=false",
+   "fetched": "2026-11-23"
+  },
+  "rosewood-revised-2027-037": {
+   "title": "Les Misérables",
+   "author": "Victor Hugo",
+   "file": "assets/covers/rosewood-revised-2027-037.jpg",
+   "width": 345,
+   "height": 500,
+   "source": "Open Library",
+   "record": "https://openlibrary.org/works/OL1063588W",
+   "matched_title": "Les Misérables",
+   "matched_author": "Victor Hugo",
+   "image_url": "https://covers.openlibrary.org/b/id/12721865-L.jpg?default=false",
+   "fetched": "2026-11-23"
   }
  }
 }

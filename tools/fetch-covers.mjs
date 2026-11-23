@@ -17,17 +17,25 @@ const only = args.includes('--only') ? new Set(args[args.indexOf('--only') + 1].
 const force = args.includes('--force');
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const norm = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+// Open Library often lists Russian authors in Cyrillic; transliterate first.
+const CYR = { а:'a',б:'b',в:'v',г:'g',д:'d',е:'e',ё:'e',ж:'zh',з:'z',и:'i',й:'y',к:'k',л:'l',м:'m',н:'n',о:'o',п:'p',р:'r',с:'s',т:'t',у:'u',ф:'f',х:'kh',ц:'ts',ч:'ch',ш:'sh',щ:'shch',ъ:'',ы:'y',ь:'',э:'e',ю:'yu',я:'ya' };
+const translit = s => String(s || '').toLowerCase().replace(/[а-яё]/g, ch => CYR[ch] ?? ch);
+const norm = s => translit(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
   .replace(/&/g, ' and ').replace(/[^a-z0-9 ]+/g, ' ').replace(/\b(the|a|an)\b/g, ' ').replace(/\s+/g, ' ').trim();
 const mainTitle = t => norm(String(t).split(/[:(]/)[0]);
 // Transliteration variants so "Dostoyevsky" and "Dostoevsky" match.
-const ALIASES = [[/dostoyevsk(y|ii|i)|dostoevsk(ii|i)/g, 'dostoevsky'], [/tolstoi/g, 'tolstoy'], [/chekov/g, 'chekhov'], [/turgeniev/g, 'turgenev'], [/gogol'/g, 'gogol']];
+const ALIASES = [[/dostoyevsk(iy|y|ii|i)|dostoevsk(iy|ii|i)/g, 'dostoevsky'], [/tolstoi/g, 'tolstoy'], [/chekov/g, 'chekhov'], [/turgeniev/g, 'turgenev'], [/gogol'/g, 'gogol']];
 const alias = s => ALIASES.reduce((v, [re, to]) => v.replace(re, to), s);
 const firstAuthor = a => String(a).split(/,| and | & /)[0].trim();
 const surname = a => alias(norm(firstAuthor(a))).split(' ').filter(Boolean).pop() || '';
 const shortTitle = t => String(t).split(/[:(]/)[0].trim();
 
+// Editions that are not the book itself: adaptations, study guides, graphic
+// novels, and omnibus volumes that bundle several works.
+const NOT_THE_BOOK = /graphic novel|adapt(ed|ation)|young (adult|reader)|coles notes|cliffs ?notes|sparknotes|study guide|summary|analysis of|workbook|\/|;| and other| & other|trilogy|collection|boxed set|omnibus|volume \d/i;
 function titleMatches(candidate, wanted) {
+  const wantedRaw = String(wanted).toLowerCase();
+  if (NOT_THE_BOOK.test(String(candidate)) && !NOT_THE_BOOK.test(wantedRaw)) return false;
   const c = mainTitle(candidate), w = mainTitle(wanted);
   return c === w || (w.length > 6 && (c.startsWith(w) || w.startsWith(c) && c.length > w.length * 0.6));
 }
@@ -38,16 +46,16 @@ function authorMatches(candidates, wanted) {
 
 async function getJson(url) {
   for (let attempt = 0; attempt < 4; attempt++) {
-    const res = await fetch(url, { headers: { 'User-Agent': UA } });
+    let res; try { res = await fetch(url, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20000) }); } catch { await sleep(3000 * (attempt + 1)); continue; }
     if (res.status === 429 || res.status >= 500) { await sleep(3000 * (attempt + 1)); continue; }
     if (!res.ok) return null;
-    return res.json();
+    try { return await res.json(); } catch { await sleep(3000 * (attempt + 1)); continue; }
   }
   return null;
 }
 async function getImage(url) {
   for (let attempt = 0; attempt < 3; attempt++) {
-    const res = await fetch(url, { headers: { 'User-Agent': UA }, redirect: 'follow' });
+    let res; try { res = await fetch(url, { headers: { 'User-Agent': UA }, redirect: 'follow', signal: AbortSignal.timeout(20000) }); } catch { await sleep(3000 * (attempt + 1)); continue; }
     if (res.status === 429 || res.status >= 500) { await sleep(3000 * (attempt + 1)); continue; }
     if (!res.ok) return null;
     const type = res.headers.get('content-type') || '';

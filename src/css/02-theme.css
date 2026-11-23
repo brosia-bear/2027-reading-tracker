@@ -347,3 +347,6 @@ h1[tabindex="-1"]:focus{outline:none}
 .ladder-body{padding:0 0 16px}
 .ladder-books{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:4px}
 @media(max-width:480px){.ladder>summary{grid-template-columns:1fr}.ladder-tiers{gap:14px}}
+
+/* Comfortable measure on wide screens */
+.main-section{max-width:980px}
