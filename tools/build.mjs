@@ -72,7 +72,8 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(root, 'too
   const version = 'brosia-' + h.digest('hex').slice(0, 12);
   let sw = fs.readFileSync(path.join(DIST, 'sw.js'), 'utf8');
   sw = sw.replace(/const VERSION='[^']*';/, `const VERSION='${version}';`)
-         .replace(/const PRECACHE=[[^]]*];/, 'const PRECACHE=' + JSON.stringify(['./', ...shipped.map(f => './' + f)]) + ';');
+         .replace(/const PRECACHE=\[[^\]]*\];/, 'const PRECACHE=' + JSON.stringify(['./', ...shipped.map(f => './' + f)]) + ';');
+  if (!sw.includes('"./index.html"') || /book-covers\//.test(sw) || !sw.includes(version)) throw Error('service worker precache list was not generated');
   fs.writeFileSync(path.join(DIST, 'sw.js'), sw);
   console.log(`built dist/ (${shipped.length} files, sw ${version})`);
 }
