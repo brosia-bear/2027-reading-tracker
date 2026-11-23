@@ -1,0 +1,406 @@
+{
+ "format": "brosia-profile-source-titles-v1",
+ "note": "Exact English Wikipedia article titles for each book (work, author). null = no article expected; the Open Library author record is used instead.",
+ "titles": {
+  "brosia-plan-2027-dearly-beloathed-01": [
+   null,
+   null
+  ],
+  "brosia-plan-2027-dearly-beloathed-02": [
+   null,
+   null
+  ],
+  "rosewood-2027-105": [
+   "Piranesi (novel)",
+   "Susanna Clarke"
+  ],
+  "rosewood-2027-106": [
+   "The Left Hand of Darkness",
+   "Ursula K. Le Guin"
+  ],
+  "brosia-curated-v2-107": [
+   "Republic (Plato)",
+   "Plato"
+  ],
+  "brosia-curated-v2-108": [
+   "Symposium (Plato)",
+   "Plato"
+  ],
+  "brosia-curated-v2-109": [
+   "Apology (Plato)",
+   "Plato"
+  ],
+  "brosia-curated-v2-110": [
+   "The Gay Science",
+   "Friedrich Nietzsche"
+  ],
+  "brosia-curated-v2-111": [
+   "Beyond Good and Evil",
+   "Friedrich Nietzsche"
+  ],
+  "brosia-curated-v2-112": [
+   "On the Genealogy of Morality",
+   "Friedrich Nietzsche"
+  ],
+  "brosia-curated-v2-113": [
+   "Fear and Trembling",
+   "Søren Kierkegaard"
+  ],
+  "brosia-curated-v2-114": [
+   "Ethics (Spinoza book)",
+   "Baruch Spinoza"
+  ],
+  "brosia-curated-v2-115": [
+   "A Theory of Justice",
+   "John Rawls"
+  ],
+  "brosia-curated-v2-116": [
+   "At the Existentialist Café",
+   "Sarah Bakewell"
+  ],
+  "brosia-curated-v2-117": [
+   "Steering the Craft",
+   "Ursula K. Le Guin"
+  ],
+  "brosia-curated-v2-118": [
+   "Bird by Bird",
+   "Anne Lamott"
+  ],
+  "brosia-curated-v2-119": [
+   "A Room of One's Own",
+   "Virginia Woolf"
+  ],
+  "brosia-curated-v2-120": [
+   "The Story of Philosophy",
+   "Will Durant"
+  ],
+  "brosia-curated-v2-121": [
+   "Very Short Introductions",
+   "Samir Okasha"
+  ],
+  "brosia-curated-v2-122": [
+   "Exhalation: Stories",
+   "Ted Chiang"
+  ],
+  "brosia-curated-v2-123": [
+   "The Demon-Haunted World",
+   "Carl Sagan"
+  ],
+  "brosia-curated-v2-124": [
+   "Cosmos (Sagan book)",
+   "Carl Sagan"
+  ],
+  "brosia-curated-v2-125": [
+   "Pale Blue Dot: A Vision of the Human Future in Space",
+   "Carl Sagan"
+  ],
+  "brosia-curated-v2-126": [
+   "A Short History of Nearly Everything",
+   "Bill Bryson"
+  ],
+  "brosia-curated-v2-127": [
+   "The Selfish Gene",
+   "Richard Dawkins"
+  ],
+  "brosia-curated-v2-128": [
+   "The Blind Watchmaker",
+   "Richard Dawkins"
+  ],
+  "brosia-curated-v2-129": [
+   "The Immortal Life of Henrietta Lacks",
+   "Rebecca Skloot"
+  ],
+  "brosia-curated-v2-130": [
+   "The Sixth Extinction: An Unnatural History",
+   "Elizabeth Kolbert"
+  ],
+  "brosia-curated-v2-131": [
+   "Entangled Life",
+   "Merlin Sheldrake"
+  ],
+  "brosia-curated-v2-132": [
+   "The Man Who Mistook His Wife for a Hat",
+   "Oliver Sacks"
+  ],
+  "brosia-curated-v2-133": [
+   "Hallucinations (book)",
+   "Oliver Sacks"
+  ],
+  "brosia-curated-v2-134": [
+   "The Undoing Project",
+   "Michael Lewis"
+  ],
+  "brosia-curated-v2-135": [
+   "The Scout Mindset",
+   "Julia Galef"
+  ],
+  "brosia-curated-v2-136": [
+   "Noise: A Flaw in Human Judgment",
+   "Daniel Kahneman"
+  ],
+  "brosia-curated-v2-137": [
+   "An Immense World",
+   "Ed Yong"
+  ],
+  "brosia-curated-v2-138": [
+   "The Song of the Cell",
+   "Siddhartha Mukherjee"
+  ],
+  "brosia-curated-v2-139": [
+   "The Warmth of Other Suns",
+   "Isabel Wilkerson"
+  ],
+  "brosia-curated-v2-140": [
+   "The 1619 Project",
+   "Nikole Hannah-Jones"
+  ],
+  "brosia-curated-v2-141": [
+   "The Dawn of Everything",
+   "David Graeber"
+  ],
+  "brosia-curated-v2-142": [
+   "The Making of the Atomic Bomb",
+   "Richard Rhodes"
+  ],
+  "brosia-curated-v2-143": [
+   "A People's History of the United States",
+   "Howard Zinn"
+  ],
+  "brosia-curated-v2-144": [
+   "Evicted: Poverty and Profit in the American City",
+   "Matthew Desmond"
+  ],
+  "brosia-curated-v2-145": [
+   "Poverty, by America",
+   "Matthew Desmond"
+  ],
+  "brosia-curated-v2-146": [
+   "The Jakarta Method",
+   "Vincent Bevins"
+  ],
+  "brosia-curated-v2-147": [
+   "The Black Jacobins",
+   "C. L. R. James"
+  ],
+  "brosia-curated-v2-148": [
+   "The Wretched of the Earth",
+   "Frantz Fanon"
+  ],
+  "brosia-curated-v2-149": [
+   "The Fire Next Time",
+   "James Baldwin"
+  ],
+  "brosia-curated-v2-150": [
+   "The Souls of Black Folk",
+   "W. E. B. Du Bois"
+  ],
+  "brosia-curated-v2-151": [
+   "Killers of the Flower Moon (book)",
+   "David Grann"
+  ],
+  "brosia-curated-v2-152": [
+   "Invisible Women: Exposing Data Bias in a World Designed for Men",
+   "Caroline Criado Perez"
+  ],
+  "brosia-curated-v2-153": [
+   "How to Hide an Empire",
+   "Daniel Immerwahr"
+  ],
+  "brosia-curated-v2-154": [
+   "An Indigenous Peoples' History of the United States",
+   "Roxanne Dunbar-Ortiz"
+  ],
+  "brosia-curated-v2-155": [
+   "Anna Karenina",
+   "Leo Tolstoy"
+  ],
+  "brosia-curated-v2-156": [
+   "The Kreutzer Sonata",
+   "Leo Tolstoy"
+  ],
+  "brosia-curated-v2-157": [
+   "Childhood (Tolstoy novel)",
+   "Leo Tolstoy"
+  ],
+  "brosia-curated-v2-158": [
+   "The Master and Margarita",
+   "Mikhail Bulgakov"
+  ],
+  "brosia-curated-v2-159": [
+   "Dead Souls",
+   "Nikolai Gogol"
+  ],
+  "brosia-curated-v2-160": [
+   "The Nose (Gogol short story)",
+   "Nikolai Gogol"
+  ],
+  "brosia-curated-v2-161": [
+   "A Hero of Our Time",
+   "Mikhail Lermontov"
+  ],
+  "brosia-curated-v2-162": [
+   "Eugene Onegin",
+   "Alexander Pushkin"
+  ],
+  "brosia-curated-v2-163": [
+   "The Queen of Spades (story)",
+   "Alexander Pushkin"
+  ],
+  "brosia-curated-v2-164": [
+   "Oblomov",
+   "Ivan Goncharov"
+  ],
+  "brosia-curated-v2-165": [
+   "We (novel)",
+   "Yevgeny Zamyatin"
+  ],
+  "brosia-curated-v2-166": [
+   "The Cherry Orchard",
+   "Anton Chekhov"
+  ],
+  "brosia-curated-v2-167": [
+   "Uncle Vanya",
+   "Anton Chekhov"
+  ],
+  "brosia-curated-v2-168": [
+   "The Seagull",
+   "Anton Chekhov"
+  ],
+  "brosia-curated-v2-169": [
+   "One Day in the Life of Ivan Denisovich",
+   "Aleksandr Solzhenitsyn"
+  ],
+  "brosia-curated-v2-170": [
+   "The Count of Monte Cristo",
+   "Alexandre Dumas"
+  ],
+  "brosia-curated-v2-171": [
+   "The Hunchback of Notre-Dame",
+   "Victor Hugo"
+  ],
+  "brosia-curated-v2-172": [
+   "The Stranger (Camus novel)",
+   "Albert Camus"
+  ],
+  "brosia-curated-v2-173": [
+   "The Plague (novel)",
+   "Albert Camus"
+  ],
+  "brosia-curated-v2-174": [
+   "The Trial",
+   "Franz Kafka"
+  ],
+  "brosia-curated-v2-175": [
+   "The Metamorphosis",
+   "Franz Kafka"
+  ],
+  "brosia-curated-v2-176": [
+   "A Memory Called Empire",
+   "Arkady Martine"
+  ],
+  "brosia-curated-v2-177": [
+   "A Desolation Called Peace",
+   "Arkady Martine"
+  ],
+  "brosia-curated-v2-178": [
+   "Mistborn: The Final Empire",
+   "Brandon Sanderson"
+  ],
+  "brosia-curated-v2-179": [
+   "The Well of Ascension",
+   "Brandon Sanderson"
+  ],
+  "brosia-curated-v2-180": [
+   "The Hero of Ages",
+   "Brandon Sanderson"
+  ],
+  "brosia-curated-v2-181": [
+   "The City of Brass (novel)",
+   "S. A. Chakraborty"
+  ],
+  "brosia-curated-v2-182": [
+   "The Kingdom of Copper",
+   "S. A. Chakraborty"
+  ],
+  "brosia-curated-v2-183": [
+   "The Empire of Gold",
+   "S. A. Chakraborty"
+  ],
+  "brosia-curated-v2-184": [
+   "The Bear and the Nightingale",
+   "Katherine Arden"
+  ],
+  "brosia-curated-v2-185": [
+   "The Girl in the Tower",
+   "Katherine Arden"
+  ],
+  "brosia-curated-v2-186": [
+   "The Winter of the Witch",
+   "Katherine Arden"
+  ],
+  "brosia-curated-v2-187": [
+   "Red Sister",
+   "Mark Lawrence (author)"
+  ],
+  "brosia-curated-v2-188": [
+   "Grey Sister",
+   "Mark Lawrence (author)"
+  ],
+  "brosia-curated-v2-189": [
+   "Holy Sister",
+   "Mark Lawrence (author)"
+  ],
+  "brosia-curated-v2-190": [
+   "The Blade Itself",
+   "Joe Abercrombie"
+  ],
+  "brosia-curated-v2-191": [
+   "Before They Are Hanged",
+   "Joe Abercrombie"
+  ],
+  "brosia-curated-v2-192": [
+   "Last Argument of Kings",
+   "Joe Abercrombie"
+  ],
+  "brosia-curated-v2-193": [
+   "The Goblin Emperor",
+   "Sarah Monette"
+  ],
+  "brosia-curated-v2-194": [
+   "The Priory of the Orange Tree",
+   "Samantha Shannon"
+  ],
+  "brosia-curated-v2-195": [
+   "The Song of Achilles",
+   "Madeline Miller"
+  ],
+  "brosia-curated-v2-196": [
+   "The Night Circus",
+   "Erin Morgenstern"
+  ],
+  "brosia-curated-v2-197": [
+   "Strange the Dreamer",
+   "Laini Taylor"
+  ],
+  "brosia-curated-v2-198": [
+   "Muse of Nightmares",
+   "Laini Taylor"
+  ],
+  "brosia-curated-v2-199": [
+   "Jonathan Strange & Mr Norrell",
+   "Susanna Clarke"
+  ],
+  "brosia-curated-v2-200": [
+   "The Ten Thousand Doors of January",
+   "Alix E. Harrow"
+  ]
+ },
+ "ol_skip": [
+  "brosia-curated-v2-107",
+  "brosia-curated-v2-108",
+  "brosia-curated-v2-113",
+  "brosia-curated-v2-156",
+  "brosia-curated-v2-173"
+ ],
+ "ol_skip_note": "Open Library only lists these under omnibus, partial or unrelated records."
+}

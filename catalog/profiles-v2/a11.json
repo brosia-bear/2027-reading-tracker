@@ -1,0 +1,235 @@
+[
+ {
+  "id": "brosia-curated-v2-159",
+  "y": 1842,
+  "g": "Russian novel; comic satire",
+  "sum": "The smooth, ingratiating Pavel Chichikov travels through provincial Russia buying up dead souls: serfs who have died since the last census but still appear on landowners’ tax rolls. His mysterious scheme takes him from one grotesque landowner to the next, the miser, the bully, the sentimental dreamer, in a comic gallery of human greed, stupidity and stagnation.",
+  "bg": "Nikolai Gogol published the first part in 1842 as a prose poem modelled loosely on Dante’s Divine Comedy. He laboured for years on a redemptive second part but burned most of it shortly before his death in 1852; only fragments survive.",
+  "br": "Read Part One as a complete comic novel; the surviving fragments of Part Two are a curiosity. Each visit to a landowner works almost as a self-contained comic episode, so it is easy to read in sittings.",
+  "la": "Gogol mixes broad caricature, absurd digressions, lyrical passages about Russia and a garrulous narrator who constantly comments on his own story, creating a style both hilarious and unsettling.",
+  "cx": "The novel satirises the system of serfdom, in which landowners owned peasants as property, and the corruption of provincial officials, nearly two decades before serfdom was abolished in 1861.",
+  "th": [
+   [
+    "Greed and emptiness",
+    "Chichikov’s scheme exposes a society that treats people as property."
+   ],
+   [
+    "The grotesque",
+    "Exaggerated characters reveal ordinary vices more sharply than realism."
+   ],
+   [
+    "Russia’s destiny",
+    "Lyrical passages ask where the troika of Russia is heading."
+   ]
+  ],
+  "fit": "A comic counterweight to the more tragic Russian classics on your list, and a link to Gogol’s stories.",
+  "mis": "Digressive and episodic, with an unfinished second part that can feel anticlimactic. Its unfinished state is part of its legend.",
+  "cw": [
+   "Serfdom and human beings treated as property."
+  ],
+  "rq": [
+   "What exactly is Chichikov’s scheme?",
+   "Which landowner is the most memorable?",
+   "What role does the narrator play?"
+  ],
+  "dq": [
+   "Is Dead Souls a comedy or a tragedy?",
+   "What does it reveal about serfdom?"
+  ],
+  "rel": [
+   [
+    "v2-160",
+    "Gogol’s absurd short story The Nose."
+   ],
+   [
+    "revised-2027-074",
+    "Gogol’s The Overcoat and other stories."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-160",
+  "y": 1836,
+  "g": "Russian short story; absurdist satire",
+  "sum": "A St Petersburg barber finds a nose baked into his morning bread. Across town, Collegiate Assessor Kovalyov wakes to find a smooth blank space where his nose used to be, and soon spots it walking the streets in the uniform of a higher-ranking official. His frantic attempts to recover it expose a society obsessed with rank and appearances.",
+  "bg": "Published by Nikolai Gogol in 1836 in Pushkin’s journal The Contemporary, after another magazine rejected it as vulgar. It later inspired an opera by Shostakovich and influenced absurdist writers from Kafka onward. Its title in Russian is simply Nos.",
+  "br": "Very short; read it in one sitting and then think about why it is so funny and so strange. Do not look for a logical explanation, since the story deliberately refuses one.",
+  "la": "Gogol narrates impossible events in a deadpan, matter-of-fact tone, and the narrator finally throws up his hands at the story’s absurdity, a joke about storytelling itself. The comedy comes from how seriously everyone treats the impossible.",
+  "cx": "The story satirises the Russian Table of Ranks, which organised civil and military status, and the vanity of officials in Tsarist St Petersburg. Every rank had its uniform, privileges and forms of address.",
+  "th": [
+   [
+    "Status and vanity",
+    "Kovalyov cares more about appearances than about the nose itself."
+   ],
+   [
+    "The absurd",
+    "An impossible event exposes how strange ordinary society already is."
+   ],
+   [
+    "Identity",
+    "A missing nose raises the question of what makes a person who they are."
+   ]
+  ],
+  "fit": "A tiny, funny classic that pairs with Dead Souls and The Overcoat on your list.",
+  "mis": "Its refusal to explain anything can frustrate readers who want meaning resolved. It is more puzzle than story.",
+  "cw": [],
+  "rq": [
+   "Why is the nose dressed as a higher official?",
+   "How does the narrator undermine the story?",
+   "What is Kovalyov most afraid of losing?"
+  ],
+  "dq": [
+   "Is the story pure nonsense or pointed satire?",
+   "How does it anticipate Kafka?"
+  ],
+  "rel": [
+   [
+    "v2-159",
+    "Gogol’s Dead Souls."
+   ],
+   [
+    "v2-175",
+    "Kafka’s Metamorphosis."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-161",
+  "y": 1840,
+  "g": "Russian novel; psychological portrait in linked stories",
+  "sum": "Grigory Pechorin, a young officer serving in the Caucasus, is brilliant, charming, bored and cruel. Through five linked stories told by different narrators and finally by Pechorin’s own journal, the novel reveals a man who manipulates love and friendship, courts danger, and cannot find any purpose worthy of his gifts.",
+  "bg": "Mikhail Lermontov published the novel in 1840, a year before he was killed in a duel at the age of twenty-six. It is considered the first major Russian psychological novel and a key influence on Tolstoy and Dostoevsky.",
+  "br": "The stories are not in chronological order, and the narrative moves from outside views of Pechorin toward his own diary. Notice how your view of him changes as you get closer.",
+  "la": "Lermontov layers narrators and frames, combining Romantic adventure in the mountains with ironic, cool psychological analysis; Pechorin’s journal is strikingly modern in its self-examination. Landscape descriptions of the Caucasus are vivid and romantic.",
+  "cx": "Pechorin is a classic example of the superfluous man, a type in Russian literature of a talented gentleman with no place or purpose in a stifling autocratic society.",
+  "th": [
+   [
+    "The superfluous man",
+    "A gifted man finds no meaningful role in his society."
+   ],
+   [
+    "Boredom and cruelty",
+    "Ennui leads Pechorin to play carelessly with other people’s lives."
+   ],
+   [
+    "Self-knowledge",
+    "Pechorin understands himself clearly but still cannot or will not change."
+   ]
+  ],
+  "fit": "Short and atmospheric, linking Pushkin’s Eugene Onegin and the Dostoevsky novels on your list.",
+  "mis": "Pechorin is deliberately unlikeable, and the shifting structure may feel disjointed. Patience with him pays off.",
+  "cw": [
+   "Duelling and violence.",
+   "Manipulation and emotional cruelty.",
+   "Abduction."
+  ],
+  "rq": [
+   "How do the different narrators shape your view of Pechorin?",
+   "Why is he so bored?",
+   "Which story shows him at his worst?"
+  ],
+  "dq": [
+   "Is Pechorin a villain or a victim of his time?",
+   "Why is the title ironic?"
+  ],
+  "rel": [
+   [
+    "v2-162",
+    "Pushkin’s Eugene Onegin, another superfluous man."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-162",
+  "y": 1833,
+  "g": "Russian novel in verse",
+  "sum": "Eugene Onegin, a jaded young St Petersburg dandy, inherits a country estate, befriends the romantic poet Lensky, and coolly rejects the heartfelt love letter of Tatyana, a dreamy young woman steeped in novels. A trivial quarrel leads to tragedy, and years later the roles reverse when Onegin meets Tatyana again in high society.",
+  "bg": "Alexander Pushkin published the work in instalments from 1825 to 1832, with the complete text in 1833. Written in a special fourteen-line stanza, it is often called the foundation of modern Russian literature, and inspired Tchaikovsky’s opera. Russians often quote its lines from memory.",
+  "br": "Choose a translation that suits you: some preserve the rhyme and stanza (such as Stanley Mitchell or James Falen), others are literal (Nabokov’s famous version). Let the narrator’s witty digressions be part of the pleasure.",
+  "la": "Pushkin’s narrator chats, teases and digresses about literature, love and Russian society, mixing irony with lyrical feeling; the verse form gives the story an elegant, musical lightness. The famous letter scene is the emotional heart.",
+  "cx": "The work captures Russian aristocratic society in the 1820s and introduced the superfluous man type that Lermontov, Turgenev and others developed. Pushkin himself died in a duel in 1837.",
+  "th": [
+   [
+    "Love and timing",
+    "Love offered and refused at the wrong moments shapes whole lives."
+   ],
+   [
+    "Literature and life",
+    "Tatyana learns about love from novels, then outgrows them."
+   ],
+   [
+    "Boredom and waste",
+    "Onegin’s ennui wastes both friendship and love, and he realises it too late."
+   ]
+  ],
+  "fit": "A short, elegant classic that complements the prose Russian novels on your list.",
+  "mis": "Poetry in translation loses much, and the many digressions can distract from the story.",
+  "cw": [
+   "Duelling and death."
+  ],
+  "rq": [
+   "Why does Onegin reject Tatyana?",
+   "How does Tatyana change?",
+   "What role does the narrator play?"
+  ],
+  "dq": [
+   "Who is the real hero of the novel?",
+   "How does verse change the story?"
+  ],
+  "rel": [
+   [
+    "v2-161",
+    "Lermontov’s A Hero of Our Time."
+   ],
+   [
+    "v2-163",
+    "Pushkin’s The Queen of Spades."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-163",
+  "y": 1834,
+  "g": "Russian short story; gothic tale",
+  "sum": "Hermann, a calculating young engineer of German descent, becomes obsessed with the rumour that an elderly countess knows a secret sequence of three winning cards. His pursuit of the secret leads him to manipulate her young companion and confront the countess at night, with chilling consequences, and finally to a high-stakes game of faro.",
+  "bg": "Published by Alexander Pushkin in 1834, the story is one of his most famous prose works. It inspired Tchaikovsky’s opera The Queen of Spades and influenced Dostoevsky, whose own novella The Gambler is on your list. It runs to only six short chapters and a conclusion.",
+  "br": "Short enough for one sitting. Pay attention to the epigraphs at the head of each chapter and to small details that might be supernatural or psychological. The ending is brisk, so read closely.",
+  "la": "Pushkin writes in spare, ironic prose and deliberately leaves the supernatural ambiguous: ghost story or madness, the reader decides. Every sentence is economical, and the mood shifts from social comedy to dread with remarkable speed.",
+  "cx": "Gambling was a passion and a ruin of the Russian aristocracy, and Hermann’s single-minded ambition contrasts with the old aristocratic world. Faro was a game of pure chance, popular in aristocratic salons.",
+  "th": [
+   [
+    "Obsession",
+    "Hermann’s fixation on the secret slowly consumes his humanity."
+   ],
+   [
+    "Fate and chance",
+    "Gambling becomes a personal duel with fate and destiny."
+   ],
+   [
+    "The supernatural or the mind",
+    "Pushkin leaves open whether the ghost is real."
+   ]
+  ],
+  "fit": "A short, atmospheric story that pairs with The Gambler and Eugene Onegin on your list.",
+  "mis": "Brief and understated; readers expecting full gothic horror may find it restrained. Its power is in suggestion.",
+  "cw": [
+   "Death.",
+   "Madness."
+  ],
+  "rq": [
+   "What drives Hermann’s obsession?",
+   "Is the ghost real or imagined?",
+   "How does Pushkin use irony?"
+  ],
+  "dq": [
+   "Is Hermann punished for greed or for cruelty?",
+   "How does this story echo in Dostoevsky?"
+  ],
+  "rel": [
+   [
+    "revised-2027-079",
+    "Dostoevsky’s The Gambler."
+   ]
+  ]
+ }
+]

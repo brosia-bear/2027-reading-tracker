@@ -1,0 +1,244 @@
+[
+ {
+  "id": "brosia-curated-v2-174",
+  "y": 1925,
+  "g": "Modernist novel; existential and legal nightmare",
+  "sum": "On the morning of his thirtieth birthday, the bank officer Josef K. is arrested by two strange men, though he is never told his crime and remains free to go about his life. As he tries to understand and fight the charges, he becomes entangled in an endless, invisible court system housed in attics and tenements, staffed by petty officials and impossible to reach.",
+  "bg": "Franz Kafka wrote the novel in 1914–15 but left it unfinished; after his death in 1924, his friend Max Brod ignored his request to burn his manuscripts and published it in 1925. The word Kafkaesque owes much to this book.",
+  "br": "The chapters were arranged by Brod, and some fragments are incomplete, so expect gaps. The parable Before the Law, told by a priest near the end, is a key to the whole novel; read it slowly.",
+  "la": "Kafka narrates nightmarish events in calm, precise, often darkly funny prose, from inside Josef K.’s limited perspective, so the reader shares his confusion and slowly growing sense of guilt.",
+  "cx": "Written in Prague under the Austro-Hungarian Empire, the novel has been read as a vision of modern bureaucracy, of guilt and religion, and as a prophecy of twentieth-century totalitarian states.",
+  "th": [
+   [
+    "Guilt without crime",
+    "K. becomes guilty, in his own eyes, simply by being accused."
+   ],
+   [
+    "Bureaucracy and power",
+    "An invisible system controls lives without ever explaining itself."
+   ],
+   [
+    "The law and its door",
+    "Before the Law suggests the way to justice was always open, and always closed."
+   ]
+  ],
+  "fit": "A modernist classic that pairs with The Metamorphosis and with the absurdist philosophy of Camus on your list.",
+  "mis": "Its unfinished, dreamlike structure and lack of resolution can frustrate readers who want clarity.",
+  "cw": [
+   "Execution.",
+   "Sexual harassment and coercion."
+  ],
+  "rq": [
+   "What is Josef K. accused of?",
+   "How does he contribute to his own fate?",
+   "What does Before the Law mean?"
+  ],
+  "dq": [
+   "Is the court real, symbolic, or both?",
+   "Why does Kafka make the story funny as well as terrifying?"
+  ],
+  "rel": [
+   [
+    "v2-175",
+    "Kafka’s The Metamorphosis."
+   ],
+   [
+    "v2-172",
+    "Camus’ The Stranger, another trial of an outsider."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-175",
+  "y": 1915,
+  "g": "Modernist novella; absurdist fable",
+  "sum": "Gregor Samsa, a travelling salesman who supports his parents and sister, wakes one morning to find himself transformed into a monstrous insect. His main worry, at first, is that he will be late for work. As he struggles to adapt to his new body, his family’s horror, shame and gradual resentment reveal how much his place in the household depended on his usefulness.",
+  "bg": "Franz Kafka wrote the novella in 1912 and published it in 1915, one of the few works he saw printed in his lifetime. He insisted that the insect should never be drawn on the cover. Its German title is Die Verwandlung.",
+  "br": "Short: read it in one sitting. Notice the matter-of-fact tone and how the story becomes as much about the family as about Gregor. It falls into three parts, each ending with Gregor confronting his family.",
+  "la": "Kafka never explains the transformation; he narrates the impossible with bureaucratic precision, and the horror comes from the ordinary reactions of people around Gregor. The plain language makes the grotesque seem unbearably normal.",
+  "cx": "Kafka worked as an insurance official and had a difficult relationship with his domineering father, which many readers see reflected in the story. He asked for most of his work to be destroyed.",
+  "th": [
+   [
+    "Alienation",
+    "Gregor is cut off from his family, his body and his own life."
+   ],
+   [
+    "Work and worth",
+    "His family valued him chiefly as a breadwinner."
+   ],
+   [
+    "Family transformation",
+    "As Gregor declines, his family changes and grows stronger."
+   ]
+  ],
+  "fit": "A short, endlessly discussed classic that pairs with The Trial and with Gogol’s The Nose on your list.",
+  "mis": "Its refusal to explain anything and its bleak ending may unsettle readers. Its mood is deeply claustrophobic.",
+  "cw": [
+   "Body horror.",
+   "Family cruelty and neglect.",
+   "Death."
+  ],
+  "rq": [
+   "Why is Gregor most worried about work?",
+   "How does his sister’s attitude change?",
+   "What does the ending suggest about the family?"
+  ],
+  "dq": [
+   "Is the transformation literal, metaphorical, or both?",
+   "Who changes more, Gregor or his family?"
+  ],
+  "rel": [
+   [
+    "v2-174",
+    "Kafka’s The Trial."
+   ],
+   [
+    "v2-160",
+    "Gogol’s The Nose."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-176",
+  "y": 2019,
+  "g": "Science fiction; political space opera",
+  "s": [
+   "Teixcalaan",
+   1
+  ],
+  "sum": "Mahit Dzmare arrives as ambassador from a small, independent mining station to the capital of the vast Teixcalaanli Empire, a civilisation obsessed with poetry, ceremony and its own literature. Her predecessor is dead, the neural implant carrying his memories is out of date and failing, and she must solve his murder while the empire edges toward a succession crisis that could swallow her home.",
+  "bg": "Arkady Martine’s debut novel won the 2020 Hugo Award for Best Novel. Martine, the pen name of AnnaLinden Weller, is a historian of the Byzantine Empire, which deeply informs the book’s portrait of imperial culture and diplomacy. It was published by Tor Books.",
+  "br": "The opening is dense with names, titles and invented customs; a glossary at the back helps. Let yourself be disoriented along with Mahit, who is also an outsider learning the city.",
+  "la": "Martine combines political thriller, murder mystery and deep cultural worldbuilding, centring language, poetry and translation as tools of power and seduction. Mahit’s inner dialogue with her predecessor’s memories adds a layer of tension and humour.",
+  "cx": "The novel explores imperialism and cultural assimilation from the perspective of someone who loves the empire’s literature even as it threatens her people, drawing on real Byzantine and Aztec history.",
+  "th": [
+   [
+    "Empire and assimilation",
+    "Loving an empire’s culture does not protect you from being consumed by it."
+   ],
+   [
+    "Memory and identity",
+    "Mahit shares her mind with her predecessor’s fading, unreliable memories."
+   ],
+   [
+    "Language and power",
+    "Poetry and translation shape politics, loyalty and seduction."
+   ]
+  ],
+  "fit": "Intelligent science fiction for a reader who enjoys political intrigue, languages and history, a natural fit with Babel and The Left Hand of Darkness.",
+  "mis": "Dense worldbuilding and political scheming can slow the opening chapters. Patience is rewarded by the halfway point.",
+  "cw": [
+   "Violence and assassination.",
+   "Political unrest."
+  ],
+  "rq": [
+   "What does Mahit love about Teixcalaan, and what does she fear?",
+   "How does the memory implant work?",
+   "What role does poetry play in politics?"
+  ],
+  "dq": [
+   "Can someone belong to two cultures fully?",
+   "How does Martine use history in her worldbuilding?"
+  ],
+  "rel": [
+   [
+    "2027-015",
+    "Kuang’s Babel, on language and empire."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-177",
+  "y": 2021,
+  "g": "Science fiction; first-contact space opera",
+  "s": [
+   "Teixcalaan",
+   2
+  ],
+  "sum": "An alien force of unknown intentions is destroying Teixcalaanli ships on the empire’s frontier, and the fleet captain asks for a diplomat. Mahit Dzmare, back on her home station and in uncomfortable circumstances, is drawn into the mission with her Teixcalaanli friend Three Seagrass, as they attempt to communicate with a species that may not think in language at all.",
+  "bg": "Arkady Martine’s sequel to A Memory Called Empire won the 2022 Hugo Award for Best Novel, giving her back-to-back wins. It concludes the current story of Mahit and Three Seagrass. Like the first book, it was published by Tor, and the two form a complete story.",
+  "br": "Read after A Memory Called Empire. The novel moves between several viewpoints, including the alien perspective, so keep track of who is speaking in each section. Short interludes from the aliens’ viewpoint are deliberately strange.",
+  "la": "Martine widens her scope from palace intrigue to military and first-contact story, alternating many viewpoints and exploring how language shapes understanding, empathy and war. Three Seagrass gets more space and becomes a co-lead.",
+  "cx": "The sequel deepens questions about empire, colonialism and personhood, asking whether a sprawling empire can even recognise an alien mind as real. It also asks what diplomacy owes to soldiers.",
+  "th": [
+   [
+    "Communication",
+    "Understanding an alien mind requires abandoning familiar categories of thought."
+   ],
+   [
+    "Belonging and loyalty",
+    "Mahit belongs fully neither to her home station nor to the empire."
+   ],
+   [
+    "What counts as a person",
+    "First contact raises the question of who counts as a person at all."
+   ]
+  ],
+  "fit": "Completes the Teixcalaan duology, a satisfying story arc of intelligent science fiction. The ending lands both emotionally and politically.",
+  "mis": "Multiple viewpoints and slow diplomatic scenes may feel less taut than the first book.",
+  "cw": [
+   "War and violence.",
+   "Body horror."
+  ],
+  "rq": [
+   "How do the characters try to communicate with the aliens?",
+   "How has Mahit changed?",
+   "What does the empire want?"
+  ],
+  "dq": [
+   "Is true communication with the alien possible?",
+   "How does the sequel deepen the first book’s themes?"
+  ],
+  "rel": [
+   [
+    "rosewood-2027-106",
+    "Le Guin on first contact and difference."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-178",
+  "y": 2006,
+  "g": "Epic fantasy; heist and rebellion story",
+  "s": [
+   "Mistborn (original trilogy)",
+   1
+  ],
+  "sum": "For a thousand years the ash has fallen, the mists have ruled the night, and the immortal Lord Ruler has governed an empire in which the skaa, an enslaved underclass, labour for the nobility. Vin, a street thief who does not know her own power, is recruited by the charismatic Kelsier and his crew of Allomancers, who burn metals for magic, for an audacious heist: overthrowing the empire itself.",
+  "bg": "Brandon Sanderson published The Final Empire in 2006 as the first of the Mistborn trilogy, set in his wider Cosmere universe. Sanderson later completed Robert Jordan’s Wheel of Time and became one of the most popular fantasy authors in the world.",
+  "br": "The Allomancy magic system has clear rules, which Sanderson explains through Vin’s training; relax and let the rules accumulate. The trilogy rewards attention to small details that pay off much later.",
+  "la": "Sanderson writes brisk, clear prose focused on plot, character growth and a precisely defined magic system, building toward large, satisfying action climaxes that reveal earlier hints. Viewpoints alternate mainly between Vin and Kelsier.",
+  "cx": "The trilogy subverts the fantasy cliché of the chosen hero who defeats the dark lord, asking what happens if the prophesied hero had failed. Sanderson’s laws of magic have influenced many writers.",
+  "th": [
+   [
+    "Trust",
+    "Vin, betrayed all her life, must learn to trust a crew."
+   ],
+   [
+    "Hope and rebellion",
+    "Kelsier insists that hope itself is a weapon."
+   ],
+   [
+    "Power and myth",
+    "Legends and religion are tools of control and resistance."
+   ]
+  ],
+  "fit": "A propulsive, completed fantasy trilogy with a clever magic system, ideal for momentum in your year.",
+  "mis": "Prose is functional rather than lyrical, and some readers find the magic explanations heavy.",
+  "cw": [
+   "Violence and executions.",
+   "Slavery and abuse.",
+   "Child abuse in backstory."
+  ],
+  "rq": [
+   "How does Vin change through the book?",
+   "What makes Kelsier persuasive?",
+   "How does Allomancy work?"
+  ],
+  "dq": [
+   "What does the book say about hope?",
+   "How does it subvert the chosen-one story?"
+  ],
+  "rel": []
+ }
+]

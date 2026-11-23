@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { buildProfiles } from './build-profiles.mjs';
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), '..');
 const SRC = path.join(root, 'src');
@@ -41,9 +42,15 @@ export function writeFacets() {
   fs.writeFileSync(path.join(SRC, 'data', 'brosia-facets.json'), JSON.stringify({ format: 'brosia-facets-v1', books: out }));
 }
 
+// Profiles for the books the original research cohorts do not cover.
+export function writeProfiles() {
+  fs.writeFileSync(path.join(SRC, 'data', 'brosia-literary-profiles-v2.json'), JSON.stringify(buildProfiles()));
+}
+
 export function assemble() {
   writeFacets();
   writeCoverIndex();
+  writeProfiles();
   fs.copyFileSync(path.join(root, 'catalog', 'curated-200-plus-2.json'), path.join(SRC, 'data', 'brosia-catalog-v2.json'));
   const shell = fs.readFileSync(path.join(SRC, 'index.html'), 'utf8');
   return shell.replace(/<!--@include ([^>]+?)-->/g, (_, rel) => fs.readFileSync(path.join(SRC, rel), 'utf8'));

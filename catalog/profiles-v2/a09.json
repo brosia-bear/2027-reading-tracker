@@ -1,0 +1,138 @@
+[
+ {
+  "id": "brosia-curated-v2-151",
+  "y": 2017,
+  "g": "Narrative history; true crime",
+  "sum": "In the 1920s the Osage Nation in Oklahoma were among the richest people per capita in the world, thanks to oil beneath their reservation. Then members began to die: shot, poisoned, blown up. David Grann reconstructs the Reign of Terror, the investigation by the young Bureau of Investigation that became the FBI, and the far wider conspiracy that the official story left untold.",
+  "bg": "Published in 2017 by a staff writer at The New Yorker, the book was a finalist for the National Book Award and was adapted into Martin Scorsese’s 2023 film. Grann spent years in archives and with Osage families.",
+  "br": "The book is divided into three chronicles: the first follows Mollie Burkhart, an Osage woman whose family is targeted; the second follows the investigator Tom White; the third follows Grann’s own research. Read them in order.",
+  "la": "Grann builds suspense like a thriller while grounding every detail in documents, and in the final section turns the narrative into an investigation of how history itself was buried.",
+  "cx": "The killings were enabled by a system of white guardianship over Osage wealth. The book has prompted renewed attention to Osage history and voices, including criticism of how the story has been told.",
+  "th": [
+   [
+    "Greed and racism",
+    "Oil wealth made the Osage targets for a predatory, racist system."
+   ],
+   [
+    "Justice delayed",
+    "Official investigations solved only a small fraction of the crimes."
+   ],
+   [
+    "Buried history",
+    "Whole communities helped to bury and forget the murders."
+   ]
+  ],
+  "fit": "A gripping narrative history that pairs with An Indigenous Peoples’ History of the United States.",
+  "mis": "The middle section focuses on the FBI investigator, which some readers find less compelling than the Osage story.",
+  "cw": [
+   "Murder.",
+   "Racism.",
+   "Poisoning and violence."
+  ],
+  "rq": [
+   "How did the guardianship system enable the murders?",
+   "What did the FBI investigation miss?",
+   "How does Grann’s research change the story?"
+  ],
+  "dq": [
+   "Who gets to tell a community’s history?",
+   "What does justice mean for crimes this old?"
+  ],
+  "rel": [
+   [
+    "v2-154",
+    "Indigenous history of the United States."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-152",
+  "y": 2019,
+  "g": "Data journalism; feminism and design",
+  "sum": "Caroline Criado Perez shows how a world built on data about men fails women: car crash dummies modelled on male bodies, medical research that excludes women, office temperatures set for male metabolisms, snow-clearing schedules, smartphones too big for many hands, and unpaid care work missing from economic statistics. The gender data gap, she argues, has real and sometimes deadly consequences.",
+  "bg": "Published in 2019, Invisible Women won the Royal Society Science Book Prize and the Financial Times and McKinsey Business Book of the Year. Criado Perez is a British journalist and campaigner. She had earlier campaigned successfully for a woman to appear on a Bank of England banknote.",
+  "br": "Each chapter covers a domain, such as daily life, the workplace, design, medicine or public life. Read in order or dip in; the examples accumulate into an argument.",
+  "la": "Criado Perez combines statistics, studies and anecdotes in a brisk, often angry style, letting the sheer volume of examples make her case. Footnotes and endnotes are extensive, and the voice is witty and sardonic as well as indignant.",
+  "cx": "The book drew attention to gaps in data collection and design and has influenced policy and product discussions, though some specific claims have been questioned by researchers.",
+  "th": [
+   [
+    "Default male",
+    "Much of the world is designed around men by default."
+   ],
+   [
+    "Data and power",
+    "What we measure shapes what we notice and fund."
+   ],
+   [
+    "Invisible labour",
+    "Unpaid care work sustains economies but goes uncounted."
+   ]
+  ],
+  "fit": "A data-driven companion to The Second Sex and A Room of One’s Own on your list.",
+  "mis": "Relentless and repetitive, with some examples contested by researchers. Some data points have been challenged.",
+  "cw": [
+   "Sexual violence.",
+   "Medical harm."
+  ],
+  "rq": [
+   "Which example surprised you most?",
+   "How does the data gap affect health?",
+   "What would change if data were collected differently?"
+  ],
+  "dq": [
+   "Who is responsible for closing the data gap?",
+   "Does the book’s focus on gender leave anything out?"
+  ],
+  "rel": [
+   [
+    "2027-098",
+    "The Second Sex."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-153",
+  "y": 2019,
+  "g": "History; American territories and empire",
+  "sum": "Daniel Immerwahr argues that the United States has been an empire, not just a nation of contiguous states, with territories including the Philippines, Puerto Rico, Guam and hundreds of islands and military bases. He traces how this greater United States was acquired, governed and largely forgotten by mainland Americans.",
+  "bg": "Published in 2019 by Daniel Immerwahr, a historian at Northwestern University, the book was named a best book of the year by many outlets and became a bestseller. It grew out of Immerwahr’s realisation that standard maps of the United States, the logo map, leave out millions of people living under American rule.",
+  "br": "Chapters are short and thematic, and loosely chronological from the nineteenth century to the present. Enjoy the surprising detours, from guano islands claimed for fertiliser to the global spread of English and standardised screws.",
+  "la": "Immerwahr writes with wit, anecdote and a sharp eye for the absurd, combining a big-picture argument about empire with vivid case studies of people and places that ordinary histories overlook.",
+  "cx": "The book connects American history to colonial wars, the Second World War in the Pacific and modern military bases, topics often omitted from standard national narratives.",
+  "th": [
+   [
+    "Hidden empire",
+    "Most mainland Americans forget the territories and people their country holds."
+   ],
+   [
+    "Technology and empire",
+    "Synthetic materials and technology replaced the need for large colonies."
+   ],
+   [
+    "Citizenship",
+    "Residents of territories have had unequal rights and citizenship."
+   ]
+  ],
+  "fit": "Pairs well with The Jakarta Method and A People’s History on your list, and reframes much American history you already know.",
+  "mis": "Episodic by design; readers wanting a comprehensive history of each territory will find gaps.",
+  "cw": [
+   "Colonial violence.",
+   "War crimes."
+  ],
+  "rq": [
+   "What surprised you most?",
+   "Why have Americans forgotten the territories?",
+   "How did technology change empire?"
+  ],
+  "dq": [
+   "Is the United States still an empire?",
+   "What do territories’ residents deserve?"
+  ],
+  "rel": [
+   [
+    "v2-146",
+    "The Jakarta Method."
+   ]
+  ]
+ }
+]

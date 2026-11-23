@@ -1,0 +1,228 @@
+[
+ {
+  "id": "brosia-curated-v2-113",
+  "y": 1843,
+  "g": "Philosophy of religion; lyrical meditation",
+  "sum": "Writing as the pseudonymous Johannes de Silentio, Kierkegaard circles again and again around the biblical story of Abraham being asked to sacrifice his son Isaac. He asks whether faith can require stepping outside ethics altogether, and whether anyone who casually admires Abraham has understood what that would mean, or how terrifying it is.",
+  "bg": "Published in Copenhagen in 1843, the same year as Either/Or, Fear and Trembling is one of Kierkegaard’s best-known works and a founding text of existentialism. He published many books under pseudonyms, each with its own outlook, so the narrator should not be simply equated with the author.",
+  "br": "Do not expect a straight argument: the narrator insists he cannot understand Abraham, only marvel at him. Read the opening retellings of the story slowly; they set the emotional stakes for everything that follows.",
+  "la": "Kierkegaard uses indirect communication: multiple retellings, lyrical passages, and a narrator who disclaims faith. The effect is to force readers to confront the question themselves rather than receive an answer.",
+  "cx": "The book was written partly in the shadow of Kierkegaard’s broken engagement to Regine Olsen, and against both the comfortable state Christianity of Denmark and the all-explaining philosophical system of Hegel.",
+  "th": [
+   [
+    "The teleological suspension of the ethical",
+    "Can a higher duty ever override morality itself?"
+   ],
+   [
+    "Faith and the absurd",
+    "Faith believes by virtue of the absurd, not because it is reasonable."
+   ],
+   [
+    "Silence and communication",
+    "Some experiences cannot be explained or justified to anyone else."
+   ]
+  ],
+  "fit": "Pairs with the existentialists on your plan and offers a religious counterpoint to Kant on duty.",
+  "mis": "The religious framing and deliberate paradoxes may frustrate readers who want clear conclusions.",
+  "cw": [
+   "Sustained contemplation of a parent sacrificing a child."
+  ],
+  "rq": [
+   "Why does the narrator keep retelling the story differently?",
+   "What separates the knight of faith from the tragic hero?",
+   "Is Abraham admirable, terrifying, or both?"
+  ],
+  "dq": [
+   "Can faith be ethical?",
+   "What is Kierkegaard criticising in his own society?"
+  ],
+  "rel": [
+   [
+    "2027-050",
+    "Sartre’s secular existentialism."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-114",
+  "y": 1677,
+  "g": "Philosophy; metaphysics and ethics in geometric form",
+  "sum": "Spinoza sets out, in definitions, axioms, propositions and proofs like a geometry textbook, a universe in which God and Nature are one infinite substance and everything follows by necessity. From that foundation he builds a detailed account of human emotions and a path to freedom and blessedness through understanding why things happen as they do.",
+  "bg": "The Ethics was published in 1677, shortly after Spinoza’s death, because it was considered too dangerous to print in his lifetime. He had been expelled from Amsterdam’s Portuguese-Jewish community in 1656 and earned part of his living grinding optical lenses.",
+  "br": "On a first pass, skim the formal proofs and read the prefaces, appendices and scholia, where Spinoza speaks most directly. Parts Three to Five, on the emotions and human freedom, are the most rewarding for most readers.",
+  "la": "The geometric method promises certainty and impersonality; the scholia and appendices supply the passion, irony and polemic behind it, including sharp attacks on superstition and on the idea that nature exists for human purposes.",
+  "cx": "Condemned as atheist and heretical, Spinoza’s ideas circulated underground and shaped the radical Enlightenment, German idealism and modern secular thought. Einstein famously said he believed in Spinoza’s God.",
+  "th": [
+   [
+    "God or Nature",
+    "Reality is one infinite substance, and God is not a person outside it."
+   ],
+   [
+    "Understanding the emotions",
+    "Passions lose their grip on us once we understand their causes."
+   ],
+   [
+    "Freedom as necessity understood",
+    "Freedom means acting from our own nature, not escaping causation."
+   ]
+  ],
+  "fit": "A demanding but transformative counterpart to Marcus Aurelius and Epictetus already on your list.",
+  "mis": "The formal style is dry and difficult, and many readers need a guide or commentary alongside.",
+  "cw": [],
+  "rq": [
+   "What does Spinoza mean by God?",
+   "Which emotion does he analyse most convincingly?",
+   "How can freedom coexist with complete necessity?"
+  ],
+  "dq": [
+   "Is Spinoza’s view of the world consoling or bleak?",
+   "How close is he to the Stoics?"
+  ],
+  "rel": [
+   [
+    "2027-029",
+    "Stoic ethics of acceptance."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-115",
+  "y": 1971,
+  "g": "Political philosophy",
+  "sum": "Rawls asks what principles of justice free and equal people would choose to govern their society if they did not know what place they would occupy in it: rich or poor, talented or not, of which religion or race. Behind this veil of ignorance, he argues, they would guarantee equal basic liberties and allow inequalities only when they benefit the least advantaged.",
+  "bg": "John Rawls, a Harvard philosopher, published the book in 1971 and a revised edition in 1999. It revived Anglo-American political philosophy almost single-handedly and remains the central reference point for debates about fairness, welfare and rights. It has been translated into dozens of languages.",
+  "br": "Part One contains the core ideas: the original position, the two principles and the critique of utilitarianism. Much of the rest elaborates and defends them. A summary or companion alongside is no shame.",
+  "la": "Rawls builds a careful, systematic argument and repeatedly tests it against our considered moral judgments, adjusting each until they fit, a method he calls reflective equilibrium. The prose is patient rather than showy.",
+  "cx": "Written during the civil rights movement and the Vietnam War, the book engages the social contract tradition of Locke, Rousseau and Kant and offers an alternative to utilitarianism. Robert Nozick’s Anarchy, State, and Utopia was a famous reply.",
+  "th": [
+   [
+    "Justice as fairness",
+    "Fair conditions of choice produce principles everyone could accept."
+   ],
+   [
+    "The difference principle",
+    "Inequalities are justified only if they help those worst off."
+   ],
+   [
+    "Priority of liberty",
+    "Basic freedoms cannot be traded away for greater economic gains."
+   ]
+  ],
+  "fit": "Completes a line of political thought from Plato and Rousseau to Sandel’s Justice, already on your list.",
+  "mis": "Long, abstract and technical; not a quick or narrative read, and better taken slowly over weeks.",
+  "cw": [],
+  "rq": [
+   "Would you choose Rawls’ principles from behind the veil?",
+   "What exactly does he object to in utilitarianism?",
+   "Who counts as the least advantaged?"
+  ],
+  "dq": [
+   "Is the veil of ignorance a fair test of justice?",
+   "How would a libertarian or communitarian respond?"
+  ],
+  "rel": [
+   [
+    "2027-018",
+    "Sandel’s lively survey of the same debates."
+   ],
+   [
+    "2027-045",
+    "The utilitarianism Rawls argues against."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-116",
+  "y": 2016,
+  "g": "Intellectual history; group biography",
+  "sum": "Sarah Bakewell tells the story of existentialism through the lives of the people who made it: Sartre, Beauvoir, Camus, Heidegger, Husserl, Merleau-Ponty, Jaspers and others. The book begins with three friends drinking apricot cocktails in a Paris café in 1932 and follows their ideas, love affairs, quarrels and political choices across the century.",
+  "bg": "Published in 2016, the book was widely praised for making difficult philosophy vivid through biography, anecdote and Bakewell’s own reflections on how she discovered these thinkers as a teenager. She also wrote a celebrated biography of Montaigne, How to Live.",
+  "br": "An ideal guide before or alongside Sartre, Beauvoir and Camus elsewhere in your plan. Chapters move roughly chronologically, so read in order. Its final chapters step back to ask what existentialism offers readers now.",
+  "la": "Bakewell alternates biography with clear explanation of ideas, especially phenomenology, and shows how these thinkers tried to live their philosophy, sometimes admirably and sometimes not. She is candid about her own changing opinions of each figure.",
+  "cx": "The story runs through the Second World War, the Occupation of France, the Cold War and the student revolts of 1968, and does not shy away from moral failures, especially Heidegger’s involvement with Nazism.",
+  "th": [
+   [
+    "Freedom and responsibility",
+    "Existentialism insists we make ourselves through our choices."
+   ],
+   [
+    "Philosophy and life",
+    "These ideas shaped how their authors loved, fought and failed."
+   ],
+   [
+    "Attention to experience",
+    "Phenomenology asks us to look again at lived experience."
+   ]
+  ],
+  "fit": "Ties together several existentialist titles already in your plan and makes them easier to approach.",
+  "mis": "Readers who want rigorous argument rather than narrative and personalities may find it light.",
+  "cw": [
+   "War, occupation and the Holocaust as historical background."
+  ],
+  "rq": [
+   "Which thinker did you find most sympathetic, and why?",
+   "How did the war change their ideas?",
+   "What is phenomenology, in your own words?"
+  ],
+  "dq": [
+   "Is existentialism still useful as a way to live?",
+   "How far should we judge ideas by their authors’ lives?"
+  ],
+  "rel": [
+   [
+    "2027-061",
+    "Beauvoir’s own ethics."
+   ],
+   [
+    "2027-050",
+    "Sartre’s famous lecture."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-117",
+  "y": 1998,
+  "g": "Writing craft; workshop handbook with exercises",
+  "sum": "Ursula K. Le Guin’s compact guide to narrative craft covers the sound and rhythm of prose, sentence length, punctuation, adjectives and adverbs, tense, point of view, indirect narration and the art of leaving things out. Each chapter ends with exercises designed for a writer working alone or for a peer workshop.",
+  "bg": "First published in 1998 and thoroughly revised in 2015, Steering the Craft distils decades of workshops Le Guin taught. She wrote it for writers who already have the basics and want to take conscious control of their storytelling.",
+  "br": "Do the exercises, even briefly: the book is meant to be practised, not just read. Reading the example passages aloud, as she recommends, makes the lessons on sound and rhythm click.",
+  "la": "Le Guin writes plainly and with dry wit, drawing examples from Woolf, Twain, Tolkien, Dickens and others, and is refreshingly sceptical of rigid rules such as never use adverbs.",
+  "cx": "Le Guin wrote across fantasy, science fiction, poetry and essays, and was a fierce advocate for genre fiction being taken seriously as literature, which shapes her examples and attitudes.",
+  "th": [
+   [
+    "The sound of prose",
+    "Good writing is heard as well as read, and rhythm carries meaning."
+   ],
+   [
+    "Point of view",
+    "Who tells the story, and how close we stand, shapes everything."
+   ],
+   [
+    "Crowding and leaping",
+    "Strong narrative knows what to include and what to skip."
+   ]
+  ],
+  "fit": "Joins your craft shelf with a working novelist’s voice and links to Earthsea and The Left Hand of Darkness.",
+  "mis": "Short and practical with little theory; readers wanting a full method for plotting should look elsewhere.",
+  "cw": [],
+  "rq": [
+   "Which exercise challenged you most?",
+   "How does Le Guin treat grammar rules?",
+   "What does she mean by crowding and leaping?"
+  ],
+  "dq": [
+   "Has your sense of point of view changed?",
+   "What advice would you add to hers?"
+  ],
+  "rel": [
+   [
+    "2027-087",
+    "Stephen King’s memoir of the craft."
+   ],
+   [
+    "v2-118",
+    "Anne Lamott’s warmer, more personal advice."
+   ]
+  ]
+ }
+]

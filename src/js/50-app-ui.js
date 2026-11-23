@@ -66,7 +66,7 @@
  const literaryFirstHundred=window.RosewoodLiteraryProfiles25.combine(literaryFirstNinety,literaryProfiles25);
  const literaryPayload26=JSON.parse(document.getElementById('rosewood-literary-profiles26').textContent);
  const literaryProfiles26=window.RosewoodLiteraryProfiles26.create(literaryPayload26,catalogIndex.books);
- const literaryProfiles=window.RosewoodLiteraryProfiles26.combine(literaryFirstHundred,literaryProfiles26);
+ let literaryProfiles=window.RosewoodLiteraryProfiles26.combine(literaryFirstHundred,literaryProfiles26);
  const slowReadPayload=JSON.parse(document.getElementById('rosewood-slowreads').textContent);
  const slowTracks=window.RosewoodSlowReads.create(slowReadPayload);
  const originalBooks=revision.previous;
@@ -84,6 +84,7 @@
  if(catalogIndex.books.length!==106)throw Error('Legacy 106-book index incomplete');
  // Catalog v2: 200 curated books in the established order, daily classics at #201–202.
  const catalogV2=window.BrosiaCatalogV2.extend(catalogIndex,JSON.parse(document.getElementById('brosia-catalog-v2').textContent));
+ literaryProfiles=window.BrosiaProfilesV2.extend(literaryProfiles,JSON.parse(document.getElementById('brosia-literary-profiles-v2').textContent),catalogIndex.books);
  if(catalogV2.curated!==200||catalogV2.daily!==2||catalogV2.unique!==202)throw Error('Catalog must have 200 curated books and 2 daily classics');
  if(!catalogIndex.byId.has('rosewood-2027-105')||!catalogIndex.byId.has('rosewood-2027-106')||new Set(catalogIndex.books.map(b=>b.id)).size!==202)throw Error('Book catalog is incomplete');
  const queueEngine=window.RosewoodQueue;
@@ -388,7 +389,7 @@
   return `<div class="profile-cover-frame"><div class="profile-cover-image">${coverMarkup(book,url)}</div></div>`;
  }
  function researchSourceList(p){
-  return `<section class="profile-panel literary-sources"><div class="spread wrap"><h3>Sources and verification</h3><span class="pill sage">${esc(p.profile_status)} · ${esc(p.verified_at)}</span></div><p class="small muted">The cited sources support the factual claims listed under each record. Interpretive observations are labeled separately. All links are optional; the bundled profile remains available offline.</p><ol class="profile-citations">${(p.sources||[]).map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a><div class="tiny muted">${esc(s.organization)} · ${esc(s.source_type.replaceAll('_',' '))} · ${esc(s.scope)} · ${esc(s.confidence)} confidence · checked ${esc(s.checked_on)}</div><ul class="tiny">${s.supports.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${s.notes?`<p class="tiny muted">Limitation: ${esc(s.notes)}</p>`:''}</li>`).join('')}</ol><p class="tiny muted">Work-level research does not verify the reader’s exact physical, ebook or audiobook edition. No exact-edition cover is claimed here.</p></section>`;
+  return `<section class="profile-panel literary-sources"><div class="spread wrap"><h3>Sources and verification</h3><span class="pill sage">${esc(p.profile_status==='sources_checked'?'Facts checked':p.profile_status==='verified'?'Verified':'Editorial draft')}${p.verified_at?' · '+esc(p.verified_at):''}</span></div><p class="small muted">The cited sources support the factual claims listed under each record. Interpretive observations are labeled separately. All links are optional; the bundled profile remains available offline.</p><ol class="profile-citations">${(p.sources||[]).map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a><div class="tiny muted">${esc(s.organization)} · ${esc(s.source_type.replaceAll('_',' '))} · ${esc(s.scope)} · ${esc(s.confidence)} confidence · checked ${esc(s.checked_on)}</div><ul class="tiny">${s.supports.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>${s.notes?`<p class="tiny muted">Limitation: ${esc(s.notes)}</p>`:''}</li>`).join('')}</ol><p class="tiny muted">Work-level research does not verify the reader’s exact physical, ebook or audiobook edition. No exact-edition cover is claimed here.</p></section>`;
  }
  function researchedDetails(book,p){
   const arc=book.series_arc_id?catalogIndex.byArc.get(book.series_arc_id):null,matched=coverIds.get(book.id);
@@ -402,10 +403,10 @@
   const examples=p.edition_information.examples||[];
   const editionText=examples.length?`<ul>${examples.map(x=>typeof x==='string'?`<li>${esc(x)}</li>`:`<li>${esc([x.publisher,x.year,x.format,x.pages?x.pages+' pages':'',x.audio_minutes_1x?`${Math.floor(x.audio_minutes_1x/60)} h ${x.audio_minutes_1x%60} min audio`:'' ,x.isbn13?'ISBN '+x.isbn13:''].filter(Boolean).join(' · '))}<div class="tiny muted">${esc(x.scope||'')}</div></li>`).join('')}</ul>`:'';
   return `<div class="profile-facts">${facts.filter(([k,v])=>hasRealValue(v)).map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v)}</strong></div>`).join('')}</div>
-  <div class="info-box literary-verification-note"><strong>Research status: work-level profile verified.</strong> ${esc(p.verification_scope)} Editorial interpretation is identified as such. This does not verify the edition you own.</div>
+  <div class="info-box literary-verification-note"><strong>${p.profile_status==='verified'?'Research status: work-level profile verified.':'Research status: publication facts checked; commentary is editorial.'}</strong> ${esc(p.verification_scope)}${p.profile_status==='verified'?' Editorial interpretation is identified as such. This does not verify the edition you own.':''}</div>
   <div class="profile-grid">
-   ${fieldSection('Spoiler-light overview',`<p>${esc(p.summary)}</p>`,'Original paraphrase based on the listed title-specific sources')}
-   ${fieldSection('Author and work background',`<p>${esc(p.author_and_work_background)}</p>`,'Bibliographic and author facts are tied to source records below')}
+   ${fieldSection('Spoiler-light overview',`<p>${esc(p.summary)}</p>`,p.profile_status==='verified'?'Original paraphrase based on the listed title-specific sources':'Editorial overview, written to avoid spoilers')}
+   ${fieldSection('Author and work background',`<p>${esc(p.author_and_work_background)}</p>`,p.profile_status==='verified'?'Bibliographic and author facts are tied to source records below':'Publication facts can be checked against the records below')}
    ${fieldSection('Before reading',`<p>${esc(p.before_reading)}</p>`,'Context and reading approach; not a plot recap')}
    ${fieldSection('Literary approach',`<p>${esc(p.literary_approach)}</p>`,'Editorial analysis, not a claim of authorial intent unless cited')}
    ${fieldSection('Historical and cultural context',`<p>${esc(p.context)}</p>`,'Known context and explicit limits')}

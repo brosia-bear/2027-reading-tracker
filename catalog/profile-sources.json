@@ -1,0 +1,2022 @@
+{
+ "format": "brosia-profile-sources-v1",
+ "books": {
+  "brosia-plan-2027-dearly-beloathed-01": {
+   "title": "The Irresistible Urge to Fall for Your Enemy",
+   "author": null,
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL42432130W",
+    "title": "The Irresistible Urge to Fall for Your Enemy",
+    "author": "Brigitte Knightley",
+    "author_url": "https://openlibrary.org/authors/OL15004632A",
+    "first_publish_year": 2025,
+    "edition_count": 5
+   },
+   "work": null
+  },
+  "brosia-plan-2027-dearly-beloathed-02": {
+   "title": "The Exquisite Torment of Loving Your Enemy",
+   "author": null,
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL45394331W",
+    "title": "The Exquisite Torment of Loving Your Enemy",
+    "author": "Brigitte Knightley",
+    "author_url": "https://openlibrary.org/authors/OL15004632A",
+    "first_publish_year": null,
+    "edition_count": 1
+   },
+   "work": null
+  },
+  "rosewood-2027-105": {
+   "title": "Piranesi",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Susanna_Clarke",
+    "title": "Susanna Clarke",
+    "description": "British author"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20893680W",
+    "title": "Piranesi",
+    "author": "Susanna Clarke",
+    "author_url": "https://openlibrary.org/authors/OL1387961A",
+    "first_publish_year": 2020,
+    "edition_count": 23
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Piranesi_(novel)",
+    "title": "Piranesi (novel)",
+    "description": "2020 fantasy novel by Susanna Clarke"
+   }
+  },
+  "rosewood-2027-106": {
+   "title": "The Left Hand of Darkness",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Ursula_K._Le_Guin",
+    "title": "Ursula K. Le Guin",
+    "description": "American author (1929–2018)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL59800W",
+    "title": "The Left Hand of Darkness",
+    "author": "Ursula K. Le Guin",
+    "author_url": "https://openlibrary.org/authors/OL31353A",
+    "first_publish_year": 1969,
+    "edition_count": 92
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Left_Hand_of_Darkness",
+    "title": "The Left Hand of Darkness",
+    "description": "1969 science fiction novel by Ursula K. Le Guin"
+   }
+  },
+  "brosia-curated-v2-107": {
+   "title": "The Republic",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Plato",
+    "title": "Plato",
+    "description": "Ancient Greek philosopher (c. 428-347 BC)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": null,
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Republic_(Plato)",
+    "title": "Republic (Plato)",
+    "description": "Philosophical work by Plato around 375 BC"
+   }
+  },
+  "brosia-curated-v2-108": {
+   "title": "Symposium",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Plato",
+    "title": "Plato",
+    "description": "Ancient Greek philosopher (c. 428-347 BC)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": null,
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Symposium_(Plato)",
+    "title": "Symposium (Plato)",
+    "description": "Socratic dialogue by Plato"
+   }
+  },
+  "brosia-curated-v2-109": {
+   "title": "Apology",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Plato",
+    "title": "Plato",
+    "description": "Ancient Greek philosopher (c. 428-347 BC)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL40876575W",
+    "title": "Apology",
+    "author": "Πλάτων",
+    "author_url": "https://openlibrary.org/authors/OL12823A",
+    "first_publish_year": 2014,
+    "edition_count": 14
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Apology_(Plato)",
+    "title": "Apology (Plato)",
+    "description": "Socratic dialogue written by Plato"
+   }
+  },
+  "brosia-curated-v2-110": {
+   "title": "The Gay Science",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche",
+    "title": "Friedrich Nietzsche",
+    "description": "German philosopher (1844–1900)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": null,
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Gay_Science",
+    "title": "The Gay Science",
+    "description": "1882 book by Friedrich Nietzsche"
+   }
+  },
+  "brosia-curated-v2-111": {
+   "title": "Beyond Good and Evil",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche",
+    "title": "Friedrich Nietzsche",
+    "description": "German philosopher (1844–1900)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL39995025W",
+    "title": "Beyond Good and Evil",
+    "author": "Friedrich Nietzsche",
+    "author_url": "https://openlibrary.org/authors/OL20157A",
+    "first_publish_year": 2010,
+    "edition_count": 17
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Beyond_Good_and_Evil",
+    "title": "Beyond Good and Evil",
+    "description": "1886 book by Friedrich Nietzsche"
+   }
+  },
+  "brosia-curated-v2-112": {
+   "title": "On the Genealogy of Morality",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche",
+    "title": "Friedrich Nietzsche",
+    "description": "German philosopher (1844–1900)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL36087448W",
+    "title": "On the Genealogy of Morality",
+    "author": "Friedrich Nietzsche",
+    "author_url": "https://openlibrary.org/authors/OL20157A",
+    "first_publish_year": 1998,
+    "edition_count": 2
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/On_the_Genealogy_of_Morality",
+    "title": "On the Genealogy of Morality",
+    "description": "1887 book by Friedrich Nietzsche"
+   }
+  },
+  "brosia-curated-v2-113": {
+   "title": "Fear and Trembling",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard",
+    "title": "Søren Kierkegaard",
+    "description": "Danish philosopher and theologian (1813–1855)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": null,
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Fear_and_Trembling",
+    "title": "Fear and Trembling",
+    "description": "1843 philosophical work by Søren Kierkegaard"
+   }
+  },
+  "brosia-curated-v2-114": {
+   "title": "Ethics",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Baruch_Spinoza",
+    "title": "Baruch Spinoza",
+    "description": "Portuguese-Dutch philosopher (1632–1677)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL37865672W",
+    "title": "Ethics",
+    "author": "Benedictus de Spinoza",
+    "author_url": "https://openlibrary.org/authors/OL33963A",
+    "first_publish_year": 2008,
+    "edition_count": 14
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Spinoza's_Ethics",
+    "title": "Spinoza's Ethics",
+    "description": "Philosophical treatise written by Spinoza"
+   }
+  },
+  "brosia-curated-v2-115": {
+   "title": "A Theory of Justice",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/John_Rawls",
+    "title": "John Rawls",
+    "description": "American philosopher (1921–2002)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL30310W",
+    "title": "A theory of justice",
+    "author": "John Rawls",
+    "author_url": "https://openlibrary.org/authors/OL27530A",
+    "first_publish_year": 1971,
+    "edition_count": 16
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/A_Theory_of_Justice",
+    "title": "A Theory of Justice",
+    "description": "1971 book by John Rawls"
+   }
+  },
+  "brosia-curated-v2-116": {
+   "title": "At the Existentialist Café",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Sarah_Bakewell",
+    "title": "Sarah Bakewell",
+    "description": "British author"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL17323751W",
+    "title": "At the Existentialist Café",
+    "author": "Sarah Bakewell",
+    "author_url": "https://openlibrary.org/authors/OL1469137A",
+    "first_publish_year": 2012,
+    "edition_count": 11
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/At_the_Existentialist_Caf%C3%A9",
+    "title": "At the Existentialist Café",
+    "description": "2016 book by Sarah Bakewell"
+   }
+  },
+  "brosia-curated-v2-117": {
+   "title": "Steering the Craft",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Ursula_K._Le_Guin",
+    "title": "Ursula K. Le Guin",
+    "description": "American author (1929–2018)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL59830W",
+    "title": "Steering the Craft",
+    "author": "Ursula K. Le Guin",
+    "author_url": "https://openlibrary.org/authors/OL31353A",
+    "first_publish_year": 1998,
+    "edition_count": 6
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Steering_the_Craft",
+    "title": "Steering the Craft",
+    "description": "1998 book by Ursula K. Le Guin"
+   }
+  },
+  "brosia-curated-v2-118": {
+   "title": "Bird by Bird",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Anne_Lamott",
+    "title": "Anne Lamott",
+    "description": "American novelist and nonfiction writer (born 1954)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL489421W",
+    "title": "Bird by Bird",
+    "author": "Anne Lamott",
+    "author_url": "https://openlibrary.org/authors/OL30614A",
+    "first_publish_year": 1994,
+    "edition_count": 16
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Anne_Lamott",
+    "title": "Anne Lamott",
+    "description": "American novelist and nonfiction writer (born 1954)"
+   }
+  },
+  "brosia-curated-v2-119": {
+   "title": "A Room of One's Own",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Virginia_Woolf",
+    "title": "Virginia Woolf",
+    "description": "English modernist writer (1882–1941)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL39379W",
+    "title": "A Room of One's Own",
+    "author": "Virginia Woolf",
+    "author_url": "https://openlibrary.org/authors/OL19450A",
+    "first_publish_year": 1929,
+    "edition_count": 303
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/A_Room_of_One's_Own",
+    "title": "A Room of One's Own",
+    "description": "1929 essay by Virginia Woolf"
+   }
+  },
+  "brosia-curated-v2-120": {
+   "title": "The Story of Philosophy",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Will_Durant",
+    "title": "Will Durant",
+    "description": "American historian, philosopher and writer (1885–1981)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL1073898W",
+    "title": "The Story of Philosophy",
+    "author": "Will Durant",
+    "author_url": "https://openlibrary.org/authors/OL109674A",
+    "first_publish_year": 1926,
+    "edition_count": 150
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Story_of_Philosophy",
+    "title": "The Story of Philosophy",
+    "description": "1926 book by Will Durant"
+   }
+  },
+  "brosia-curated-v2-121": {
+   "title": "Philosophy of Science: A Very Short Introduction",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Samir_Okasha",
+    "title": "Samir Okasha",
+    "description": "Professor of Philosophy of Science"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL6016284W",
+    "title": "Philosophy of Science",
+    "author": "Samir Okasha",
+    "author_url": "https://openlibrary.org/authors/OL1509587A",
+    "first_publish_year": 2002,
+    "edition_count": 4
+   },
+   "work": null
+  },
+  "brosia-curated-v2-122": {
+   "title": "Exhalation",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Ted_Chiang",
+    "title": "Ted Chiang",
+    "description": "American science fiction writer (born 1967)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20149336W",
+    "title": "Exhalation",
+    "author": "Ted Chiang",
+    "author_url": "https://openlibrary.org/authors/OL1604887A",
+    "first_publish_year": 2014,
+    "edition_count": 17
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Exhalation%3A_Stories",
+    "title": "Exhalation: Stories",
+    "description": "2019 collection of short stories by Ted Chiang"
+   }
+  },
+  "brosia-curated-v2-123": {
+   "title": "The Demon-Haunted World",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Carl_Sagan",
+    "title": "Carl Sagan",
+    "description": "American scientist and science communicator (1934–1996)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL2950942W",
+    "title": "The Demon-Haunted World",
+    "author": "Carl Sagan",
+    "author_url": "https://openlibrary.org/authors/OL450295A",
+    "first_publish_year": 1995,
+    "edition_count": 35
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Demon-Haunted_World",
+    "title": "The Demon-Haunted World",
+    "description": "1995 book by Carl Sagan"
+   }
+  },
+  "brosia-curated-v2-124": {
+   "title": "Cosmos",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Carl_Sagan",
+    "title": "Carl Sagan",
+    "description": "American scientist and science communicator (1934–1996)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL15829966W",
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "author_url": "https://openlibrary.org/authors/OL450295A",
+    "first_publish_year": 1980,
+    "edition_count": 74
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Cosmos_(Sagan_book)",
+    "title": "Cosmos (Sagan book)",
+    "description": "1980 book by Carl Sagan"
+   }
+  },
+  "brosia-curated-v2-125": {
+   "title": "Pale Blue Dot",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Carl_Sagan",
+    "title": "Carl Sagan",
+    "description": "American scientist and science communicator (1934–1996)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL2950948W",
+    "title": "Pale Blue Dot",
+    "author": "Carl Sagan",
+    "author_url": "https://openlibrary.org/authors/OL450295A",
+    "first_publish_year": 1994,
+    "edition_count": 19
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Pale_Blue_Dot_(book)",
+    "title": "Pale Blue Dot (book)",
+    "description": "1994 book by Carl Sagan"
+   }
+  },
+  "brosia-curated-v2-126": {
+   "title": "A Short History of Nearly Everything",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Bill_Bryson",
+    "title": "Bill Bryson",
+    "description": "American-British author (born 1951)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL74128W",
+    "title": "A short history of nearly everything",
+    "author": "Bill Bryson",
+    "author_url": "https://openlibrary.org/authors/OL21718A",
+    "first_publish_year": 2003,
+    "edition_count": 57
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/A_Short_History_of_Nearly_Everything",
+    "title": "A Short History of Nearly Everything",
+    "description": "2003 book by Bill Bryson"
+   }
+  },
+  "brosia-curated-v2-127": {
+   "title": "The Selfish Gene",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Richard_Dawkins",
+    "title": "Richard Dawkins",
+    "description": "British evolutionary biologist and author (born 1941)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL1966488W",
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "author_url": "https://openlibrary.org/authors/OL236174A",
+    "first_publish_year": 1976,
+    "edition_count": 42
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Selfish_Gene",
+    "title": "The Selfish Gene",
+    "description": "1976 book by Richard Dawkins"
+   }
+  },
+  "brosia-curated-v2-128": {
+   "title": "The Blind Watchmaker",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Richard_Dawkins",
+    "title": "Richard Dawkins",
+    "description": "British evolutionary biologist and author (born 1941)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL1966501W",
+    "title": "The Blind Watchmaker",
+    "author": "Richard Dawkins",
+    "author_url": "https://openlibrary.org/authors/OL236174A",
+    "first_publish_year": 1986,
+    "edition_count": 28
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Blind_Watchmaker",
+    "title": "The Blind Watchmaker",
+    "description": "Book by Richard Dawkins"
+   }
+  },
+  "brosia-curated-v2-129": {
+   "title": "The Immortal Life of Henrietta Lacks",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Rebecca_Skloot",
+    "title": "Rebecca Skloot",
+    "description": "American science writer (born 1972)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL13850788W",
+    "title": "The Immortal Life of Henrietta Lacks",
+    "author": "Rebecca Skloot",
+    "author_url": "https://openlibrary.org/authors/OL6720423A",
+    "first_publish_year": 2009,
+    "edition_count": 25
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Immortal_Life_of_Henrietta_Lacks",
+    "title": "The Immortal Life of Henrietta Lacks",
+    "description": "2010 book by Rebecca Skloot"
+   }
+  },
+  "brosia-curated-v2-130": {
+   "title": "The Sixth Extinction",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Elizabeth_Kolbert",
+    "title": "Elizabeth Kolbert",
+    "description": "American journalist, author, and scholar (born 1961)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL16820830W",
+    "title": "The Sixth Extinction",
+    "author": "Elizabeth Kolbert",
+    "author_url": "https://openlibrary.org/authors/OL1431724A",
+    "first_publish_year": 2014,
+    "edition_count": 18
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Sixth_Extinction%3A_An_Unnatural_History",
+    "title": "The Sixth Extinction: An Unnatural History",
+    "description": "2014 nonfiction book by Elizabeth Kolbert"
+   }
+  },
+  "brosia-curated-v2-131": {
+   "title": "Entangled Life",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Merlin_Sheldrake",
+    "title": "Merlin Sheldrake",
+    "description": "British biologist and author (born 1987)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20758206W",
+    "title": "Entangled Life",
+    "author": "Merlin Sheldrake",
+    "author_url": "https://openlibrary.org/authors/OL7904926A",
+    "first_publish_year": 2020,
+    "edition_count": 11
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Entangled_Life",
+    "title": "Entangled Life",
+    "description": "2020 non-fiction book by Merlin Sheldrake"
+   }
+  },
+  "brosia-curated-v2-132": {
+   "title": "The Man Who Mistook His Wife for a Hat",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Oliver_Sacks",
+    "title": "Oliver Sacks",
+    "description": "British neurologist and writer (1933–2015)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL1811898W",
+    "title": "The Man Who Mistook His Wife for a Hat",
+    "author": "Oliver Sacks",
+    "author_url": "https://openlibrary.org/authors/OL217344A",
+    "first_publish_year": 1980,
+    "edition_count": 62
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Man_Who_Mistook_His_Wife_for_a_Hat",
+    "title": "The Man Who Mistook His Wife for a Hat",
+    "description": "1985 book by Oliver Sacks"
+   }
+  },
+  "brosia-curated-v2-133": {
+   "title": "Hallucinations",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Oliver_Sacks",
+    "title": "Oliver Sacks",
+    "description": "British neurologist and writer (1933–2015)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL16490291W",
+    "title": "Hallucinations",
+    "author": "Oliver Sacks",
+    "author_url": "https://openlibrary.org/authors/OL217344A",
+    "first_publish_year": 2012,
+    "edition_count": 17
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Hallucinations_(book)",
+    "title": "Hallucinations (book)",
+    "description": "Accounts of hallucinations, by Oliver Sacks"
+   }
+  },
+  "brosia-curated-v2-134": {
+   "title": "The Undoing Project",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Michael_Lewis",
+    "title": "Michael Lewis",
+    "description": "American writer and journalist (born 1960)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL19669285W",
+    "title": "The undoing project",
+    "author": "Michael Lewis",
+    "author_url": "https://openlibrary.org/authors/OL383719A",
+    "first_publish_year": 2016,
+    "edition_count": 15
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Undoing_Project",
+    "title": "The Undoing Project",
+    "description": "2016 book by Michael Lewis"
+   }
+  },
+  "brosia-curated-v2-135": {
+   "title": "The Scout Mindset",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Julia_Galef",
+    "title": "Julia Galef",
+    "description": "American rationality writer and speaker (born 1983)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL21690394W",
+    "title": "Scout Mindset",
+    "author": "Julia Galef",
+    "author_url": "https://openlibrary.org/authors/OL8119142A",
+    "first_publish_year": 2021,
+    "edition_count": 4
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Scout_Mindset",
+    "title": "The Scout Mindset",
+    "description": "2021 nonfiction book by Julia Galef"
+   }
+  },
+  "brosia-curated-v2-136": {
+   "title": "Noise: A Flaw in Human Judgment",
+   "author": null,
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL17962180W",
+    "title": "Noise",
+    "author": "Cass R. Sunstein",
+    "author_url": "https://openlibrary.org/authors/OL234141A",
+    "first_publish_year": 2021,
+    "edition_count": 21
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Noise%3A_A_Flaw_in_Human_Judgment",
+    "title": "Noise: A Flaw in Human Judgment",
+    "description": "2021 book by Daniel Kahneman, Olivier Sibony, and Cass Sunstein"
+   }
+  },
+  "brosia-curated-v2-137": {
+   "title": "An Immense World",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Ed_Yong",
+    "title": "Ed Yong",
+    "description": "British science journalist (born 1981)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL25815646W",
+    "title": "An Immense World",
+    "author": "Ed Yong",
+    "author_url": "https://openlibrary.org/authors/OL637198A",
+    "first_publish_year": 2022,
+    "edition_count": 7
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/An_Immense_World",
+    "title": "An Immense World",
+    "description": "2022 book by Ed Yong"
+   }
+  },
+  "brosia-curated-v2-138": {
+   "title": "The Song of the Cell",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Siddhartha_Mukherjee",
+    "title": "Siddhartha Mukherjee",
+    "description": "Indian-American physician, writer b. 1970"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL27846773W",
+    "title": "The Song of the Cell",
+    "author": "Siddhartha Mukherjee",
+    "author_url": "https://openlibrary.org/authors/OL7396111A",
+    "first_publish_year": 2022,
+    "edition_count": 11
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Song_of_the_Cell",
+    "title": "The Song of the Cell",
+    "description": "2022 book by Siddhartha Mukherjee"
+   }
+  },
+  "brosia-curated-v2-139": {
+   "title": "The Warmth of Other Suns",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Isabel_Wilkerson",
+    "title": "Isabel Wilkerson",
+    "description": "American journalist (born 1961)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL15380640W",
+    "title": "The Warmth of Other Suns",
+    "author": "Isabel Wilkerson",
+    "author_url": "https://openlibrary.org/authors/OL3553076A",
+    "first_publish_year": 2010,
+    "edition_count": 13
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Warmth_of_Other_Suns",
+    "title": "The Warmth of Other Suns",
+    "description": "2010 book by Isabel Wilkerson"
+   }
+  },
+  "brosia-curated-v2-140": {
+   "title": "The 1619 Project: A New Origin Story",
+   "author": null,
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL24340913W",
+    "title": "The 1619 Project",
+    "author": "Nikole Hannah-Jones",
+    "author_url": "https://openlibrary.org/authors/OL8297333A",
+    "first_publish_year": 2021,
+    "edition_count": 13
+   },
+   "work": null
+  },
+  "brosia-curated-v2-141": {
+   "title": "The Dawn of Everything",
+   "author": null,
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL24663287W",
+    "title": "The Dawn of Everything",
+    "author": "David Wengrow",
+    "author_url": "https://openlibrary.org/authors/OL2766925A",
+    "first_publish_year": 2021,
+    "edition_count": 19
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Dawn_of_Everything",
+    "title": "The Dawn of Everything",
+    "description": "2021 book by David Graeber and David Wengrow"
+   }
+  },
+  "brosia-curated-v2-142": {
+   "title": "The Making of the Atomic Bomb",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Richard_Rhodes",
+    "title": "Richard Rhodes",
+    "description": "American author and historian"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL2617750W",
+    "title": "The making of the atomic bomb",
+    "author": "Richard Rhodes",
+    "author_url": "https://openlibrary.org/authors/OL381326A",
+    "first_publish_year": 1986,
+    "edition_count": 11
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Making_of_the_Atomic_Bomb",
+    "title": "The Making of the Atomic Bomb",
+    "description": "1986 history book by Richard Rhodes"
+   }
+  },
+  "brosia-curated-v2-143": {
+   "title": "A People's History of the United States",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Howard_Zinn",
+    "title": "Howard Zinn",
+    "description": "American historian and socialist philosopher (1922–2010)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL50283W",
+    "title": "A People's History of the United States",
+    "author": "Howard Zinn",
+    "author_url": "https://openlibrary.org/authors/OL2684549A",
+    "first_publish_year": 1980,
+    "edition_count": 50
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/A_People's_History_of_the_United_States",
+    "title": "A People's History of the United States",
+    "description": "1980 history book by Howard Zinn"
+   }
+  },
+  "brosia-curated-v2-144": {
+   "title": "Evicted",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Matthew_Desmond",
+    "title": "Matthew Desmond",
+    "description": "American sociologist"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL17828326W",
+    "title": "Evicted",
+    "author": "Matthew Desmond",
+    "author_url": "https://openlibrary.org/authors/OL3392352A",
+    "first_publish_year": 2016,
+    "edition_count": 19
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Evicted%3A_Poverty_and_Profit_in_the_American_City",
+    "title": "Evicted: Poverty and Profit in the American City",
+    "description": "2016 non-fiction book by Matthew Desmond"
+   }
+  },
+  "brosia-curated-v2-145": {
+   "title": "Poverty, by America",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Matthew_Desmond",
+    "title": "Matthew Desmond",
+    "description": "American sociologist"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL28357053W",
+    "title": "Poverty, by America",
+    "author": "Matthew Desmond",
+    "author_url": "https://openlibrary.org/authors/OL3392352A",
+    "first_publish_year": 2023,
+    "edition_count": 9
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Poverty%2C_by_America",
+    "title": "Poverty, by America",
+    "description": "2023 non-fiction book by Matthew Desmond"
+   }
+  },
+  "brosia-curated-v2-146": {
+   "title": "The Jakarta Method",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Vincent_Bevins",
+    "title": "Vincent Bevins",
+    "description": "American journalist and writer (born 1984)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20781307W",
+    "title": "The Jakarta Method",
+    "author": "Vincent Bevins",
+    "author_url": "https://openlibrary.org/authors/OL7922459A",
+    "first_publish_year": 2020,
+    "edition_count": 6
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Jakarta_Method",
+    "title": "The Jakarta Method",
+    "description": "2020 book by Vincent Bevins"
+   }
+  },
+  "brosia-curated-v2-147": {
+   "title": "The Black Jacobins",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/C._L._R._James",
+    "title": "C. L. R. James",
+    "description": "Trinidadian historian, journalist and Marxist (1901–1989)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL1155988W",
+    "title": "The Black Jacobins",
+    "author": "C. L. R. James",
+    "author_url": "https://openlibrary.org/authors/OL117245A",
+    "first_publish_year": 1935,
+    "edition_count": 25
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Black_Jacobins",
+    "title": "The Black Jacobins",
+    "description": "1938 book by C. L. R. James"
+   }
+  },
+  "brosia-curated-v2-148": {
+   "title": "The Wretched of the Earth",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Frantz_Fanon",
+    "title": "Frantz Fanon",
+    "description": "French psychiatrist and philosopher (1925-1961)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": null,
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Wretched_of_the_Earth",
+    "title": "The Wretched of the Earth",
+    "description": "1961 book by Frantz Fanon"
+   }
+  },
+  "brosia-curated-v2-149": {
+   "title": "The Fire Next Time",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/James_Baldwin",
+    "title": "James Baldwin",
+    "description": "American writer and activist (1924–1987)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL2683364W",
+    "title": "The fire next time",
+    "author": "James Baldwin",
+    "author_url": "https://openlibrary.org/authors/OL391839A",
+    "first_publish_year": 1962,
+    "edition_count": 54
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Fire_Next_Time",
+    "title": "The Fire Next Time",
+    "description": "1963 non-fiction book by James Baldwin"
+   }
+  },
+  "brosia-curated-v2-150": {
+   "title": "The Souls of Black Folk",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/W._E._B._Du_Bois",
+    "title": "W. E. B. Du Bois",
+    "description": "American sociologist and activist (1868–1963)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL28577W",
+    "title": "The Souls of Black Folk",
+    "author": "W. E. B. Du Bois",
+    "author_url": "https://openlibrary.org/authors/OL26460A",
+    "first_publish_year": 1903,
+    "edition_count": 412
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Souls_of_Black_Folk",
+    "title": "The Souls of Black Folk",
+    "description": "1903 essay collection by W. E. B. Du Bois"
+   }
+  },
+  "brosia-curated-v2-151": {
+   "title": "Killers of the Flower Moon",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/David_Grann",
+    "title": "David Grann",
+    "description": "American journalist (born 1967)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL17778665W",
+    "title": "Killers of the Flower Moon",
+    "author": "David Grann",
+    "author_url": "https://openlibrary.org/authors/OL5124799A",
+    "first_publish_year": 2017,
+    "edition_count": 19
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Killers_of_the_Flower_Moon_(book)",
+    "title": "Killers of the Flower Moon (book)",
+    "description": "2017 nonfiction book by David Grann"
+   }
+  },
+  "brosia-curated-v2-152": {
+   "title": "Invisible Women",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Caroline_Criado_Perez",
+    "title": "Caroline Criado Perez",
+    "description": "British feminist author, journalist and activist (born 1984)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20157508W",
+    "title": "Invisible Women",
+    "author": "Caroline Criado Perez",
+    "author_url": "https://openlibrary.org/authors/OL7636049A",
+    "first_publish_year": 2019,
+    "edition_count": 16
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Invisible_Women%3A_Exposing_Data_Bias_in_a_World_Designed_for_Men",
+    "title": "Invisible Women: Exposing Data Bias in a World Designed for Men",
+    "description": "2019 book by Caroline Criado Perez"
+   }
+  },
+  "brosia-curated-v2-153": {
+   "title": "How to Hide an Empire",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Daniel_Immerwahr",
+    "title": "Daniel Immerwahr",
+    "description": "American historian (born 1980)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20644890W",
+    "title": "How to Hide an Empire",
+    "author": "Daniel Immerwahr",
+    "author_url": "https://openlibrary.org/authors/OL7822840A",
+    "first_publish_year": 2019,
+    "edition_count": 13
+   },
+   "work": null
+  },
+  "brosia-curated-v2-154": {
+   "title": "An Indigenous Peoples' History of the United States",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Roxanne_Dunbar-Ortiz",
+    "title": "Roxanne Dunbar-Ortiz",
+    "description": "American historian and activist (born 1938)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL17640485W",
+    "title": "An Indigenous Peoples' History of the United States",
+    "author": "Roxanne Dunbar Ortiz",
+    "author_url": "https://openlibrary.org/authors/OL387216A",
+    "first_publish_year": 2014,
+    "edition_count": 7
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/An_Indigenous_Peoples'_History_of_the_United_States",
+    "title": "An Indigenous Peoples' History of the United States",
+    "description": "2014 book by Roxanne Dunbar-Ortiz"
+   }
+  },
+  "brosia-curated-v2-155": {
+   "title": "Anna Karenina",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Leo_Tolstoy",
+    "title": "Leo Tolstoy",
+    "description": "Russian writer (1828–1910)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL36073991W",
+    "title": "Anna Karenina",
+    "author": "Лев Толстой",
+    "author_url": "https://openlibrary.org/authors/OL26783A",
+    "first_publish_year": 2016,
+    "edition_count": 4
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Anna_Karenina",
+    "title": "Anna Karenina",
+    "description": "1878 novel by Leo Tolstoy"
+   }
+  },
+  "brosia-curated-v2-156": {
+   "title": "The Kreutzer Sonata",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Leo_Tolstoy",
+    "title": "Leo Tolstoy",
+    "description": "Russian writer (1828–1910)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": null,
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Kreutzer_Sonata",
+    "title": "The Kreutzer Sonata",
+    "description": "1889 novella by Leo Tolstoy"
+   }
+  },
+  "brosia-curated-v2-157": {
+   "title": "Childhood, Boyhood, Youth",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Leo_Tolstoy",
+    "title": "Leo Tolstoy",
+    "description": "Russian writer (1828–1910)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL33830174W",
+    "title": "CHILDHOOD BOYHOOD YOUTH",
+    "author": "LYOF N. TOLSTOI",
+    "author_url": "https://openlibrary.org/authors/OL12245404A",
+    "first_publish_year": 1929,
+    "edition_count": 1
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Childhood_(Tolstoy_novel)",
+    "title": "Childhood (Tolstoy novel)",
+    "description": "1852 novel by Leo Tolstoy"
+   }
+  },
+  "brosia-curated-v2-158": {
+   "title": "The Master and Margarita",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Mikhail_Bulgakov",
+    "title": "Mikhail Bulgakov",
+    "description": "Russian and Soviet author (1891–1940)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL36999384W",
+    "title": "The Master and Margarita",
+    "author": "Михаил Афанасьевич Булгаков",
+    "author_url": "https://openlibrary.org/authors/OL52940A",
+    "first_publish_year": 1967,
+    "edition_count": 1
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Master_and_Margarita",
+    "title": "The Master and Margarita",
+    "description": "Novel by Mikhail Bulgakov, written 1928–1940"
+   }
+  },
+  "brosia-curated-v2-159": {
+   "title": "Dead Souls",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Nikolai_Gogol",
+    "title": "Nikolai Gogol",
+    "description": "Ukrainian-Russian writer (1809–1852)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL17396611W",
+    "title": "Dead Souls",
+    "author": "Nikolaĭ Vasilʹevich  Gogolʹ",
+    "author_url": "https://openlibrary.org/authors/OL2627043A",
+    "first_publish_year": 1942,
+    "edition_count": 218
+   },
+   "work": null
+  },
+  "brosia-curated-v2-160": {
+   "title": "The Nose",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Nikolai_Gogol",
+    "title": "Nikolai Gogol",
+    "description": "Ukrainian-Russian writer (1809–1852)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL8791626W",
+    "title": "The Nose",
+    "author": "Николай Васильевич Гоголь",
+    "author_url": "https://openlibrary.org/authors/OL2627043A",
+    "first_publish_year": 2000,
+    "edition_count": 15
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Nose_(Gogol_short_story)",
+    "title": "The Nose (Gogol short story)",
+    "description": "1836 short story by Nikolai Gogol"
+   }
+  },
+  "brosia-curated-v2-161": {
+   "title": "A Hero of Our Time",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Mikhail_Lermontov",
+    "title": "Mikhail Lermontov",
+    "description": "Russian writer, poet and painter (1814–1841)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL24999367W",
+    "title": "A Hero of Our Time",
+    "author": "Mikhail Yurievich Lermontov",
+    "author_url": "https://openlibrary.org/authors/OL9417993A",
+    "first_publish_year": 1992,
+    "edition_count": 42
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/A_Hero_of_Our_Time",
+    "title": "A Hero of Our Time",
+    "description": "1840 novel by Mikhail Lermontov"
+   }
+  },
+  "brosia-curated-v2-162": {
+   "title": "Eugene Onegin",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Alexander_Pushkin",
+    "title": "Alexander Pushkin",
+    "description": "Russian writer (1799–1837)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL24667968W",
+    "title": "Eugene Onegin",
+    "author": "Александр Сергеевич Пушкин",
+    "author_url": "https://openlibrary.org/authors/OL47908A",
+    "first_publish_year": 1995,
+    "edition_count": 19
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Eugene_Onegin",
+    "title": "Eugene Onegin",
+    "description": "Novel in verse by Alexander Pushkin"
+   }
+  },
+  "brosia-curated-v2-163": {
+   "title": "The Queen of Spades",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Alexander_Pushkin",
+    "title": "Alexander Pushkin",
+    "description": "Russian writer (1799–1837)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL623479W",
+    "title": "The Queen of Spades",
+    "author": "Александр Сергеевич Пушкин",
+    "author_url": "https://openlibrary.org/authors/OL47908A",
+    "first_publish_year": 1928,
+    "edition_count": 15
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Queen_of_Spades_(story)",
+    "title": "The Queen of Spades (story)",
+    "description": "1834 novella by Alexander Pushkin"
+   }
+  },
+  "brosia-curated-v2-164": {
+   "title": "Oblomov",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Ivan_Goncharov",
+    "title": "Ivan Goncharov",
+    "description": "Russian novelist and official (1812–1891)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL40395197W",
+    "title": "Oblomov",
+    "author": "Goncharov Ivan Aleksandrovich",
+    "author_url": "https://openlibrary.org/authors/OL9649548A",
+    "first_publish_year": 2014,
+    "edition_count": 6
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Oblomov",
+    "title": "Oblomov",
+    "description": "1859 novel by Ivan Goncharov"
+   }
+  },
+  "brosia-curated-v2-165": {
+   "title": "We",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Yevgeny_Zamyatin",
+    "title": "Yevgeny Zamyatin",
+    "description": "Russian author (1884–1937)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL43508575W",
+    "title": "We",
+    "author": "Евгений Иванович Замятин",
+    "author_url": "https://openlibrary.org/authors/OL30241A",
+    "first_publish_year": 1983,
+    "edition_count": 1
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/We_(novel)",
+    "title": "We (novel)",
+    "description": "1924 novel by Yevgeny Zamyatin"
+   }
+  },
+  "brosia-curated-v2-166": {
+   "title": "The Cherry Orchard",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Anton_Chekhov",
+    "title": "Anton Chekhov",
+    "description": "Russian dramatist and author (1860–1904)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL37787800W",
+    "title": "The cherry orchard,",
+    "author": "Антон Павлович Чехов",
+    "author_url": "https://openlibrary.org/authors/OL19677A",
+    "first_publish_year": 1923,
+    "edition_count": 1
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Cherry_Orchard",
+    "title": "The Cherry Orchard",
+    "description": "1904 play by Anton Chekhov"
+   }
+  },
+  "brosia-curated-v2-167": {
+   "title": "Uncle Vanya",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Anton_Chekhov",
+    "title": "Anton Chekhov",
+    "description": "Russian dramatist and author (1860–1904)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL30529917W",
+    "title": "Uncle Vanya Scenes from Country Life in Four Acts",
+    "author": "Антон Павлович Чехов",
+    "author_url": "https://openlibrary.org/authors/OL19677A",
+    "first_publish_year": 2017,
+    "edition_count": 3
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Uncle_Vanya",
+    "title": "Uncle Vanya",
+    "description": "1899 play by Anton Chekhov"
+   }
+  },
+  "brosia-curated-v2-168": {
+   "title": "The Seagull",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Anton_Chekhov",
+    "title": "Anton Chekhov",
+    "description": "Russian dramatist and author (1860–1904)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": null,
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Seagull",
+    "title": "The Seagull",
+    "description": "1896 play by Anton Chekhov"
+   }
+  },
+  "brosia-curated-v2-169": {
+   "title": "One Day in the Life of Ivan Denisovich",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Aleksandr_Solzhenitsyn",
+    "title": "Aleksandr Solzhenitsyn",
+    "description": "Soviet-Russian author and dissident (1918–2008)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL28966413W",
+    "title": "One Day in the Life of Ivan Denisovich",
+    "author": "Александр Исаевич Солженицын",
+    "author_url": "https://openlibrary.org/authors/OL222507A",
+    "first_publish_year": 1963,
+    "edition_count": 15
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/One_Day_in_the_Life_of_Ivan_Denisovich",
+    "title": "One Day in the Life of Ivan Denisovich",
+    "description": "1962 novella by Alexander Solzhenitsyn"
+   }
+  },
+  "brosia-curated-v2-170": {
+   "title": "The Count of Monte Cristo",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Alexandre_Dumas",
+    "title": "Alexandre Dumas",
+    "description": "French writer and dramatist (1802–1870)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20201553W",
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "author_url": "https://openlibrary.org/authors/OL6819624A",
+    "first_publish_year": 1920,
+    "edition_count": 13
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo",
+    "title": "The Count of Monte Cristo",
+    "description": "1846 novel by Alexandre Dumas"
+   }
+  },
+  "brosia-curated-v2-171": {
+   "title": "The Hunchback of Notre-Dame",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Victor_Hugo",
+    "title": "Victor Hugo",
+    "description": "French writer and politician (1802–1885)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL35667951W",
+    "title": "The Hunchback of Notre-Dame",
+    "author": "Victor Hugo",
+    "author_url": "https://openlibrary.org/authors/OL107571A",
+    "first_publish_year": 1968,
+    "edition_count": 9
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Hunchback_of_Notre-Dame",
+    "title": "The Hunchback of Notre-Dame",
+    "description": "1831 novel by Victor Hugo"
+   }
+  },
+  "brosia-curated-v2-172": {
+   "title": "The Stranger",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Albert_Camus",
+    "title": "Albert Camus",
+    "description": "French philosopher and writer (1913–1960)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": null,
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Stranger_(Camus_novel)",
+    "title": "The Stranger (Camus novel)",
+    "description": "1942 French novella by Albert Camus"
+   }
+  },
+  "brosia-curated-v2-173": {
+   "title": "The Plague",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Albert_Camus",
+    "title": "Albert Camus",
+    "description": "French philosopher and writer (1913–1960)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": null,
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Plague_(novel)",
+    "title": "The Plague (novel)",
+    "description": "1947 novel by Albert Camus"
+   }
+  },
+  "brosia-curated-v2-174": {
+   "title": "The Trial",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Franz_Kafka",
+    "title": "Franz Kafka",
+    "description": "German-language writer from Prague (1883–1924)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL43043884W",
+    "title": "The Trial",
+    "author": "Franz Kafka",
+    "author_url": "https://openlibrary.org/authors/OL33146A",
+    "first_publish_year": 1925,
+    "edition_count": 7
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Trial",
+    "title": "The Trial",
+    "description": "1925 novel by Franz Kafka"
+   }
+  },
+  "brosia-curated-v2-175": {
+   "title": "The Metamorphosis",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Franz_Kafka",
+    "title": "Franz Kafka",
+    "description": "German-language writer from Prague (1883–1924)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL498556W",
+    "title": "Metamorphosis",
+    "author": "Franz Kafka",
+    "author_url": "https://openlibrary.org/authors/OL33146A",
+    "first_publish_year": 1915,
+    "edition_count": 957
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Metamorphosis",
+    "title": "The Metamorphosis",
+    "description": "1915 novella by Franz Kafka"
+   }
+  },
+  "brosia-curated-v2-176": {
+   "title": "A Memory Called Empire",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Arkady_Martine",
+    "title": "Arkady Martine",
+    "description": "American science fiction writer (born 1985)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20157046W",
+    "title": "A Memory Called Empire",
+    "author": "Arkady Martine",
+    "author_url": "https://openlibrary.org/authors/OL7635848A",
+    "first_publish_year": 2019,
+    "edition_count": 8
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/A_Memory_Called_Empire",
+    "title": "A Memory Called Empire",
+    "description": "2019 novel by Arkady Martine"
+   }
+  },
+  "brosia-curated-v2-177": {
+   "title": "A Desolation Called Peace",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Arkady_Martine",
+    "title": "Arkady Martine",
+    "description": "American science fiction writer (born 1985)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20832939W",
+    "title": "A Desolation Called Peace",
+    "author": "Arkady Martine",
+    "author_url": "https://openlibrary.org/authors/OL7635848A",
+    "first_publish_year": 2021,
+    "edition_count": 6
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/A_Desolation_Called_Peace",
+    "title": "A Desolation Called Peace",
+    "description": "2021 novel by Arkady Martine"
+   }
+  },
+  "brosia-curated-v2-178": {
+   "title": "The Final Empire",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Brandon_Sanderson",
+    "title": "Brandon Sanderson",
+    "description": "American fiction writer (born 1975)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL5738148W",
+    "title": "The Final Empire",
+    "author": "Brandon Sanderson",
+    "author_url": "https://openlibrary.org/authors/OL1394865A",
+    "first_publish_year": 2001,
+    "edition_count": 45
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Mistborn%3A_The_Final_Empire",
+    "title": "Mistborn: The Final Empire",
+    "description": "2006 fantasy novel by Brandon Sanderson"
+   }
+  },
+  "brosia-curated-v2-179": {
+   "title": "The Well of Ascension",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Brandon_Sanderson",
+    "title": "Brandon Sanderson",
+    "description": "American fiction writer (born 1975)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL5738150W",
+    "title": "The Well of Ascension",
+    "author": "Brandon Sanderson",
+    "author_url": "https://openlibrary.org/authors/OL1394865A",
+    "first_publish_year": 2007,
+    "edition_count": 36
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Mistborn%3A_The_Well_of_Ascension",
+    "title": "Mistborn: The Well of Ascension",
+    "description": "2007 fantasy novel by Brandon Sanderson"
+   }
+  },
+  "brosia-curated-v2-180": {
+   "title": "The Hero of Ages",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Brandon_Sanderson",
+    "title": "Brandon Sanderson",
+    "description": "American fiction writer (born 1975)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL5738154W",
+    "title": "The Hero of Ages",
+    "author": "Brandon Sanderson",
+    "author_url": "https://openlibrary.org/authors/OL1394865A",
+    "first_publish_year": 2008,
+    "edition_count": 27
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Mistborn%3A_The_Hero_of_Ages",
+    "title": "Mistborn: The Hero of Ages",
+    "description": "2008 fantasy novel by Brandon Sanderson"
+   }
+  },
+  "brosia-curated-v2-181": {
+   "title": "The City of Brass",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/S._A._Chakraborty",
+    "title": "S. A. Chakraborty",
+    "description": "American fantasy writer"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL19623241W",
+    "title": "The City of Brass",
+    "author": "Shannon A. Chakraborty",
+    "author_url": "https://openlibrary.org/authors/OL7528534A",
+    "first_publish_year": 2017,
+    "edition_count": 14
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_City_of_Brass_(novel)",
+    "title": "The City of Brass (novel)",
+    "description": "2017 novel by S.A. Chakraborty"
+   }
+  },
+  "brosia-curated-v2-182": {
+   "title": "The Kingdom of Copper",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/S._A._Chakraborty",
+    "title": "S. A. Chakraborty",
+    "description": "American fantasy writer"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL45586553W",
+    "title": "The Kingdom of Copper",
+    "author": "S. A. Chakraborty",
+    "author_url": "https://openlibrary.org/authors/OL13539115A",
+    "first_publish_year": null,
+    "edition_count": 1
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Kingdom_of_Copper",
+    "title": "The Kingdom of Copper",
+    "description": "2019 novel by S.A. Chakraborty"
+   }
+  },
+  "brosia-curated-v2-183": {
+   "title": "The Empire of Gold",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/S._A._Chakraborty",
+    "title": "S. A. Chakraborty",
+    "description": "American fantasy writer"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20789805W",
+    "title": "The Empire of Gold",
+    "author": "Shannon A. Chakraborty",
+    "author_url": "https://openlibrary.org/authors/OL7528534A",
+    "first_publish_year": 2019,
+    "edition_count": 10
+   },
+   "work": null
+  },
+  "brosia-curated-v2-184": {
+   "title": "The Bear and the Nightingale",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Katherine_Arden",
+    "title": "Katherine Arden",
+    "description": "American novelist"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL21213411W",
+    "title": "The Bear and the Nightingale",
+    "author": "Katherine Arden",
+    "author_url": "https://openlibrary.org/authors/OL7500579A",
+    "first_publish_year": 2017,
+    "edition_count": 10
+   },
+   "work": null
+  },
+  "brosia-curated-v2-185": {
+   "title": "The Girl in the Tower",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Katherine_Arden",
+    "title": "Katherine Arden",
+    "description": "American novelist"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL19738981W",
+    "title": "The Girl in The Tower",
+    "author": "Katherine Arden",
+    "author_url": "https://openlibrary.org/authors/OL7500579A",
+    "first_publish_year": 2017,
+    "edition_count": 6
+   },
+   "work": null
+  },
+  "brosia-curated-v2-186": {
+   "title": "The Winter of the Witch",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Katherine_Arden",
+    "title": "Katherine Arden",
+    "description": "American novelist"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20941183W",
+    "title": "The Winter of the Witch",
+    "author": "Katherine Arden",
+    "author_url": "https://openlibrary.org/authors/OL7500579A",
+    "first_publish_year": 2019,
+    "edition_count": 7
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Winter_of_the_Witch",
+    "title": "The Winter of the Witch",
+    "description": "2019 historical fantasy novel by Katherine Arden"
+   }
+  },
+  "brosia-curated-v2-187": {
+   "title": "Red Sister",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Mark_Lawrence_(author)",
+    "title": "Mark Lawrence (author)",
+    "description": "American-British novelist (born 1966)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL17888183W",
+    "title": "Red Sister",
+    "author": "Mark Lawrence",
+    "author_url": "https://openlibrary.org/authors/OL6983136A",
+    "first_publish_year": 2017,
+    "edition_count": 12
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Book_of_the_Ancestor_trilogy",
+    "title": "Book of the Ancestor trilogy",
+    "description": "Fantasy trilogy by Mark Lawrence"
+   }
+  },
+  "brosia-curated-v2-188": {
+   "title": "Grey Sister",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Mark_Lawrence_(author)",
+    "title": "Mark Lawrence (author)",
+    "description": "American-British novelist (born 1966)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL24287727W",
+    "title": "Grey Sister",
+    "author": "Mark Lawrence",
+    "author_url": "https://openlibrary.org/authors/OL6983136A",
+    "first_publish_year": 2018,
+    "edition_count": 10
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Book_of_the_Ancestor_trilogy",
+    "title": "Book of the Ancestor trilogy",
+    "description": "Fantasy trilogy by Mark Lawrence"
+   }
+  },
+  "brosia-curated-v2-189": {
+   "title": "Holy Sister",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Mark_Lawrence_(author)",
+    "title": "Mark Lawrence (author)",
+    "description": "American-British novelist (born 1966)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20097592W",
+    "title": "Holy Sister",
+    "author": "Mark Lawrence",
+    "author_url": "https://openlibrary.org/authors/OL6983136A",
+    "first_publish_year": 2019,
+    "edition_count": 8
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Book_of_the_Ancestor_trilogy",
+    "title": "Book of the Ancestor trilogy",
+    "description": "Fantasy trilogy by Mark Lawrence"
+   }
+  },
+  "brosia-curated-v2-190": {
+   "title": "The Blade Itself",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Joe_Abercrombie",
+    "title": "Joe Abercrombie",
+    "description": "English fantasy writer and film editor (born 1974)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL8400950W",
+    "title": "The Blade Itself",
+    "author": "Joe Abercrombie",
+    "author_url": "https://openlibrary.org/authors/OL2801083A",
+    "first_publish_year": 2001,
+    "edition_count": 16
+   },
+   "work": null
+  },
+  "brosia-curated-v2-191": {
+   "title": "Before They Are Hanged",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Joe_Abercrombie",
+    "title": "Joe Abercrombie",
+    "description": "English fantasy writer and film editor (born 1974)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL8400946W",
+    "title": "Before they are hanged",
+    "author": "Joe Abercrombie",
+    "author_url": "https://openlibrary.org/authors/OL2801083A",
+    "first_publish_year": 2007,
+    "edition_count": 19
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_First_Law",
+    "title": "The First Law",
+    "description": "Fantasy series by Joe Abercrombie"
+   }
+  },
+  "brosia-curated-v2-192": {
+   "title": "Last Argument of Kings",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Joe_Abercrombie",
+    "title": "Joe Abercrombie",
+    "description": "English fantasy writer and film editor (born 1974)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL8400952W",
+    "title": "Last Argument of Kings",
+    "author": "Joe Abercrombie",
+    "author_url": "https://openlibrary.org/authors/OL2801083A",
+    "first_publish_year": 2008,
+    "edition_count": 19
+   },
+   "work": null
+  },
+  "brosia-curated-v2-193": {
+   "title": "The Goblin Emperor",
+   "author": null,
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL17270804W",
+    "title": "The Goblin Emperor",
+    "author": "Sarah Monette",
+    "author_url": "https://openlibrary.org/authors/OL1434466A",
+    "first_publish_year": 2014,
+    "edition_count": 10
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Goblin_Emperor",
+    "title": "The Goblin Emperor",
+    "description": "2014 novel by Katherine Addison"
+   }
+  },
+  "brosia-curated-v2-194": {
+   "title": "The Priory of the Orange Tree",
+   "author": null,
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20157354W",
+    "title": "The Priory of the Orange Tree",
+    "author": "Samantha Shannon",
+    "author_url": "https://openlibrary.org/authors/OL7310561A",
+    "first_publish_year": 2018,
+    "edition_count": 10
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Priory_of_the_Orange_Tree",
+    "title": "The Priory of the Orange Tree",
+    "description": "2019 fantasy novel by Samantha Shannon"
+   }
+  },
+  "brosia-curated-v2-195": {
+   "title": "The Song of Achilles",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Madeline_Miller",
+    "title": "Madeline Miller",
+    "description": "American writer (born 1978)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL16509148W",
+    "title": "The Song of Achilles",
+    "author": "Madeline Miller",
+    "author_url": "https://openlibrary.org/authors/OL1926056A",
+    "first_publish_year": 2011,
+    "edition_count": 43
+   },
+   "work": null
+  },
+  "brosia-curated-v2-196": {
+   "title": "The Night Circus",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Erin_Morgenstern",
+    "title": "Erin Morgenstern",
+    "description": "American novelist"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL16086747W",
+    "title": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "author_url": "https://openlibrary.org/authors/OL6976354A",
+    "first_publish_year": 2011,
+    "edition_count": 37
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Night_Circus",
+    "title": "The Night Circus",
+    "description": "2011 fantasy novel by Erin Morgenstern"
+   }
+  },
+  "brosia-curated-v2-197": {
+   "title": "Strange the Dreamer",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Laini_Taylor",
+    "title": "Laini Taylor",
+    "description": "American fantasy writer (born 1971)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL17719038W",
+    "title": "Strange the Dreamer",
+    "author": "Laini Taylor",
+    "author_url": "https://openlibrary.org/authors/OL2688942A",
+    "first_publish_year": 2016,
+    "edition_count": 18
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Strange_the_Dreamer",
+    "title": "Strange the Dreamer",
+    "description": "Fantasy novel"
+   }
+  },
+  "brosia-curated-v2-198": {
+   "title": "Muse of Nightmares",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Laini_Taylor",
+    "title": "Laini Taylor",
+    "description": "American fantasy writer (born 1971)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL18184356W",
+    "title": "Muse of Nightmares",
+    "author": "Laini Taylor",
+    "author_url": "https://openlibrary.org/authors/OL2688942A",
+    "first_publish_year": 2018,
+    "edition_count": 13
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Muse_of_Nightmares",
+    "title": "Muse of Nightmares",
+    "description": "2018 young adult fantasy novel written by American author Laini Taylor"
+   }
+  },
+  "brosia-curated-v2-199": {
+   "title": "Jonathan Strange & Mr Norrell",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Susanna_Clarke",
+    "title": "Susanna Clarke",
+    "description": "British author"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL5703422W",
+    "title": "Jonathan Strange and Mr. Norrell",
+    "author": "Susanna Clarke",
+    "author_url": "https://openlibrary.org/authors/OL1387961A",
+    "first_publish_year": 2001,
+    "edition_count": 51
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/Jonathan_Strange_%26_Mr_Norrell",
+    "title": "Jonathan Strange & Mr Norrell",
+    "description": "2004 novel by Susanna Clarke"
+   }
+  },
+  "brosia-curated-v2-200": {
+   "title": "The Ten Thousand Doors of January",
+   "author": {
+    "url": "https://en.wikipedia.org/wiki/Alix_E._Harrow",
+    "title": "Alix E. Harrow",
+    "description": "American writer (born 1989)"
+   },
+   "checked_on": "2026-11-23",
+   "openlibrary": {
+    "url": "https://openlibrary.org/works/OL20074045W",
+    "title": "The Ten Thousand Doors of January",
+    "author": "Alix E. Harrow",
+    "author_url": "https://openlibrary.org/authors/OL7617622A",
+    "first_publish_year": 2019,
+    "edition_count": 12
+   },
+   "work": {
+    "url": "https://en.wikipedia.org/wiki/The_Ten_Thousand_Doors_of_January",
+    "title": "The Ten Thousand Doors of January",
+    "description": "2019 novel by Alix E. Harrow"
+   }
+  }
+ }
+}

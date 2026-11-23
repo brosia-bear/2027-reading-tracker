@@ -1,0 +1,238 @@
+[
+ {
+  "id": "brosia-curated-v2-136",
+  "y": 2021,
+  "g": "Psychology and decision science",
+  "sum": "Daniel Kahneman, Olivier Sibony and Cass Sunstein argue that unwanted variability in judgment, which they call noise, is as damaging as bias and far less noticed. Judges give very different sentences for similar crimes, doctors disagree on diagnoses, insurance underwriters quote wildly different premiums, and the same person judges differently on different days. The authors show how to measure noise and propose decision hygiene to reduce it.",
+  "bg": "Published in 2021, a decade after Thinking, Fast and Slow, by a Nobel-winning psychologist, a professor of strategy at HEC Paris, and a Harvard legal scholar who co-wrote Nudge. It draws on research into courts, medicine, forecasting, hiring and business, much of it the authors’ own.",
+  "br": "The opening chapters establish the key distinction with a memorable image of target shooting: bias is shots clustered off-centre, noise is shots scattered everywhere. Hold onto that picture and the rest of the book follows from it.",
+  "la": "The authors combine research summaries, case studies and practical recommendations in a systematic structure, with frequent recaps at the end of chapters. The style is careful and explanatory rather than narrative or anecdotal.",
+  "cx": "The book builds on decades of judgment and decision research and enters live debates about algorithms, sentencing guidelines and whether structured rules should replace human discretion in high-stakes decisions.",
+  "th": [
+   [
+    "Noise versus bias",
+    "Scattered, inconsistent errors matter as much as errors that lean one way."
+   ],
+   [
+    "Decision hygiene",
+    "Structured, independent judgments can reduce noise without knowing its source."
+   ],
+   [
+    "Fairness",
+    "Inconsistent judgment means similar people receive very different treatment."
+   ]
+  ],
+  "fit": "Extends the psychology of judgment you meet in Thinking, Fast and Slow and The Undoing Project into institutions and policy.",
+  "mis": "It is repetitive in places and more technical than narrative, so it can feel like a long report.",
+  "cw": [],
+  "rq": [
+   "Where might noise be affecting decisions in your own life?",
+   "What does decision hygiene involve in practice?",
+   "How exactly do noise and bias differ?"
+  ],
+  "dq": [
+   "Should algorithms replace human judges in some decisions?",
+   "What might be lost if we reduce noise too far?"
+  ],
+  "rel": [
+   [
+    "2027-011",
+    "Kahneman’s earlier work on bias."
+   ],
+   [
+    "v2-134",
+    "The story of Kahneman’s partnership with Tversky."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-137",
+  "y": 2022,
+  "g": "Popular science; animal senses and perception",
+  "sum": "Ed Yong explores how animals perceive the world through senses we lack or barely understand: the electric fields sensed by sharks and fish, the magnetic compass of migrating birds, the ultraviolet colours seen by bees, the echolocation of bats, and vibrations passed through leaves and sand. Each creature lives in its own sensory bubble, and imagining those bubbles changes how we see our own.",
+  "bg": "Published in 2022 by the science journalist who won a Pulitzer Prize for his COVID-19 reporting at The Atlantic. It followed his first book, I Contain Multitudes, about the microbiome, and was widely named among the best books of its year.",
+  "br": "Chapters are organised by sense, starting with smell and taste and moving to stranger senses later. Enjoy the wonder, and pause on the moments where Yong asks you to imagine life as a particular animal.",
+  "la": "Yong combines field reporting with scientists, lucid explanation and playful prose. He organises the book around the concept of Umwelt, the perceptual world of an organism, introduced by the biologist Jakob von Uexküll in the early twentieth century.",
+  "cx": "The final chapter turns to how human light pollution, noise and other sensory pollution disrupt animal lives, giving the book an environmental argument as well as a celebratory one.",
+  "th": [
+   [
+    "Umwelt",
+    "Every creature lives inside its own distinct perceptual world."
+   ],
+   [
+    "Humility",
+    "Human senses capture only a narrow slice of what is out there."
+   ],
+   [
+    "Sensory pollution",
+    "Our lights and noise quietly disrupt how other species perceive and survive."
+   ]
+  ],
+  "fit": "A wonder-filled science read that pairs naturally with Entangled Life and balances the darker environmental titles on your list.",
+  "mis": "Long and densely detailed; readers wanting a brisk overview may tire before the end.",
+  "cw": [],
+  "rq": [
+   "Which animal sense would you most like to experience?",
+   "What is an Umwelt, in your own words?",
+   "How does sensory pollution harm animals?"
+  ],
+  "dq": [
+   "Can we ever truly know another being’s experience?",
+   "How should this change the way we protect wildlife?"
+  ],
+  "rel": [
+   [
+    "v2-131",
+    "Fungal networks and non-human life."
+   ],
+   [
+    "v2-130",
+    "The human impact on other species."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-138",
+  "y": 2022,
+  "g": "Popular science; history of cell biology and medicine",
+  "sum": "Siddhartha Mukherjee tells the story of the cell, the basic unit of life, from its discovery under seventeenth-century microscopes to blood transfusion, IVF, bone-marrow transplants, immunotherapy and gene-edited cell therapies. Woven through the history are the patients he has treated as an oncologist, whose lives depended on what we understand, and still do not understand, about cells.",
+  "bg": "Published in 2022, the book completes a loose trilogy with The Emperor of All Maladies, which won the Pulitzer Prize, and The Gene. Mukherjee is a cancer physician and researcher at Columbia University. Each book can be read on its own.",
+  "br": "Read after, or alongside, The Gene and The Emperor of All Maladies on your list. The book moves from basic biology toward modern medicine, so the later chapters build on the early ones.",
+  "la": "Mukherjee combines history, scientific explanation and patient stories with literary flair, often opening chapters with epigraphs and building toward personal reflection on what new knowledge makes possible. Metaphors from music, hinted at in the title, recur throughout.",
+  "cx": "Written partly during the COVID-19 pandemic, which features in the chapters on the immune system, and at a time when cell and gene therapies were moving rapidly from experiment into clinical use.",
+  "th": [
+   [
+    "Life’s building blocks",
+    "Understanding cells has transformed medicine and our idea of the body."
+   ],
+   [
+    "The new human",
+    "Engineering cells changes what it means to be human."
+   ],
+   [
+    "Medicine and suffering",
+    "Patients’ stories ground the science and show its stakes."
+   ]
+  ],
+  "fit": "Completes Mukherjee’s trilogy, whose other two volumes are already on your list. It also deepens the immunology you meet elsewhere.",
+  "mis": "Long and sometimes discursive, and readers who already know the biology may find parts slow.",
+  "cw": [
+   "Illness, cancer and death.",
+   "The COVID-19 pandemic."
+  ],
+  "rq": [
+   "Which discovery surprised you most?",
+   "How has cell therapy changed medicine?",
+   "How does Mukherjee use his patients’ stories?"
+  ],
+  "dq": [
+   "What ethical limits should cell engineering have?",
+   "How does this book connect to The Gene?"
+  ],
+  "rel": [
+   [
+    "2027-091",
+    "Mukherjee’s The Gene."
+   ],
+   [
+    "2027-096",
+    "Mukherjee’s history of cancer."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-139",
+  "y": 2010,
+  "g": "Narrative history; American migration",
+  "sum": "Isabel Wilkerson tells the story of the Great Migration, in which some six million Black Americans left the Jim Crow South for cities in the North and West between about 1915 and 1970. She follows three people who made the journey in different decades, Ida Mae Gladney to Chicago, George Starling to New York and Robert Foster to Los Angeles, and weaves their lives into a vast history.",
+  "bg": "Published in 2010 after fifteen years of research and more than a thousand interviews, it won the National Book Critics Circle Award for nonfiction. Wilkerson had earlier won a Pulitzer Prize for journalism, and later wrote Caste. It is widely taught in schools and universities.",
+  "br": "Long but propulsive: the three life stories carry it, and you will come to know each person well. Background chapters on the wider migration sit between their stories.",
+  "la": "Wilkerson uses novelistic narrative grounded in interviews and archival research, alternating between the three protagonists so that their journeys echo and contrast with one another. Small domestic details, meals, letters and train journeys, carry a great deal of meaning.",
+  "cx": "The migration reshaped American cities, politics, music and culture, from Chicago blues to the Harlem Renaissance and beyond, and it met new forms of discrimination in the North and West.",
+  "th": [
+   [
+    "Migration as resistance",
+    "Leaving the South was a quiet, collective act of defiance."
+   ],
+   [
+    "Home and belonging",
+    "Migrants sought a new home while carrying the old one with them."
+   ],
+   [
+    "Persistent racism",
+    "Discrimination followed migrants north in new and often subtler forms."
+   ]
+  ],
+  "fit": "Pairs closely with Caste on your list and with the American history titles elsewhere in your plan.",
+  "mis": "It is long, and some repetition between the three stories can slow the middle section.",
+  "cw": [
+   "Racism.",
+   "Lynching and racial violence.",
+   "Addiction and illness."
+  ],
+  "rq": [
+   "Which of the three journeys moved you most?",
+   "How did the North differ from what migrants expected?",
+   "What did migrants carry with them?"
+  ],
+  "dq": [
+   "How does the Great Migration still shape America today?",
+   "How does this book relate to Wilkerson’s Caste?"
+  ],
+  "rel": [
+   [
+    "2027-035",
+    "Wilkerson’s Caste."
+   ]
+  ]
+ },
+ {
+  "id": "brosia-curated-v2-140",
+  "y": 2021,
+  "g": "History and essays; anthology with poetry and fiction",
+  "sum": "Expanded from The New York Times Magazine’s 2019 project, the book reframes American history around August 1619, when about twenty enslaved Africans arrived in the English colony of Virginia. Eighteen essays on democracy, music, medicine, capitalism, religion, citizenship and justice alternate with poems and short stories by Black writers, creating a chorus of perspectives.",
+  "bg": "Created by journalist Nikole Hannah-Jones, who won a Pulitzer Prize for her lead essay, and published in book form in 2021 with revisions and expansions responding to critics. Contributors include historians, journalists and writers such as Jesmyn Ward and Claudia Rankine.",
+  "br": "Read an essay at a time together with the poem or story that follows it. The book makes an argument and also gathers many voices, so let each piece stand on its own.",
+  "la": "The book mixes journalism, history and creative work, so the literary pieces carry the emotional history that the essays argue. The structure itself suggests that facts and imagination both shape national memory.",
+  "cx": "The original project prompted a public debate among historians and politicians, especially over claims about slavery’s role in the American Revolution; the book’s introduction and revised essays address this directly.",
+  "th": [
+   [
+    "Origins and memory",
+    "The date a nation chooses as its beginning shapes its whole story."
+   ],
+   [
+    "Slavery’s legacy",
+    "Present institutions still carry the imprint of slavery."
+   ],
+   [
+    "Black Americans and democracy",
+    "Black Americans fought hardest to make the nation’s ideals real."
+   ]
+  ],
+  "fit": "Pairs with Caste, The New Jim Crow and The Color of Law already on your list.",
+  "mis": "Some of its interpretations are contested, and readers wanting a single narrative history may find it uneven.",
+  "cw": [
+   "Slavery and racial violence.",
+   "Police violence."
+  ],
+  "rq": [
+   "What changes when 1619 becomes the starting point?",
+   "Which essay persuaded you most, and which least?",
+   "How do the poems change the effect of the essays?"
+  ],
+  "dq": [
+   "How should historians handle contested interpretations in public history?",
+   "What is the purpose of a national origin story?"
+  ],
+  "rel": [
+   [
+    "2027-035",
+    "Caste."
+   ],
+   [
+    "2027-043",
+    "The Color of Law."
+   ]
+  ]
+ }
+]
