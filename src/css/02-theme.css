@@ -350,3 +350,30 @@ h1[tabindex="-1"]:focus{outline:none}
 
 /* Comfortable measure on wide screens */
 .main-section{max-width:980px}
+
+/* READING CONTROLS — Start/Finish beside the cover; progress and notes as drawers at the top. */
+.profile-cover-frame{grid-template-columns:auto minmax(0,1fr);align-items:center;gap:18px}
+.quick-area{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.quick-area .small{margin:0;font-style:italic}
+.btn.quick-status{min-width:92px}
+.btn.quick-start{background:var(--claret);border-color:var(--claret);color:var(--leaf)}
+.btn.quick-start:hover{background:#65242F;border-color:#65242F}
+.btn.quick-finish{background:var(--moss);border-color:var(--moss);color:var(--leaf)}
+.btn.quick-finish:hover{background:#465034;border-color:#465034}
+.quick-done{font-style:italic;color:var(--moss);font-weight:600}
+.profile-cover-frame .quick-area .btn.quick-status{min-height:44px;font-size:1rem;min-width:120px}
+.book-card .right{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:6px}
+.reading-drawers{display:grid;gap:10px;margin:14px 0 18px}
+.reading-drawer{padding:0;margin:0}
+.reading-drawer>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;min-height:48px}
+.reading-drawer>summary::-webkit-details-marker{display:none}
+.reading-drawer>summary .drawer-title{font-size:1.08rem;font-weight:600}
+.reading-drawer>summary .drawer-title::before{content:"";display:inline-block;width:.45em;height:.45em;margin-right:.6em;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(-45deg);transition:transform .15s ease;vertical-align:.12em}
+.reading-drawer[open]>summary .drawer-title::before{transform:rotate(45deg)}
+.reading-drawer[open]>summary{border-bottom:1px solid var(--hairline)}
+.reading-drawer>form,.reading-drawer>p{margin:12px 14px}
+.reading-drawer>summary:focus-visible{outline:2px solid var(--claret);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.reading-drawer>summary .drawer-title::before{transition:none}}
+.reading-drawer.profile-panel{border:1px solid var(--rule);background:var(--leaf);border-radius:var(--radius-md)}
+.book-card .btn.quick-start{background:transparent;color:var(--claret);border-color:var(--claret)}
+.book-card .btn.quick-start:hover{background:var(--soft-rose);color:var(--claret)}
